@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Nav, NavDropdown, Container } from "react-bootstrap";
 
 export const NavButtonContainer = styled.div`
 	position: relative;
@@ -22,17 +22,9 @@ export const CanvasNavbarContainer = styled.div`
 	padding-top: 50px;
 `;
 
-export const NavbarContainer = styled(Navbar)`
-	position: fixed;
-	left: 4%;
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-`;
-
 export const NavLink = styled(Nav.Link)`
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 34;
 
 	&:focus,
@@ -43,7 +35,7 @@ export const NavLink = styled(Nav.Link)`
 
 export const NavDropdownItem = styled(NavDropdown.Item)`
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 34;
 	padding: 0.5rem 0;
 
@@ -51,8 +43,20 @@ export const NavDropdownItem = styled(NavDropdown.Item)`
 	&:active {
 		color: #ffffff;
 	}
-`;
 
+	&:before {
+		content: "";
+		background: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid #fff;
+		width: 85%;
+	}
+`;
+export const NavDropdownItemContainer = styled(Container)`
+	width: 50%;
+`;
 export const BottomNavLinks = styled.div`
-	margin-top: 250px;
+	margin-top: 50%;
 `;
