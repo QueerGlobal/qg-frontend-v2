@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Nav, NavDropdown, Container } from "react-bootstrap";
 
 export const NavButtonContainer = styled.div`
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 50px;
 	background: #655dc6;
@@ -19,7 +19,7 @@ export const CanvasNavbarContainer = styled.div`
 	width: 50vw;
 	background: #655dc6;
 	color: #ffffff;
-	padding-top: 50px;
+	padding-top: 70px;
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -58,5 +58,5 @@ export const NavDropdownItemContainer = styled(Container)`
 	width: 50%;
 `;
 export const BottomNavLinks = styled.div`
-	margin-top: 50%;
+	margin-top: 40%;
 `;

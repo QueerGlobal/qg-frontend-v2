@@ -39,12 +39,12 @@ const NavBar = () => {
 			<CanvasNavbarContainer
 				className="offcanvas offcanvas-start"
 				data-bs-scroll="true"
-				data-bs-backdrop="false"
+				data-bs-backdrop="true"
 				tabIndex="-1"
 				id="sidebar"
 				aria-labelledby="offcanvasScrollingLabel"
 			>
-				<div className="offcanvas-body p-0">
+				<div className="offcanvas-body p-0 overflow-hidden">
 					<NavLink href="/">
 						<span>
 							<FontAwesomeIcon icon={faHome} style={{ marginRight: "13px" }} />
