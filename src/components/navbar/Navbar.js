@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBars,
@@ -23,6 +23,13 @@ import {
 } from "./Navbar.Styled";
 
 const NavBar = () => {
+	useEffect(() => {});
+
+	// const decreaseMargin = () => {
+	// 	const bottomLinks = document.getElementsByClassName("bottomLinks");
+	// 	bottomLinks.styles.marginBottom = "50px";
+	// };
+
 	return (
 		<>
 			<NavButtonContainer>
@@ -80,6 +87,7 @@ const NavBar = () => {
 					</NavLink>
 
 					<NavDropdown
+						id="add-resource"
 						title={
 							<span style={{ fontSize: "18px" }}>
 								<FontAwesomeIcon
@@ -103,7 +111,7 @@ const NavBar = () => {
 						</NavDropdownItemContainer>
 					</NavDropdown>
 
-					<NavLink href="/search">
+					<NavLink id="search" href="/search">
 						<span>
 							<FontAwesomeIcon
 								icon={faSearch}
@@ -112,7 +120,7 @@ const NavBar = () => {
 						</span>
 						Search
 					</NavLink>
-					<BottomNavLinks>
+					<BottomNavLinks id="bottom-links">
 						<NavLink href="/logout">
 							<span>
 								<FontAwesomeIcon
@@ -123,6 +131,7 @@ const NavBar = () => {
 							Log Out
 						</NavLink>
 						<NavDropdown
+							id="support"
 							title={
 								<span style={{ fontSize: "18px" }}>
 									<FontAwesomeIcon

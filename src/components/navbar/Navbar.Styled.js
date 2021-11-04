@@ -3,7 +3,7 @@ import { Nav, NavDropdown, Container } from "react-bootstrap";
 
 export const NavButtonContainer = styled.div`
 	position: fixed;
-	width: 100%;
+	width: 100%; /* TODO add break points for desktop screen */
 	height: 50px;
 	background: #655dc6;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
@@ -19,7 +19,7 @@ export const CanvasNavbarContainer = styled.div`
 	width: 50vw;
 	background: #655dc6;
 	color: #ffffff;
-	padding-top: 70px;
+	padding-top: 60px;
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -58,5 +58,7 @@ export const NavDropdownItemContainer = styled(Container)`
 	width: 50%;
 `;
 export const BottomNavLinks = styled.div`
-	margin-top: 40%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 `;
