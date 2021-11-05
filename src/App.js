@@ -1,7 +1,14 @@
-import "./App.css";
+import React from 'react';
+
+import './App.css';
+import LandingPage from './components/landingPage/LandingPage';
 
 function App() {
-	return <div></div>;
+  return (
+    <div>
+      <LandingPage />
+    </div>
+  );
 }
 
 export default App;
