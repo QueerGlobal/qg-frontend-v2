@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBars,
@@ -23,13 +23,6 @@ import {
 } from "./Navbar.Styled";
 
 const NavBar = () => {
-	useEffect(() => {});
-
-	// const decreaseMargin = () => {
-	// 	const bottomLinks = document.getElementsByClassName("bottomLinks");
-	// 	bottomLinks.styles.marginBottom = "50px";
-	// };
-
 	return (
 		<>
 			<NavButtonContainer>

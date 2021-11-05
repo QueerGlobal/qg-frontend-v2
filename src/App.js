@@ -9,11 +9,12 @@ import Blog from "./components/blog/Blog";
 import AddResource from "./components/add-resource/AddResource";
 import Search from "./components/search/Search";
 import Logout from "./components/logout/Logout";
-//import GlobalStyles from "../src/Global.Styled";
+import GlobalStyles from "../src/Global.Styled";
 
 const App = () => {
 	return (
 		<>
+			<GlobalStyles />
 			<Router>
 				<Navbar />
 				<br />
