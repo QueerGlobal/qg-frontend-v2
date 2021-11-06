@@ -22,6 +22,7 @@ export const StyledButton = styled.button<ButtonWrapperProps>`
     }
   }};
   border-radius: 3px;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;

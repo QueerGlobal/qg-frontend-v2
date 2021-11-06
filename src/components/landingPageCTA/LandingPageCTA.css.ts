@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LandingPageWrapperCTA = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 0px 10px #00000040;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
   padding: 15px;
