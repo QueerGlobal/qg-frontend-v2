@@ -35,7 +35,7 @@ const LandingPageCTA: FC = () => {
         businesses in their area.
       </Text>
       <ButtonWrapper>
-        <Button buttonText='Join our Community' />
+        <Button label='primary' buttonText='Join our Community' />
       </ButtonWrapper>
     </LandingPageWrapperCTA>
   );
