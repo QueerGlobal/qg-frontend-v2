@@ -1,9 +1,26 @@
 import styled from 'styled-components';
+import colors from '../../../styles/colors';
+interface ButtonWrapperProps {
+  label: string;
+  active?: string;
+  disabled?: boolean;
+}
 
-export const Container = styled.div``;
-
-export const StyledButton = styled.button`
-  background: #655dc6;
+export const StyledButton = styled.button<ButtonWrapperProps>`
+  background: ${(props) => {
+    if (props.label === 'primary' && !props.disabled) {
+      return colors.PRIMARY;
+    }
+    if (props.label === 'secondary' && !props.disabled) {
+      return colors.SECONDARY;
+    }
+    if (props.label === 'donate' && !props.disabled) {
+      return colors.DONATE;
+    }
+    if (props.disabled) {
+      return colors.DISABLED;
+    }
+  }};
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -13,8 +30,14 @@ export const StyledButton = styled.button`
   height: 50px;
 `;
 
-export const ButtonText = styled.div`
-  color: #ffffff;
+export const ButtonText = styled.div<ButtonWrapperProps>`
+  color: ${(props) => {
+    if (props.disabled) {
+      return colors.DISABLED_TEXT;
+    } else {
+      return colors.WHITE;
+    }
+  }};
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   font-weight: normal;

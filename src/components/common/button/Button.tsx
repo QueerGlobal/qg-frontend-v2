@@ -1,18 +1,23 @@
 import React, { FC } from 'react';
 
-import { Container, StyledButton, ButtonText } from './Button.css';
+import { StyledButton, ButtonText } from './Button.css';
 
 export interface ButtonProps {
   buttonText: string;
   handleClick?: () => void; //optional until we know where it's clicking to
+  disabled?: boolean;
+  label: string;
 }
-const Button: FC<ButtonProps> = ({ buttonText, handleClick }: ButtonProps) => {
+const Button: FC<ButtonProps> = ({
+  buttonText,
+  handleClick,
+  disabled = false,
+  label,
+}) => {
   return (
-    <Container>
-      <StyledButton onClick={handleClick}>
-        <ButtonText>{buttonText}</ButtonText>
-      </StyledButton>
-    </Container>
+    <StyledButton onClick={handleClick} label={label} disabled={disabled}>
+      <ButtonText label={label}>{buttonText}</ButtonText>
+    </StyledButton>
   );
 };
 
