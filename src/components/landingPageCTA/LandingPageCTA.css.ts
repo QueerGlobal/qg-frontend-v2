@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const LandingPageWrapperCTA = styled.div`
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px #00000040;
+  background-color: ${colors.WHITE};
   border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
@@ -11,38 +11,52 @@ export const LandingPageWrapperCTA = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: #655dc6;
+  color: ${colors.PRIMARY};
+  font-family: openSans, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 `;
 export const SubHeader1 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
+  font-family: openSans, sans-serif;
+  margin-bottom: -20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 15px 0 0;
 `;
 
 export const SubHeader2 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
+  font-family: openSans, sans-serif;
   font-size: 18px;
+  font-weight: 500;
+  margin-bottom: -5px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline #655dc6;
-  line-height: 20px;
+  border-bottom: 2px solid ${colors.PRIMARY};
 `;
 
 export const SubHeader3 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
+  font-family: openSans, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
+`;
+
+export const Span = styled.h2`
+  @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  color: ${colors.UNICORN};
+  font-family: openSans, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+  display: inline-block;
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0auto;
+  /* margin: 0auto; */
 `;
 
 export const Image = styled.h2`
@@ -54,8 +68,9 @@ export const Image = styled.h2`
 `;
 
 export const Text = styled.p`
-  font-size: 14px;
-  color: #1f1f1f;
+  font-family: openSans, sans-serif;
+  font-size: 15px;
+  color: ${colors.BLACK};
 `;
 
 export const ButtonWrapper = styled.div`

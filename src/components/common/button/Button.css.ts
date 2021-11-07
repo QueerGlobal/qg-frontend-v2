@@ -27,8 +27,8 @@ export const StyledButton = styled.button<ButtonWrapperProps>`
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  width: 300px;
-  height: 50px;
+  width: 209px;
+  height: 36px;
 `;
 
 export const ButtonText = styled.div<ButtonWrapperProps>`
@@ -40,7 +40,7 @@ export const ButtonText = styled.div<ButtonWrapperProps>`
     }
   }};
   font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 `;

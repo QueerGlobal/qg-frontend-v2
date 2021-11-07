@@ -12,7 +12,9 @@ export const LinksWrapperProps = styled.div`
 `;
 
 export const Header = styled.h1`
+  font-family: openSans, sans-serif;
   color: ${colors.BLACK};
-  font-size: 24px;
+  font-size: 23px;
   text-transform: uppercase;
+  margin: 32px 0 0 -40px;
 `;

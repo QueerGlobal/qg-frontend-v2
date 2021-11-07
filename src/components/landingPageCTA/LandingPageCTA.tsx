@@ -7,6 +7,7 @@ import {
   SubHeader1,
   SubHeader2,
   SubHeader3,
+  Span, 
   ImageWrapper,
   Image,
   Text,
@@ -18,7 +19,7 @@ const LandingPageCTA: FC = () => {
     <LandingPageWrapperCTA>
       <Header>We're Queer Global.</Header>
       <SubHeader1>We Put</SubHeader1>
-      <SubHeader2>People of all sizes</SubHeader2>
+      <SubHeader2>People of <Span>all sizes</Span></SubHeader2>
       <SubHeader3>First.</SubHeader3>
       <ImageWrapper>
         <Image>Image goes here</Image>
