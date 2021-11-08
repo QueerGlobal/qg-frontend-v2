@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const AddResource = () => {
+const AddResource: FC = () => {
 	return (
 		<div>
 			<h1>resource</h1>

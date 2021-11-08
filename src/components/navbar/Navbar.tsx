@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBars,
@@ -22,7 +22,7 @@ import {
 	BottomNavLinks,
 } from "./Navbar.css";
 
-const NavBar = () => {
+const NavBar: FC = () => {
 	return (
 		<>
 			<NavButtonContainer>

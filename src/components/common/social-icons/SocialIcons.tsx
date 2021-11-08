@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import {
 	SocialContainer,
 	IconsWrapper,
@@ -10,7 +10,7 @@ import instagram from "../../../assets/footer/instagram.svg";
 import linkedIn from "../../../assets/footer/linkedIn.svg";
 import pinterest from "../../../assets/footer/pinterest.svg";
 
-const SocialIcons = () => {
+const SocialIcons: FC = () => {
 	return (
 		<SocialContainer>
 			<IconsWrapper>

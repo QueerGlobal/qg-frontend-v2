@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Search = () => {
+const Search: FC = () => {
 	return (
 		<div>
 			<h1>search</h1>

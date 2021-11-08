@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Donate = () => {
+const Donate: FC = () => {
 	return (
 		<div>
 			<h1>donate</h1>
