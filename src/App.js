@@ -8,6 +8,7 @@ import AddResource from "./components/add-resource/AddResource.tsx";
 import Search from "./components/search/Search.tsx";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "../src/Global.css";
+import Footer from "./components/common/footer/Footer";
 
 const App = () => {
 	return (
@@ -24,6 +25,7 @@ const App = () => {
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
 			</Router>
+			<Footer />
 		</>
 	);
 };
