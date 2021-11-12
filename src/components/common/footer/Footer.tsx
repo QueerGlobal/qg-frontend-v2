@@ -21,7 +21,7 @@ const Footer: FC = () => {
 			</LogoContainer>
 			<KnowUs> get to know us</KnowUs>
 			<SocialIcons />
-			<Email>Email@queerglobal.com</Email>
+			<Email>info@queerglobal.com</Email>
 			<NavLinksContainer>
 				<NavLink href="/blog">Blog</NavLink>
 				<NavLink href="/about">About</NavLink>
