@@ -23,9 +23,19 @@ import {
 } from "./Navbar.css";
 
 const NavBar: FC = () => {
+	// window.addEventListener("scroll", () => {
+	// 	const nav = document.querySelector("#nav");
+	// 	if (nav) {
+	// 		if (window.pageYOffset > 0) {
+	// 			nav.classList.add("add-shadow");
+	// 		} else {
+	// 			nav.classList.remove("add-shadow");
+	// 		}
+	// 	}
+	// });
 	return (
 		<>
-			<NavButtonContainer>
+			<NavButtonContainer id="nav">
 				<MenuButton
 					className="float-end"
 					type="button"
