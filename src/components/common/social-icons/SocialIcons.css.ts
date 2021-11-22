@@ -7,11 +7,16 @@ export const SocialContainer = styled(Container)`
 `;
 
 export const IconsWrapper = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-column-gap: 20px;
 	margin: 7px auto;
+	min-width: 85%;
 `;
-export const IconContainer = styled.div`
-	height: 44px;
-	width: 44px;
-	margin-left: 30px;
+
+export const Icon = styled.img`
+	min-width: 20px;
+	min-height: 20px;
+	max-width: 44px;
+	max-height: 44px;
 `;

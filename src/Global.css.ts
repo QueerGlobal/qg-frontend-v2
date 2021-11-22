@@ -1,12 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  * {
+* {
     box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    padding: 0;
+	
   }
 
 .dropdown-menu {
@@ -33,11 +30,6 @@ a[aria-expanded="true"] {
 	background-color: #4c4695;
 	width: 100%;
 	margin-bottom: 190px !important;
-}
-
-svg {
-	stroke: blue;
-	fill: white !important;
 }
 `;
 

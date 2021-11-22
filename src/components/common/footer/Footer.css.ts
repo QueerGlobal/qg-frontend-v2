@@ -19,6 +19,11 @@ export const LogoContainer = styled.div`
 	justify-content: center;
 	margin: 50px 0;
 `;
+
+export const Logo = styled.img`
+	min-width: 30%;
+	min-height: 20%;
+`;
 export const KnowUs = styled.p`
 	height: 19px;
 	font-size: 14px;

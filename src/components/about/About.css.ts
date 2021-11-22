@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 
-interface PropsShape {}
+interface PropsShape {
+	shape: string;
+	left: string;
+	top: string;
+	width: string;
+	height: string;
+}
 
 export const AboutContainer = styled(Container)`
 	display: flex;
@@ -10,15 +16,18 @@ export const AboutContainer = styled(Container)`
 `;
 export const ColorBlue = styled.div`
 	height: 2595px;
+	width: 100vw;
 	background: #655dc6;
 `;
 
 export const Shapes = styled.div<PropsShape>`
 	position: absolute;
-	left: 20px;
-	top: 50px;
-	width: 200px;
-	height: 300px;
+	left: ${({ left }) => left};
+	top: ${({ top }) => top};
+	width: ${({ width }) => width};
+	height: ${({ height }) => height};
+	background-image: url(${({ shape }) => shape});
+	background-size: cover;
 `;
 
 export const MiddleDiv = styled.div`

@@ -3,6 +3,7 @@ import {
 	FooterContainer,
 	FooterBar,
 	LogoContainer,
+	Logo,
 	KnowUs,
 	Email,
 	NavLinksContainer,
@@ -17,7 +18,9 @@ const Footer: FC = () => {
 		<FooterContainer fluid className="QG-background">
 			<FooterBar></FooterBar>
 			<LogoContainer>
-				<img src={icon} alt="logo" />
+				<a href="/">
+					<Logo src={icon} alt="logo" />
+				</a>
 			</LogoContainer>
 			<KnowUs> get to know us</KnowUs>
 			<SocialIcons />
