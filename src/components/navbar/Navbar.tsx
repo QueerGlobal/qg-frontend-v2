@@ -91,7 +91,7 @@ const NavBar: FC = () => {
 					<NavDropdown
 						id="add-resource"
 						title={
-							<span style={{ fontSize: "18px" }}>
+							<span style={{ fontSize: "16px" }}>
 								<FontAwesomeIcon
 									icon={faPlusSquare}
 									style={{ marginRight: "13px" }}
@@ -135,7 +135,7 @@ const NavBar: FC = () => {
 						<NavDropdown
 							id="support"
 							title={
-								<span style={{ fontSize: "18px" }}>
+								<span style={{ fontSize: "16px" }}>
 									<FontAwesomeIcon
 										icon={faQuestionCircle}
 										style={{ marginRight: "13px" }}

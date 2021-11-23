@@ -10,7 +10,7 @@ import Background from "./Background";
 
 const About: FC = () => {
 	return (
-		<AboutContainer className="p-0">
+		<>
 			<Background />
 			{/* <AboutContainer className="p-0">
 				<MiddleDiv className="bg">
@@ -67,7 +67,7 @@ const About: FC = () => {
 					</Header>
 				</MiddleDiv>
 			</AboutContainer> */}
-		</AboutContainer>
+		</>
 	);
 };
 

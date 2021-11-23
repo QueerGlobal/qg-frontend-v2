@@ -24,7 +24,7 @@ export const CanvasNavbarContainer = styled.div`
 
 export const NavLink = styled(Nav.Link)`
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 34;
 
 	&:focus,
@@ -35,7 +35,7 @@ export const NavLink = styled(Nav.Link)`
 
 export const NavDropdownItem = styled(NavDropdown.Item)`
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 34;
 	padding: 0.5rem 0;
 

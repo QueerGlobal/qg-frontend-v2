@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container } from "react-bootstrap";
 
 interface PropsShape {
-	shape: string;
+	// shape: string;
 	left: string;
 	top: string;
 	width: string;
@@ -20,14 +20,12 @@ export const ColorBlue = styled.div`
 	background: #655dc6;
 `;
 
-export const Shapes = styled.div<PropsShape>`
+export const Shape = styled.img<PropsShape>`
 	position: absolute;
 	left: ${({ left }) => left};
 	top: ${({ top }) => top};
 	width: ${({ width }) => width};
 	height: ${({ height }) => height};
-	background-image: url(${({ shape }) => shape});
-	background-size: cover;
 `;
 
 export const MiddleDiv = styled.div`
