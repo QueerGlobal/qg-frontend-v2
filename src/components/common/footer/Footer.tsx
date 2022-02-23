@@ -19,9 +19,9 @@ const Footer: FC = () => {
 			<LogoContainer>
 				<img src={icon} alt="logo" />
 			</LogoContainer>
-			<KnowUs> get to know us</KnowUs>
+			<KnowUs> Get to know us</KnowUs>
 			<SocialIcons />
-			<Email>Email@queerglobal.com</Email>
+			<Email>email@queerglobal.com</Email>
 			<NavLinksContainer>
 				<NavLink href="/blog">Blog</NavLink>
 				<NavLink href="/about">About</NavLink>

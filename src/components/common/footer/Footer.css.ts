@@ -1,29 +1,34 @@
 import styled from "styled-components";
 import { Container, Nav } from "react-bootstrap";
+import colors from "../../../styles/colors";
+
+export const FooterContainer = styled(Container)`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: ${colors.BLACK};
+	height: 100%;
+	max-width: 100%;
+`;
 
 export const FooterBar = styled.div`
 	height: 22px;
-	width: 100%;
+	margin: 0 -20px;
 	background: transparent
 		linear-gradient(244deg, #c69c6d 0%, #754c24 48%, #c69c6d 76%, #754c24 100%)
 		0% 0% no-repeat padding-box;
 	opacity: 1;
 `;
-export const FooterContainer = styled(Container)`
-	height: 792px;
-	padding: 0;
-`;
 
 export const LogoContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	margin: 50px 0;
+	margin: 40px auto;
 `;
+
 export const KnowUs = styled.p`
 	height: 19px;
 	font-size: 14px;
 	text-transform: uppercase;
-	text-align: center;
 	color: #ffffff;
 	opacity: 1;
 	font-weight: bold;
@@ -40,8 +45,8 @@ export const Email = styled.p`
 `;
 
 export const NavLinksContainer = styled.div`
-	margin-top: 80px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -58,7 +63,6 @@ export const NavLink = styled(Nav.Link)`
 export const FooterLinks = styled.p`
 	text-align: center;
 	color: #ffffff;
-
 	font-size: 18px;
 `;
 export const RightsReserved = styled.p`
