@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
 import Button from '../common/button/Button';
-import { LinksWrapperProps, Header } from './LandingPageLinks.css';
+import { LinksWrapperProps, Header } from './HomepageLinks.css';
 
-const LandingPageLinks: FC = () => {
+const HomepageLinks: FC = () => {
   return (
     <LinksWrapperProps>
     <Header>Find what you need</Header>
@@ -14,4 +14,4 @@ const LandingPageLinks: FC = () => {
     </LinksWrapperProps>
   );
 };
-export default LandingPageLinks;
+export default HomepageLinks;

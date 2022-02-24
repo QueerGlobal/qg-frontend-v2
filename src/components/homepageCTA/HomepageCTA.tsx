@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import Button from '../common/button/Button';
 import {
-  LandingPageWrapperCTA,
+  HomepageCTAWrapper,
   Header,
   SubHeader1,
   SubHeader2,
@@ -11,11 +11,11 @@ import {
   Image,
   Text,
   ButtonWrapper,
-} from './LandingPageCTA.css';
+} from './HomepageCTA.css';
 
-const LandingPageCTA: FC = () => {
+const HomepageCTA: FC = () => {
   return (
-    <LandingPageWrapperCTA>
+    <HomepageCTAWrapper>
       <Header>We're Queer Global.</Header>
       <SubHeader1>We Put</SubHeader1>
       <SubHeader2>People of all sizes</SubHeader2>
@@ -37,7 +37,7 @@ const LandingPageCTA: FC = () => {
       <ButtonWrapper>
         <Button label='primary' buttonText='Join our Community' />
       </ButtonWrapper>
-    </LandingPageWrapperCTA>
+    </HomepageCTAWrapper>
   );
 };
-export default LandingPageCTA;
+export default HomepageCTA;

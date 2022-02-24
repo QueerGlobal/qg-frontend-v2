@@ -1,14 +1,14 @@
-import React, { FC } from "react";
-import Footer from "../common/footer/Footer";
-import LandingPage from "../landingPage/LandingPage";
+import React, { FC } from 'react';
+import Footer from '../common/footer/Footer';
+import Homepage from '../homepage/Homepage';
 
 const Home: FC = () => {
-	return (
-		<div>
-			<LandingPage />
-			<Footer />
-		</div>
-	);
-};
+  return (
+    <>
+     <Homepage />
+     <Footer />
+    </>
+  );
+}
 
 export default Home;

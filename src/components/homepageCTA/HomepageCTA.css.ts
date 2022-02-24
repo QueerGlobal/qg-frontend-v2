@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const LandingPageWrapperCTA = styled.div`
+export const HomepageCTAWrapper = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 0px 10px #00000040;
   border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
   padding: 15px;
   width: 95%;
 `;
@@ -13,10 +14,12 @@ export const LandingPageWrapperCTA = styled.div`
 export const Header = styled.h1`
   color: #655dc6;
   font-size: 24px;
+  font-weight: bold;
   text-transform: uppercase;
 `;
 export const SubHeader1 = styled.h2`
   color: #1f1f1f;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 15px 0 0;
@@ -25,14 +28,17 @@ export const SubHeader1 = styled.h2`
 export const SubHeader2 = styled.h2`
   color: #1f1f1f;
   font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline #655dc6;
   line-height: 20px;
+  padding-top: 15px;
 `;
 
 export const SubHeader3 = styled.h2`
   color: #1f1f1f;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
@@ -52,6 +58,7 @@ export const Image = styled.h2`
   height: 210px;
   width: 45%;
 `;
+
 
 export const Text = styled.p`
   font-size: 14px;
