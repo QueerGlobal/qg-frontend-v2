@@ -14,7 +14,7 @@ import icon from "../../../assets/footer/QG-Logo-V3-Gold-Transparent-PNG-1.png";
 
 const Footer: FC = () => {
 	return (
-		<FooterContainer fluid className="QG-background">
+		<FooterContainer className="QG-background">
 			<FooterBar></FooterBar>
 			<LogoContainer>
 				<img src={icon} alt="logo" />

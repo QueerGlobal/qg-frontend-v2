@@ -17,8 +17,9 @@ export const FooterBar = styled.div`
 	margin: 0 -20px;
 	background: transparent
 		linear-gradient(244deg, #c69c6d 0%, #754c24 48%, #c69c6d 76%, #754c24 100%)
-		0% 0% no-repeat padding-box;
+		0% 0% no-repeat;
 	opacity: 1;
+	align-self: stretch;
 `;
 
 export const LogoContainer = styled.div`
