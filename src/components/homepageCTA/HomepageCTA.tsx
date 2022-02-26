@@ -6,6 +6,8 @@ import {
   Header,
   SubHeader1,
   SubHeader2,
+  Span,
+  Underline,
   SubHeader3,
   ImageWrapper,
   Image,
@@ -18,7 +20,10 @@ const HomepageCTA: FC = () => {
     <HomepageCTAWrapper>
       <Header>We're Queer Global.</Header>
       <SubHeader1>We Put</SubHeader1>
-      <SubHeader2>People of all sizes</SubHeader2>
+      <SubHeader2>
+        People of <Span>all sizes</Span>
+      </SubHeader2>
+      <Underline></Underline>
       <SubHeader3>First.</SubHeader3>
       <ImageWrapper>
         <Image>Image goes here</Image>
