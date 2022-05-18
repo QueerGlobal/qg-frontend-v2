@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { Story } from '@storybook/react';
-import HomepageCTA from '../components/homepageCTA/HomepageCTA';
+import HomepageCTA from '../components/homepage/HomepageCTA';
 
 export default {
   title: 'Homepage CTA',

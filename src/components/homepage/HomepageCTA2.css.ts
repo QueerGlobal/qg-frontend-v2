@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import colors from '../../styles/colors';
 
 export const HomepageCTA2Wrapper = styled.div`
- background-color: ${colors.WHITE};
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- padding: 15px;
- width: 95%;
+  background-color: ${colors.WHITE};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 95%;
 `;
 
 export const Header = styled.h1`
@@ -63,7 +63,7 @@ export const ImageWrapper1 = styled.div`
 `;
 
 export const Image = styled.div`
-  background-color: firebrick;
+  background-color: ${colors.COTTON_CANDY};
   height: 190px; /*this will change to % once we have the images*/
   width: 300px;
 `;
@@ -74,22 +74,22 @@ export const Content = styled.p`
 
 export const ImageWrapper2 = styled.div`
   display: grid;
-  grid-template-columns: 90% 85% repeat(2, 1fr);
-  height: 160px;
-  max-width: 100%;
+  grid-template-columns: 65% 50% repeat(2, 1fr);
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 25px;
-  gap: 10px;
+  gap: 2px;
 `;
 
 export const Image1 = styled.div`
-  background-color: firebrick;
-  margin-left: -120px;
+  background-color: ${colors.COTTON_CANDY};
+  transform: translateX(-15%);
   height: 160px; /*this will change to % once we have the images*/
 `;
 
 export const Image2 = styled.div`
-  background-color: firebrick;
+  background-color: ${colors.COTTON_CANDY};
+  transform: translateX(-10%);
   height: 160px; /*this will change to % once we have the images*/
 `;
 

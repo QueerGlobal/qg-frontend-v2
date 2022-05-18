@@ -69,7 +69,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Image = styled.h2`
-  background-color: hotpink;
+  background-color: ${colors.COTTON_CANDY};
   margin: 30px 0;
   height: 210px;
   width: 100%;

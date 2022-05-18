@@ -1,16 +1,23 @@
+html,
 body {
-	margin: 0;
-	font-family: "Open Sans", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .QG-background {
-	background-image: url("./assets/footer/QG-Pattern-with-bckgrnd-01.jpg") !important;
-	background-size: cover;
+  background-image: url('./assets/footer/QG-Pattern-with-bckgrnd-01.jpg') !important;
+  background-size: cover;
 }

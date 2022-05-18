@@ -17,7 +17,6 @@ import {
   ButtonWrapper,
   Content,
 } from './HomepageCTA2.css';
-import BeautifulFlower from '../../assets/beautifulFlower.jpg';
 
 const HomepageCTA2: FC = () => {
   return (
@@ -51,7 +50,6 @@ const HomepageCTA2: FC = () => {
       <SubHeader3>human.</SubHeader3>
 
       <ImageWrapper2>
-        {/* <BeautifulFlower /> */}
         <Image1>Image goes here</Image1>
         <Image2>Image goes here</Image2>
       </ImageWrapper2>
