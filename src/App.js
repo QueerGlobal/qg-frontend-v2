@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import About from "./components/about/About";
 import Donate from "./components/donate/Donate.tsx";
 import Profile from "./components/profile/Profile.tsx";
 import Blog from "./components/blog/Blog.tsx";
@@ -17,6 +18,7 @@ const App = () => {
 				<Navbar />
 				<br />
 				<Route path="/" exact component={Home} />
+				<Route path="/about" exact component={About} />
 				<Route path="/donate" component={Donate} />
 				<Route path="/profile" component={Profile} />
 				<Route path="/blog" component={Blog} />
