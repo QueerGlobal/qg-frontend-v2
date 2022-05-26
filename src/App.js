@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Donate from "./components/donate/Donate.tsx";
@@ -9,14 +8,16 @@ import AddResource from "./components/add-resource/AddResource.tsx";
 import Search from "./components/search/Search.tsx";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "../src/Global.css";
+import TopNav from "./components/common/topnav/TopNav";
 
 const App = () => {
+	const windowWidth = window.innerWidth <= 375;
+
 	return (
 		<>
 			<GlobalStyles />
+      		<TopNav windowWidth={windowWidth} />
 			<Router>
-				<Navbar />
-				<br />
 				<Route path="/" exact component={Home} />
 				<Route path="/about" exact component={About} />
 				<Route path="/donate" component={Donate} />
