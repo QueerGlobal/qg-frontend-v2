@@ -1,55 +1,50 @@
 import React, { FC } from "react";
-import Header from '../common/header/Header';
-import Footer from '../common/footer/Footer';
+import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection, DnDImg } from './About.css'
+import DnDPhoto from "../../assets/misc/dna_ex.jpeg";
 
 const About: FC = () => {
 	return (
-		<>
-			<Header />
-			<main>
-				{/* Five main headings */}
+		<AboutMain>
+			<WhiteBGSection>
 				<h2>ABOUT US.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. At consectetur lorem donec massa sapien. Nec dui nunc mattis enim. Vulputate enim nulla aliquet porttitor lacus luctus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi.</p>
+				<p>We support and prioritize the people who are least represented in an outside of the rainbow umbrella. We want to give the community a safe, inviting space to confidently be themselves, easily find accurate, trusted information, share common experiences, and have the ability to support other LGBTQIA+ people and businesses in their area.</p>
 		
-				<h2>WE ARE <span>united</span>.</h2>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. At consectetur lorem donec massa sapien.
-				</p>
-				<p>
-				<strong>
-					Nec dui nunc mattis enim. Vulputate enim nulla aliquet porttitor lacus luctus.
-				</strong>
-				</p>
-				<p>
-				Quisque id diam vel quam elementum pulvinar. Ullamcorper velit sed ullamcorper morbi. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Urna nunc id cursus metus aliquam eleifend. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Suspendisse interdum consectetur libero id faucibus nisl.
-				</p>
+				<h2>WE ARE <PurpleSpan>united</PurpleSpan>.</h2>
+				<p>We are Black. We are Latinx. We are Asian, Middle Eastern, White, Bi and Multi-Racial. We are tall, short, curvy, plus size, fat. We use chairs, canes, crutches, lifts, and braces.</p>
+
+				<p><strong>And we believe that kind of diversity is what makes Queerness beautiful.</strong></p>
+
+				<p>We strive to be a place where ALL people can talk about the solutions they found to specific crises in their lives, so other people do not have to go through them as well. A place where people do not have to fear outing themselves to coworkers and friends who follow them when discussing physical limitations, needs for legal advice, future medical procedures, or their financial situations. Queer Global is a worldwide masterlist for marginalized peoples in the Queer community.</p>
 		
-				<h2>WE ARE <span>proud</span>.</h2>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. At consectetur lorem donec massa sapien. Nec dui nunc mattis enim. Vulputate enim nulla aliquet porttitor lacus luctus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Senectus et netus et malesuada fames ac turpis egestas. Euismod quis viverra nibh cras. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Neque sodales ut etiam sit amet nisl purus. Quisque id diam vel quam elementum pulvinar. Ullamcorper velit sed ullamcorper morbi. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Urna nunc id cursus metus aliquam eleifend. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Suspendisse interdum consectetur libero id faucibus nisl.
-				</p>
+				<h2>WE ARE <PurpleSpan>proud</PurpleSpan>.</h2>
+				<p>Queer Global is run by a Black trans/pan/poly/not-so-able-bodied man and a multi-racial pan/poly musician, business owner, stylist and vintage clothing expert.</p>
 		
-				<h2>WE ARE <span>family</span>.</h2>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius.
-				</p>
-				<p>
-				Fermentum iaculis eu non diam phasellus vestibulum lorem sed. At consectetur lorem donec massa sapien. Nec dui nunc mattis enim. Vulputate enim nulla aliquet porttitor lacus luctus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi.
-				</p>
-				<p>
-				Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Senectus et netus et malesuada fames ac turpis egestas. Euismod quis viverra nibh cras. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Neque sodales ut etiam sit amet nisl purus. Quisque id diam vel quam elementum pulvinar.
-				</p>
-				<p>
-				Ullamcorper velit sed ullamcorper morbi. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit.
-				</p>
+				<p>Our goal is to provide a platform that consolidates resources and information for people outside of the Big 5 social media platforms, where it gets buried in posts, behind locked accounts and manipulative algorithms.</p>
+
+				<p>We embraced the transparency of shared community advice and information. With all the resources you need at your fingertips, we hope you can be confident in just being yourself every day.</p>
+
+				<p>We believe providing information is only the beginning & we're just getting started.</p>
+
+				<em>Deacon & D'Arcy</em>
+				<div><DnDImg src={DnDPhoto} alt="Deacon and D'Arcy" /></div>
+			</WhiteBGSection>
+
+			<DarkGreyBGSection>
+				<h2>WE ARE <PurpleSpan>family</PurpleSpan>.</h2>
+				<small>Our amazing volunteers!</small>
+				<div>INSERT THUMBNAILS</div>
+
+				<small>We're all different, but still all the same. Our family is always growing.</small>
+				<button>SEE VOLUNTEER OPPORTUNITIES</button>
+				
+				<small>We want YOU to feel represented and worthy as you are. The people you see on our site are real Queer Global members. Want to join them?</small>
+				<button>SEND US YOUR PHOTO OR ARTWORK</button>
 		
-				<h2>WE ARE HERE FOR <span>you</span>.</h2>
-				<p>
-				Urna nunc id cursus metus aliquam eleifend. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Suspendisse interdum consectetur libero id faucibus nisl.
-				</p>
-			</main>
-			<Footer />
-		</>
+				<h2>WE ARE HERE FOR <PurpleSpan>you</PurpleSpan>.</h2>
+				<p>We do our best to provide up-to-date, accurate resources and information, but we could always use a helping hand. If you know of any helpful resources, please help us and the rest of our community out and add them.</p>
+				<button>ADD A RESOURCE</button>
+			</DarkGreyBGSection>
+		</AboutMain>
 	);
 };
 
