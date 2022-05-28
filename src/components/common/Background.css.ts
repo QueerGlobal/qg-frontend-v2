@@ -13,7 +13,7 @@ interface PropsShape {
 	height: string;
 }
 
-export const Shape = styled.img<PropsShape>`
+export const HuggingImg = styled.img<PropsShape>`
 	position: absolute;
 	left: ${({ left }) => left};
 	top: ${({ top }) => top};
@@ -49,21 +49,40 @@ export const WhiteX = styled.div`
 		font-size: 80px;
 		right: 259px;
 		top: 136px;
-		transition: all .4s;
-	  	-webkit-transition: all .4s;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
 
 	}
 `;
 
 export const BlackSolidHex = styled.div`
 	background-color: ${colors.BLACK};
-	width: 210px;
-	height: 120px;
+	width: 420px;
+	height: 240px;
 	position: absolute;
-	right: 159px;
-	top: 16px;
+	left: 15px;
+	top: 352px;
 	transition: all .7s;
 	-webkit-transition: all .7s;
+	
+	&.bsh1 {
+		position: absolute;
+		top: 350px;
+	}
+	
+	&.bsh2 {
+		position: absolute;
+		top: 350px;
+		transform: rotate(60deg);
+		-webkit-transform: rotate(60deg);
+	}
+	
+	&.bsh3 {
+		position: absolute;
+		top: 350px;
+		transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg);
+	}
 
 `;
 
@@ -73,25 +92,25 @@ export const CottonCandySolidHex = styled.div`
 	height: 120px;
 	position: absolute;
 	right: 300px;
-	top: 82px;
+	top: 482px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 
 	&.ccsh1 {
 		position: absolute;
-		top: 80px;
+		top: 480px;
 	}
 	
 	&.ccsh2 {
 		position: absolute;
-		top: 80px;
+		top: 480px;
 		transform: rotate(60deg);
 		-webkit-transform: rotate(60deg);
 	}
 	
 	&.ccsh3 {
 		position: absolute;
-		top: 80px;
+		top: 480px;
 		transform: rotate(-60deg);
 		-webkit-transform: rotate(-60deg);
 	}
