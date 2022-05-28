@@ -13,6 +13,8 @@ import SocialIcons from "../social-icons/SocialIcons";
 import icon from "../../../assets/footer/QG-Logo-V3-Gold-Transparent-PNG-1.png";
 
 const Footer: FC = () => {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<FooterContainer className="QG-background">
 			<FooterBar></FooterBar>
@@ -31,7 +33,7 @@ const Footer: FC = () => {
 				<NavLink href="/contact-us">Contact Us</NavLink>
 			</NavLinksContainer>
 			<RightsReserved>
-				&#169; 2021 Queer Global | All Rights Reserved
+				&#169; {currentYear} Queer Global | All Rights Reserved
 			</RightsReserved>
 		</FooterContainer>
 	);
