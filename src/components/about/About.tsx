@@ -1,11 +1,9 @@
 import React, { FC } from "react";
-import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
 
 const About: FC = () => {
 	return (
 		<>
-			<Header />
 			<main>
 				{/* Five main headings */}
 				<h2>ABOUT US.</h2>
