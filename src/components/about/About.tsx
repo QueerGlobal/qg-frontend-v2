@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection } from './About.css';
+import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection, DnDImg } from './About.css';
+import DnDImgSrc from "../../assets/misc/placeholder.jpeg";
 
 const About: FC = () => {
 	return (
@@ -25,7 +26,7 @@ const About: FC = () => {
 				<p>We believe providing information is only the beginning & we're just getting started.</p>
 
 				<em>Deacon & D'Arcy</em>
-				<div>INSERT PIC</div>
+				<DnDImg src={DnDImgSrc} alt="Deacon and D'Arcy" />
 			</WhiteBGSection>
 
 			<DarkGreyBGSection>
