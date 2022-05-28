@@ -17,13 +17,6 @@ export const AboutMain = styled.main`
   display: flex; 
   flex-direction: column; 
   margin: 10%;
-  border: 1px solid red;
-  padding: 10%;
-`;
-
-export const DnDImg = styled.img`
-  width: 75%;
-  height: auto;
 `;
 
 export const PurpleSpan = styled.span`
