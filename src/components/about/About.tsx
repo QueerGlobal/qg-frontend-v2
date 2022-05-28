@@ -9,7 +9,7 @@ import {
 	WhiteBGSection, 
 	PurpleSpan, 
 	DarkGreyBGSection } from './About.css';
-import Background from "./Background";
+import Background from "../common/Background";
 
 const About: FC = () => {
 	return (
