@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { BackgroundColor, Shape } from "../about/About.css";
+import { BackgroundColor, Shape } from "./Background.css";
 import hugging from "../../assets/misc/placeholder.jpeg";
 
 /**
