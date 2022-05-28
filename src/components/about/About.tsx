@@ -5,8 +5,6 @@ import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection } from './Abou
 const About: FC = () => {
 	return (
 		<>
-			<Header />
-
 			<AboutMain>
 				<WhiteBGSection>
 					<h2>ABOUT US.</h2>
