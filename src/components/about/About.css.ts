@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import colors from "../../styles/colors";
 
-/* PRIMARY: #655DC6 for purple */
-/* COTTON_CANDY: #F5ACB8 for pink */
-/* #48ADE5 for blue circle on home page */
 import { Container } from "react-bootstrap";
 
 interface PropsShape {
@@ -14,23 +11,25 @@ interface PropsShape {
 	height: string;
 }
 
-export const AboutContainer = styled(Container)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-`;
-export const BackgroundColor = styled.div`
-	height: 2595px;
-	width: 100vw;
-	background: ${colors.PRIMARY};
-`;
-
 export const Shape = styled.img<PropsShape>`
 	position: absolute;
 	left: ${({ left }) => left};
 	top: ${({ top }) => top};
 	width: ${({ width }) => width};
 	height: ${({ height }) => height};
+`;
+
+export const AboutContainer = styled(Container)`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+/* PRIMARY: #655DC6 for purple */
+export const BackgroundColor = styled.div`
+	height: 2595px;
+	width: 100vw;
+	background: ${colors.PRIMARY}; 
 `;
 
 export const MiddleDiv = styled.div`
