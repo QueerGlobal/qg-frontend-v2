@@ -49,41 +49,23 @@ export const WhiteX = styled.div`
 		font-size: 80px;
 		right: 259px;
 		top: 136px;
-		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
-
+		transform: rotate(45deg);
 	}
 `;
 
+// Width originally 420			624
 export const BlackSolidHex = styled.div`
 	background-color: ${colors.BLACK};
-	width: 420px;
-	height: 240px;
+	width: 520px;
+	height: 520px;
 	position: absolute;
-	left: 15px;
-	top: 352px;
-	transition: all .7s;
-	-webkit-transition: all .7s;
-	
-	&.bsh1 {
-		position: absolute;
-		top: 350px;
-	}
-	
-	&.bsh2 {
-		position: absolute;
-		top: 350px;
-		transform: rotate(60deg);
-		-webkit-transform: rotate(60deg);
-	}
-	
-	&.bsh3 {
-		position: absolute;
-		top: 350px;
-		transform: rotate(-60deg);
-		-webkit-transform: rotate(-60deg);
-	}
-
+	left: 515px;
+	top: 250px;
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
 `;
 
 export const CottonCandySolidHex = styled.div`
@@ -93,8 +75,6 @@ export const CottonCandySolidHex = styled.div`
 	position: absolute;
 	right: 300px;
 	top: 482px;
-	transition: all .5s;
-	-webkit-transition: all .5s;
 
 	&.ccsh1 {
 		position: absolute;
@@ -104,15 +84,64 @@ export const CottonCandySolidHex = styled.div`
 	&.ccsh2 {
 		position: absolute;
 		top: 480px;
-		transform: rotate(60deg);
 		-webkit-transform: rotate(60deg);
+		transform: rotate(60deg);
 	}
 	
 	&.ccsh3 {
 		position: absolute;
 		top: 480px;
-		transform: rotate(-60deg);
 		-webkit-transform: rotate(-60deg);
+		transform: rotate(-60deg);
 	}
+`;
+
+export const NineWhiteSpikes = styled.div`
+	background-color: ${colors.WHITE};
+	width: 210px;
+	height: 120px;
+	position: absolute;
+	left: 22px;
+	top: 282px;
+
+	&.nws1 {
+		position: absolute;
+		top: 282px;
+	}
+	
+	&.nws2 {
+		position: absolute;
+		top: 282px;
+		-webkit-transform: rotate(60deg);
+		transform: rotate(60deg);
+	}
+	
+	&.nws3 {
+		position: absolute;
+		top: 282px;
+		-webkit-transform: rotate(-60deg);
+		transform: rotate(-60deg);
+	}
+`;
+
+export const WhiteTriangle = styled.div`
+	position: absolute;
+	right: 15px;
+	top: 50px;
+	width:100px;
+	height: 100px;
+	background: ${colors.WHITE};
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+`;
+
+export const CircleShape = styled.div`
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	-webkit-clip-path: circle(50%);
+	clip-path: circle(50%);
 `;
 /* END OF CSS SHAPES */

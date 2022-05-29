@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { BackgroundColor, HuggingImg, CottonCandyX, WhiteX, BlackSolidHex, CottonCandySolidHex } from "./Background.css";
+import { BackgroundColor, HuggingImg, CottonCandyX, WhiteX, BlackSolidHex, CottonCandySolidHex, WhiteTriangle, CircleShape, NineWhiteSpikes } from "./Background.css";
 import hugging from "../../assets/misc/placeholder.jpeg";
 
 /**
@@ -26,13 +26,19 @@ const Background: FC = () => {
 
 			<WhiteX />
 			
-			<BlackSolidHex className="bsh1" />
-			<BlackSolidHex className="bsh2" />
-			<BlackSolidHex className="bsh3" />
+			<BlackSolidHex />
 
 			<CottonCandySolidHex className="ccsh1" />
 			<CottonCandySolidHex className="ccsh2" />
 			<CottonCandySolidHex className="ccsh3" />
+
+			<WhiteTriangle />
+
+			<CircleShape />
+
+			<NineWhiteSpikes className="nws1" />
+			<NineWhiteSpikes className="nws2" />
+			<NineWhiteSpikes className="nws3" />
 		</BackgroundColor>
 	);
 };
