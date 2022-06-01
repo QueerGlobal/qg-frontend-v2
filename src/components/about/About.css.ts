@@ -75,6 +75,8 @@ export const AboutMain = styled.main`
   display: flex; 
   flex-direction: column; 
   margin: 10%;
+  position: absolute;
+  top: 200px;
 `;
 
 export const PurpleSpan = styled.span`
