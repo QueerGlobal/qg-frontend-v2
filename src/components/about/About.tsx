@@ -1,13 +1,10 @@
 import React, { FC } from "react";
-import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
 import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection } from './About.css';
 
 const About: FC = () => {
 	return (
 		<>
-			<Header />
-
 			<AboutMain>
 				<WhiteBGSection>
 					<h2>ABOUT US.</h2>
