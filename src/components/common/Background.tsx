@@ -30,7 +30,7 @@ const Background: FC = () => {
 
 				<SVGDiv>
 					<svg viewBox="0 0 1000 1000" version="1.1">
-						<path d="M 740 230 L 780 190 L 800 250 L 740 230" stroke="#FFFFFF" stroke-width="2" fill="none"></path>
+						<path d="M 740 230 L 780 190 L 800 250 L 740 230" stroke="#FFFFFF" strokeWidth="2" fill="none"></path>
 					</svg>
 				</SVGDiv>
 
