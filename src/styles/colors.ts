@@ -1,4 +1,4 @@
-const colors = {
+const colors: any = {
   //Buttons
   PRIMARY: '#655dc6',
   PRIMARY_HOVER: '#4A448E',
