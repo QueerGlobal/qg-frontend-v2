@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { Story } from '@storybook/react';
-import Background from '../components/common/Background';
+import Background from '../components/common/background/Background';
 
 export default {
     title: 'Background',

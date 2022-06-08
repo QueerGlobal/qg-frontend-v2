@@ -9,12 +9,13 @@ import {
 	WhiteBGSection, 
 	PurpleSpan, 
 	DarkGreyBGSection } from './About.css';
-import Background from '../common/Background';
+import Background from '../common/background/Background';
 
 const About: FC = () => {
 	return (
 		<>
 			<Background />
+			
 			<AboutMain>
 				<WhiteBGSection>
 					<h2>ABOUT US.</h2>

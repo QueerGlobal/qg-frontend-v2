@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from "../../styles/colors";
+import colors from '../../../styles/colors';
 
 /* PRIMARY: #655DC6 for purple */
 /* COTTON_CANDY: #F5ACB8 for pink */
