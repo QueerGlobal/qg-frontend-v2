@@ -11,6 +11,15 @@ import GlobalStyles from "../src/Global.css";
 import TopNav from "./components/common/topnav/TopNav";
 import Footer from "./components/common/footer/Footer";
 
+// Business-related components
+import BusinessBasicInfo from "./components/business/add-a-business/BusinessBasicInfo";
+import BusinessDetails from "./components/business/add-a-business/BusinessDetails";
+import BusinessLocation from "./components/business/add-a-business/BusinessLocation";
+import BusinessReview from "./components/business/add-a-business/BusinessReview";
+import BusinessSubmit from "./components/business/add-a-business/BusinessSubmit";
+import ViewAllBusinesses from "./components/business/view-all/ViewAllBusinesses";
+import ViewOneBusiness from "./components/business/view-one/ViewOneBusiness";
+
 const App = () => {
 	const windowWidth = window.innerWidth <= 375;
 
@@ -27,6 +36,15 @@ const App = () => {
 				<Route path="/add-resource" component={AddResource} />
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
+
+				{/** Business-related links */}
+				<Route path="/add-a-business" component={BusinessBasicInfo} />
+				<Route path="/business-details" component={BusinessDetails} />
+				<Route path="/business-location" component={BusinessLocation} />
+				<Route path="/business-review" component={BusinessReview} />
+				<Route path="/business-submit" component={BusinessSubmit} />
+				<Route path="/view-all-businesses" component={ViewAllBusinesses} />
+				<Route path="/view-one-business" component={ViewOneBusiness} />
 			</Router>
 			<Footer />
 		</>

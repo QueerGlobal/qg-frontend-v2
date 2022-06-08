@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { BackgroundColor, TinyCottonCandyX, LargeCottonCandyX, HuggingImg, WhiteX, WhiteXTwo, BlackSolidHex, CottonCandySolidHex, WhiteTriangle, GradientPinkTriangle, CircleShape, NineWhiteSpikes, BlackBG, BlackX, CottonCandySemiOpaqueRect, SVGDiv, Cont, Cols, Blue, Red, Pink, Yellow, GridOfPics, NineWhitePointsStarDiv, SingleWhitePoint, BorderedHex } from "./Background.css";
-import hugging from "../../assets/misc/placeholder.jpeg";
+import placeholder from "../../assets/misc/placeholder.jpeg";
 import colors from "../../../styles/colors";
 
 /**
