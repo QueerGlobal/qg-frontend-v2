@@ -1,6 +1,6 @@
 // https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/9a020f3a-4b71-42e5-8ff4-2c93f15ddb28/
 import React, { FC, useState } from 'react';
-import Business from "../data/business-data";
+import BusinessCard from "./BusinessCard";
 import { BusinessesFilter } from "./ViewAllBusinesses.css";
 
 
@@ -10,6 +10,7 @@ const ViewAllBusinesses: FC = () => {
     return (
         <>
             <h1>FIND BUSINESSES</h1>
+            
             <section>
                 <BusinessesFilter>
                     <div>
@@ -34,9 +35,11 @@ const ViewAllBusinesses: FC = () => {
                         <button>APPLY</button>
                     </div>
                 </BusinessesFilter>
-                {/** Where to map the businesses */}
-                <Business key="string" img="string" cat="string" name="string" desc="string" loc="string" rating={1} />
+
+                {/** Where to map the businesses. Info will be populated from an xhr value from useEffect */}
+                <BusinessCard id="unique-id-generated" thumbnail="string" cat="string" name="string" desc="string" loc="string" rating={1} liked={false} />
             </section>
+
             <button>SEE MORE BUSINESSES</button>
         </>
     );
