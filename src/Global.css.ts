@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import colors from './styles/colors';
 
+// TODO - Find out from Jenn about 'MYSTERIO'
 const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -13,12 +15,12 @@ const GlobalStyles = createGlobalStyle`
 	position: absolute !important;
 	left: 0 !important;
 	width: 100% !important;
-	background-color: #4c4695 !important;
+	background-color: ${colors.MYSTERIO} !important;
 	border-radius: 0 !important;
 }
 
 .nav-link {
-	color: #ffffff !important;
+	color: ${colors.WHITE} !important;
 	letter-spacing: 34;
 	padding: 0.5rem 0;
 }
@@ -30,14 +32,14 @@ const GlobalStyles = createGlobalStyle`
 }
 
 a[aria-expanded="true"] {
-	background-color: #4c4695;
+	background-color: ${colors.MYSTERIO};
 	width: 100%;
 	margin-bottom: 190px !important;
 }
 
 svg {
-	stroke: blue;
-	fill: white !important;
+	stroke: ${colors.BLUE};
+	fill: ${colors.WHITE} !important;
 }
 `;
 
