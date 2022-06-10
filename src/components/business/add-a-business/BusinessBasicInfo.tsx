@@ -10,16 +10,17 @@ import React, { FC } from 'react';
  */
 const BusinessBasicInfo: FC = () => {
     // html-entities example, from node_modules\html-entities\README.md    
-    const Entities = require('html-entities').AllHtmlEntities;
+    type cat = "advocacy" | "art_entertainment" | "business_finance" | "community" | "education" | "family" | "food" | "legal" | "health_medical" | "military" | "religion" | "sports" | "travel" | "other";
 
-    const entities = new Entities();
-
-    console.log(entities.encode('<>"&©®∆')); // &lt;&gt;&quot;&amp;&copy;&reg;∆
-    console.log(entities.encodeNonUTF('<>"&©®∆')); // &lt;&gt;&quot;&amp;&copy;&reg;&#8710;
-    console.log(entities.encodeNonASCII('<>"&©®∆')); // <>"&©®&#8710;
-    console.log(entities.decode('&lt;&gt;&quot;&amp;&copy;&reg;')); // <>"&©®
-
-    return <h1>Hello</h1>;
+    return (
+        <>
+            <h1>Hello</h1>
+            <form action="">
+                <label htmlFor="cat">Category</label>
+                <input type="text" name="cat" id="cat" />
+            </form>
+        </>
+    );
 };
 
 export default BusinessBasicInfo;
