@@ -7,7 +7,7 @@ import {
 	SignUpBtn,
 	DonateBtn
 } from "./TopNav.css";
-import icon from "../../../assets/header/QG-Logo-V3-White-Transparent-PNG-1.png";
+import icon from "../../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png";
 
 const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 	if (windowWidth) {
