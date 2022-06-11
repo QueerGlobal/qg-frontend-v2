@@ -1,7 +1,7 @@
 // https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/9a020f3a-4b71-42e5-8ff4-2c93f15ddb28/
 import React, { FC, useState } from 'react';
 import { GenerateCards } from "./BusinessCard";
-import { BusinessesFilter, AllBusinesses } from "./ViewAllBusinesses.css";
+import { ViewAllBusinessesContainer, BusinessesFilter, AllBusinesses } from "./ViewAllBusinesses.css";
 
 /**
  * Maximum cards in a row: 3
@@ -247,7 +247,7 @@ const ViewAllBusinesses: FC = () => {
     ];
 
     return (
-        <>
+        <ViewAllBusinessesContainer>
             <h1>FIND BUSINESSES</h1>
             
             <section>
@@ -284,7 +284,7 @@ const ViewAllBusinesses: FC = () => {
             </section>
 
             <button type="button">SEE MORE BUSINESSES</button>
-        </>
+        </ViewAllBusinessesContainer>
     );
 };
 
