@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import Navbar from "../../navbar/Navbar";
 import {
-	HeaderContainer,
+	TopNavContainer,
 	NavLink,
-	HeaderLogo,
+	TopNavLogo,
 	SignUpBtn,
 	DonateBtn
 } from "./TopNav.css";
@@ -14,12 +14,12 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 		return <Navbar />;
 	} else {
 		return (
-			<HeaderContainer>
-				<HeaderLogo>
+			<TopNavContainer>
+				<TopNavLogo>
 					<NavLink to="/home">
 						<img src={icon} alt="logo" />
 					</NavLink>
-				</HeaderLogo>
+				</TopNavLogo>
 				<nav>
 					<NavLink href="/about">ABOUT</NavLink>
 					<NavLink href="/resources">RESOURCES</NavLink>
@@ -31,7 +31,7 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 						<DonateBtn>SIGN UP</DonateBtn>
 					</NavLink> {/** Correct? */}
 				</nav>
-			</HeaderContainer>
+			</TopNavContainer>
 		);
 	}
 }
