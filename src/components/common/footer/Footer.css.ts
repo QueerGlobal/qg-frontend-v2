@@ -16,7 +16,7 @@ export const FooterBar = styled.div`
 	height: 22px;
 	margin: 0 -20px;
 	background: transparent
-		linear-gradient(244deg, #c69c6d 0%, #754c24 48%, #c69c6d 76%, #754c24 100%)
+		linear-gradient(244deg, ${colors.LIGHT_BROWN} 0%, ${colors.DARK_BROWN} 48%, ${colors.LIGHT_BROWN} 76%, ${colors.DARK_BROWN} 100%)
 		0% 0% no-repeat;
 	opacity: 1;
 	align-self: stretch;
@@ -30,7 +30,7 @@ export const KnowUs = styled.p`
 	height: 19px;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: ${colors.WHITE};
 	opacity: 1;
 	font-weight: bold;
 `;
@@ -38,7 +38,7 @@ export const KnowUs = styled.p`
 export const Email = styled.p`
 	height: 19px;
 	text-align: center;
-	color: #ffffff;
+	color: ${colors.WHITE};
 	opacity: 1;
 	letter-spacing: 0.14px;
 	font-weight: bold;
@@ -51,24 +51,24 @@ export const NavLinksContainer = styled.div`
 `;
 
 export const NavLink = styled(Nav.Link)`
-	color: #ffffff;
+	color: ${colors.WHITE};
 	font-size: 18px;
 	text-align: center;
 	opacity: 1;
 
 	&:focus,
 	&:active {
-		color: #ffffff;
+		color: ${colors.WHITE};
 	}
 `;
 export const FooterLinks = styled.p`
 	text-align: center;
-	color: #ffffff;
+	color: ${colors.WHITE};
 	font-size: 18px;
 `;
 export const RightsReserved = styled.p`
 	font-weight: 100;
 	height: 17px;
-	color: #fff;
+	color: ${colors.WHITE};
 	text-align: center;
 `;

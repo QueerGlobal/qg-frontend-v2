@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const NavLink = styled(Nav.Link)`
-	color: #ffffff;
+	color: ${colors.WHITE};
 	font-size: 18px;
 	text-align: center;
 	opacity: 1;
@@ -24,7 +24,7 @@ export const NavLink = styled(Nav.Link)`
 	margin-left: 10px;
 	&:focus,
 	&:active {
-		color: #ffffff;
+		color: ${colors.WHITE};
 	}
 `;
 
