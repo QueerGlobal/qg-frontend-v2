@@ -15,28 +15,28 @@ const SocialIcons: FC = () => {
 		<SocialContainer>
 			<IconsWrapper>
 				<IconContainer className="svg">
-				<a href="https://www.facebook.com/QueerGlobal/" target="_blank" rel="noreferrer noopener">
+					<a href="/" target="_blank" rel="noreferrer">
 						<img src={facebook} alt="facebook" />
 					</a>
 				</IconContainer>
 				<IconContainer>
-					<a href="https://twitter.com/queerglobal_" target="_blank" rel="noreferrer noopener">
+					<a href="/" target="_blank" rel="noreferrer">
 						<img src={twitter} alt="twitter" />
 					</a>
 				</IconContainer>
 				<IconContainer>
-					<a href="https://www.instagram.com/queerglobal/" target="_blank" rel="noreferrer noopener">
+					<a href="/" target="_blank" rel="noreferrer">
 						<img src={instagram} alt="instagram" />
 					</a>
 				</IconContainer>
 				<IconContainer>
-					<a href="https://www.linkedin.com/company/queer-global/" target="_blank" rel="noreferrer noopener">
+					<a href="/" target="_blank" rel="noreferrer">
 						<img src={linkedIn} alt="linkedIn" />
 					</a>
 				</IconContainer>
 				<IconContainer>
-					<a href="https://www.pinterest.com/QueerGlobal/_created/" target="_blank" rel="noreferrer noopener">
-						<img src={pinterest} alt="pinterest" />
+					<a href="/" target="_blank" rel="noreferrer">
+						<img src={pinterest} alt="facebook" />
 					</a>
 				</IconContainer>
 			</IconsWrapper>

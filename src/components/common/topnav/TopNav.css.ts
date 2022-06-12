@@ -5,7 +5,7 @@ import { Nav } from "react-bootstrap";
 /* PRIMARY: #655DC6 for purple */
 /* COTTON_CANDY: #F5ACB8 for pink */
 
-export const TopNavContainer = styled.header`
+export const HeaderContainer = styled.header`
 	display: flex;
 	color: ${colors.WHITE};
 	text-transform: uppercase;
@@ -28,7 +28,7 @@ export const NavLink = styled(Nav.Link)`
 	}
 `;
 
-export const TopNavLogo = styled.span`
+export const HeaderLogo = styled.span`
 	text-align: left;
 	flex-grow: 1;
 `;

@@ -9,7 +9,6 @@ import Search from "./components/search/Search.tsx";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "../src/Global.css";
 import TopNav from "./components/common/topnav/TopNav";
-import Footer from "./components/common/footer/Footer";
 
 const App = () => {
 	const windowWidth = window.innerWidth <= 375;
@@ -28,7 +27,6 @@ const App = () => {
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
 			</Router>
-			<Footer />
 		</>
 	);
 };
