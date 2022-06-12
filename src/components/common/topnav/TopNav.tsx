@@ -7,7 +7,7 @@ import {
 	SignUpBtn,
 	DonateBtn
 } from "./TopNav.css";
-import icon from "../../../assets/header/QG-Logo-V3-White-Transparent-PNG-1.png";
+import icon from "../../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png";
 
 const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 	if (windowWidth) {
@@ -22,7 +22,7 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 				</HeaderLogo>
 				<nav>
 					<NavLink href="/about">ABOUT</NavLink>
-					<NavLink href="/resources">RESOURCES</NavLink>
+					<NavLink href="/resources">RESOURCES</NavLink>  
 					<NavLink href="/blog">BLOG</NavLink>
 					<NavLink href="/donate">
 						<SignUpBtn>DONATE</SignUpBtn>
