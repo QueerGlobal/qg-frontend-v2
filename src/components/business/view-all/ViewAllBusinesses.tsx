@@ -12,7 +12,7 @@ import { ViewAllBusinessesContainer, BusinessesFilter, AllBusinesses } from "./V
 const ViewAllBusinesses: FC = () => {
     const [loadMoreBusinesses, setLoadMoreBusinesses] = useState(false); // Businesses will be loaded from subsequent xhr calls
 
-    const items = [
+    const exampleItems = [
         {
             id: "1-a", 
             key: "1-a-key", 
@@ -278,7 +278,7 @@ const ViewAllBusinesses: FC = () => {
                 <AllBusinesses>
                 {
                     /** Where to map the businesses. Info will be populated from an xhr value from useEffect */
-                    GenerateCards(items)
+                    GenerateCards(exampleItems)
                 }
                 </AllBusinesses>
             </section>
