@@ -6,10 +6,12 @@ import {
 	Paragraph,
 	TahuFont,
 	AboutMain, 
+	DnDImg,
 	WhiteBGSection, 
 	PurpleSpan, 
 	DarkGreyBGSection } from './About.css';
 import Background from '../common/background/Background';
+import placeholder from '../../assets/misc/placeholder.jpeg';
 
 const About: FC = () => {
 	return (
@@ -44,7 +46,7 @@ const About: FC = () => {
 				<DarkGreyBGSection>
 					<h2>WE ARE <PurpleSpan>family</PurpleSpan>.</h2>
 					<small>Our amazing volunteers!</small>
-					<div>INSERT THUMBNAILS</div>
+					<DnDImg src={placeholder} alt="Deacon and D'Arcy" />
 
 					<small>We're all different, but still all the same. Our family is always growing.</small>
 					<button>SEE VOLUNTEER OPPORTUNITIES</button>

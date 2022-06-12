@@ -84,7 +84,7 @@ export const PurpleSpan = styled.span`
 `;
 
 export const DnDImg = styled.img`
-display: block;
-width: 75%;
-height: auto;
+	display: block;
+	width: 75%;
+	height: auto;
 `;
