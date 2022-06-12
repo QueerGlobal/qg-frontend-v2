@@ -13,11 +13,15 @@ Site Milestone Dates\*: June 30th | August 31st | October 11th
 - Homepage (60%)
 - About (60%)
 - Blog (links to blank page)
-- Resources (links to blank page)
+- Resources
+  --- General Resources+ Search Form (links to blank page)
   --- Add Resource (links to blank page)
-  --- Add Business (links to blank page)
   --- Add Event (links to blank page)
   --- Share (links to blank page)
+- Businesses
+  --- Add Business (links to blank page)
+  --- View One Business (links to blank page)
+  --- View All Businesses (30%)
 - Donate (links to blank page)
 - Profile (links to blank page)
   --- Logout (links to blank page)
@@ -27,8 +31,8 @@ Site Milestone Dates\*: June 30th | August 31st | October 11th
   --- Report Something (links to blank page)
 - Search (links to blank page)
 - Get Involved (links to blank page)
-- Header/Footer (90%)
-- Social media links (icons not linked in footer)
+- Header/Footer (90% - Needs final layout formatting, responsive testing)
+- Social media links (functional; Manual testing complete)
 
 ---
 
