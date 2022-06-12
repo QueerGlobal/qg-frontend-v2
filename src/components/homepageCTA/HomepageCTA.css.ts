@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
+/** TODO - Figure out meaning behind the box-shadow color */
 export const HomepageCTAWrapper = styled.div`
-  background-color: #ffffff;
+  background-color: ${colors.WHITE};
   box-shadow: 0px 0px 10px #00000040;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -12,13 +14,13 @@ export const HomepageCTAWrapper = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: #655dc6;
+  color: ${colors.PRIMARY};
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
 `;
 export const SubHeader1 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -26,18 +28,18 @@ export const SubHeader1 = styled.h2`
 `;
 
 export const SubHeader2 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline #655dc6;
+  text-decoration: underline ${colors.PRIMARY};
   line-height: 20px;
   padding-top: 15px;
 `;
 
 export const SubHeader3 = styled.h2`
-  color: #1f1f1f;
+  color: ${colors.BLACK};
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -51,6 +53,7 @@ export const ImageWrapper = styled.div`
   margin: 0auto;
 `;
 
+// TODO - Is hotpink supposed to be colors.UNICORN?
 export const Image = styled.h2`
   background-color: hotpink;
   flex-direction: row;
@@ -62,7 +65,7 @@ export const Image = styled.h2`
 
 export const Text = styled.p`
   font-size: 14px;
-  color: #1f1f1f;
+  color: ${colors.BLACK};
 `;
 
 export const ButtonWrapper = styled.div`

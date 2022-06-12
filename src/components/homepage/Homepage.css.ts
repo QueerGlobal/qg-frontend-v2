@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const PageWrapper = styled.div`
-  background-color: #655dc6;
+  background-color: ${colors.PRIMARY};
   display: flex;
   align-items: center;
   justify-content: center;
