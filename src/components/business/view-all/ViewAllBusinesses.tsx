@@ -2,6 +2,7 @@
 import React, { FC, useState } from 'react';
 import { GenerateCards } from "./BusinessCard";
 import { ViewAllBusinessesContainer, BusinessesFilter, AllBusinesses } from "./ViewAllBusinesses.css";
+import { exampleBusiness } from "../business-interfaces";
 
 /**
  * Maximum cards in a row: 3
@@ -10,241 +11,22 @@ import { ViewAllBusinessesContainer, BusinessesFilter, AllBusinesses } from "./V
  * @returns {Node} ViewAllBusinesses
  */
 const ViewAllBusinesses: FC = () => {
+    const [allBusinesses, setAllBusinesses] = useState<{}[]>([]);
     const [loadMoreBusinesses, setLoadMoreBusinesses] = useState(false); // Businesses will be loaded from subsequent xhr calls
 
-    const exampleItems = [
-        {
-            id: "1-a", 
-            key: "1-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "2-b", 
-            key: "2-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "3-c", 
-            key: "3-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "4-a", 
-            key: "4-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "5-b", 
-            key: "5-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "6-c", 
-            key: "6-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "7-a", 
-            key: "7-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "8-b", 
-            key: "8-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "9-c", 
-            key: "9-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "10-a", 
-            key: "10-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "11-b", 
-            key: "11-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "12-c", 
-            key: "12-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "13-a", 
-            key: "13-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "14-b", 
-            key: "14-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "15-c", 
-            key: "15-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "16-a", 
-            key: "16-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "17-b", 
-            key: "17-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "18-c", 
-            key: "18-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "19-a", 
-            key: "19-a-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "20-b", 
-            key: "20-b-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        },
-        {
-            id: "21-c", 
-            key: "21-c-key", 
-            thumbnail: "placeholder", 
-            cat: "cat", 
-            name: "name", 
-            desc: "desc", 
-            loc: "loc", 
-            rating: 1, 
-            liked: true, 
-        }
-    ];
+    const generateBusinesses = (): void => {
+        let exampleItems: Array<{}> = [];
+    
+        let counter: number = 1;
+            exampleItems.push(exampleBusiness);
+        do {
+    
+        } while (counter < 22);
+
+        setAllBusinesses(exampleItems);
+    }
+
+    generateBusinesses();
 
     return (
         <ViewAllBusinessesContainer>
@@ -278,7 +60,7 @@ const ViewAllBusinesses: FC = () => {
                 <AllBusinesses>
                 {
                     /** Where to map the businesses. Info will be populated from an xhr value from useEffect */
-                    GenerateCards(exampleItems)
+                    GenerateCards(allBusinesses)
                 }
                 </AllBusinesses>
             </section>
