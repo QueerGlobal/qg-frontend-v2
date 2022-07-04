@@ -63,3 +63,11 @@ export const BottomNavLinks = styled.div`
 	bottom: 0;
 	width: 100%;
 `;
+
+export const MessagesContainer = styled.span`
+	background-color: ${colors.SUNNY_D};
+	width: 15px;
+	height: 15px;
+	clip-path: circle(50%);
+	font-size: 10px;
+`;
