@@ -246,14 +246,14 @@ const About: FC = () => {
 					</FamilyImgGrid>
 
 					<small>We're all different, but still all the same. Our family is always growing.</small>
-					<button>SEE VOLUNTEER OPPORTUNITIES</button>
+      				<Button label='primary' buttonText='SEE VOLUNTEER OPPORTUNITIES' />
 					
 					<small>We want YOU to feel represented and worthy as you are. The people you see on our site are real Queer Global members. Want to join them?</small>
-					<button>SEND US YOUR PHOTO OR ARTWORK</button>
+      				<Button label='primary' buttonText='SEND US YOUR PHOTO OR ARTWORK' />
 			
 					<h2>WE ARE HERE FOR <PurpleSpan>you</PurpleSpan>.</h2>
 					<p>We do our best to provide up-to-date, accurate resources and information, but we could always use a helping hand. If you know of any helpful resources, please help us and the rest of our community out and add them.</p>
-					<button>ADD A RESOURCE</button>
+      				<Button label='primary' buttonText='ADD A RESOURCE' />
 				</DarkGreyBGSection>
 			</AboutMain>
 		</>
