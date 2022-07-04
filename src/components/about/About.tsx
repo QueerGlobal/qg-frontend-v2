@@ -9,11 +9,189 @@ import {
 	DnDImg,
 	WhiteBGSection, 
 	PurpleSpan, 
-	DarkGreyBGSection } from './About.css';
+	DarkGreyBGSection,
+	UnitedSection,
+	UnitedImgGrid,
+	UnitedImg,
+	UnitedDesc,
+	FamilyImgGrid,
+	FamilyImg } from './About.css';
 import Background from '../common/background/Background';
 import placeholder from '../../assets/misc/placeholder.jpeg';
+import Button from '../common/button/Button';
 
 const About: FC = () => {
+	const unitedSectionImgs = [
+		{
+			key: "1a",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "2b",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "3c",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "4d",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "5e",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "6f",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "7g",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "8h",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "9i",
+			src: placeholder,
+			alt: "img"
+		}
+	];
+	
+	const familySectionImgs = [
+		{
+			key: "1a",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "2b",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "3c",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "4d",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "5e",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "6f",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "7g",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "8h",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "9i",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "10j",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "11k",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "12l",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "13m",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "14n",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "15o",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "16p",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "17q",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "18r",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "19s",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "20t",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "21u",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "22v",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "23w",
+			src: placeholder,
+			alt: "img"
+		},
+		{
+			key: "24x",
+			src: placeholder,
+			alt: "img"
+		}
+	];
+
 	return (
 		<>
 			<Background />
@@ -24,12 +202,24 @@ const About: FC = () => {
 					<p>We support and prioritize the people who are least represented in an outside of the rainbow umbrella. We want to give the community a safe, inviting space to confidently be themselves, easily find accurate, trusted information, share common experiences, and have the ability to support other LGBTQIA+ people and businesses in their area.</p>
 			
 					<h2>WE ARE <PurpleSpan>united</PurpleSpan>.</h2>
-					<p>We are Black. We are Latinx. We are Asian, Middle Eastern, White, Bi and Multi-Racial. We are tall, short, curvy, plus size, fat. We use chairs, canes, crutches, lifts, and braces.</p>
+					<UnitedSection>
+						<UnitedImgGrid>
+							{
+								unitedSectionImgs.map((items: any) => {
+									return <UnitedImg key={items.key} src={items.src} alt={items.alt} />
+								})
+							}
+						</UnitedImgGrid>
 
-					<p><strong>And we believe that kind of diversity is what makes Queerness beautiful.</strong></p>
+						<UnitedDesc>
+							<p>We are Black. We are Latinx. We are Asian, Middle Eastern, White, Bi and Multi-Racial. We are tall, short, curvy, plus size, fat. We use chairs, canes, crutches, lifts, and braces.</p>
 
-					<p>We strive to be a place where ALL people can talk about the solutions they found to specific crises in their lives, so other people do not have to go through them as well. A place where people do not have to fear outing themselves to coworkers and friends who follow them when discussing physical limitations, needs for legal advice, future medical procedures, or their financial situations. Queer Global is a worldwide masterlist for marginalized peoples in the Queer community.</p>
-			
+							<p><strong>And we believe that kind of diversity is what makes Queerness beautiful.</strong></p>
+
+							<p>We strive to be a place where ALL people can talk about the solutions they found to specific crises in their lives, so other people do not have to go through them as well. A place where people do not have to fear outing themselves to coworkers and friends who follow them when discussing physical limitations, needs for legal advice, future medical procedures, or their financial situations. Queer Global is a worldwide masterlist for marginalized peoples in the Queer community.</p>
+						</UnitedDesc>
+					</UnitedSection>
+
 					<h2>WE ARE <PurpleSpan>proud</PurpleSpan>.</h2>
 					<p>Queer Global is run by a Black trans/pan/poly/not-so-able-bodied man and a multi-racial pan/poly musician, business owner, stylist and vintage clothing expert.</p>
 			
@@ -46,7 +236,14 @@ const About: FC = () => {
 				<DarkGreyBGSection>
 					<h2>WE ARE <PurpleSpan>family</PurpleSpan>.</h2>
 					<small>Our amazing volunteers!</small>
-					<DnDImg src={placeholder} alt="Deacon and D'Arcy" />
+
+					<FamilyImgGrid>
+						{
+							familySectionImgs.map((items: any) => {
+								return <FamilyImg key={items.key} src={items.src} alt={items.alt} />
+							})
+						}
+					</FamilyImgGrid>
 
 					<small>We're all different, but still all the same. Our family is always growing.</small>
 					<button>SEE VOLUNTEER OPPORTUNITIES</button>

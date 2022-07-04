@@ -88,3 +88,32 @@ export const DnDImg = styled.img`
 	width: 75%;
 	height: auto;
 `;
+
+export const UnitedSection = styled.div`
+	display: flex;
+`;
+
+export const UnitedImgGrid = styled.div`
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+`;
+
+export const UnitedImg = styled.img`
+	width: 100%;
+`;
+
+export const UnitedDesc = styled.div`
+	width: 50%;
+`;
+
+export const FamilyImgGrid = styled.div`
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+`;
+
+export const FamilyImg = styled.img`
+	width: 100%;
+`;
