@@ -1,9 +1,10 @@
-import React, { FC } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBars,
 	faHome,
 	faDollarSign,
+	faInfoCircle,
 	faUserAlt,
 	faPlusSquare,
 	faSearch,
@@ -20,9 +21,38 @@ import {
 	NavDropdownItem,
 	NavDropdownItemContainer,
 	BottomNavLinks,
+	MessagesContainer
 } from "./Navbar.css";
 
 const NavBar: FC = () => {
+	const [profileThumbnail, setProfileThumbnail] = useState("");
+	const [messages, setMessages] = useState(3);
+
+	useEffect(() => {
+		let url: string = "/user";
+		fetch(url, {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json;charset=utf-8'
+			},
+		}).then((response) => {
+			if (response.ok) {
+				return response.json()
+			}
+		}).then(({ profileThumbnail, messages }) => {
+			setProfileThumbnail(profileThumbnail);
+			setMessages(messages);
+		});
+	}, []);
+
+	const MessagesIcon = () => {
+		if (messages > 0) return <MessagesContainer>{messages}</MessagesContainer>;
+	};
+
+	const ProfilePic = () => {
+		return <img src={profileThumbnail ? profileThumbnail : "../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png"} alt="Profile Thumbnail" />
+	}
+
 	return (
 		<>
 			<NavButtonContainer>
@@ -62,7 +92,7 @@ const NavBar: FC = () => {
 					<NavLink href="/about">
 						<span>
 							<FontAwesomeIcon
-								icon={faUserAlt}
+								icon={faInfoCircle}
 								style={{ marginRight: "13px" }}
 							/>
 						</span>
@@ -77,7 +107,7 @@ const NavBar: FC = () => {
 						</span>
 						BLOG
 					</NavLink>
-
+					{/** RESOURCES DROPDOWN MENU */}
 					<NavDropdown
 						id="resources"
 						title={
@@ -91,18 +121,12 @@ const NavBar: FC = () => {
 						}
 					>
 						<NavDropdownItemContainer>
-							<NavDropdownItem href="/add-resource">
-								Add Resource
-							</NavDropdownItem>
-							<NavDropdownItem href="/add-business">
-								Add Business
-							</NavDropdownItem>
-							<NavDropdownItem href="/add-event">Add Event</NavDropdownItem>
-
-							<NavDropdownItem href="/share">Share With Us</NavDropdownItem>
+							<NavDropdownItem href="/resources">SEE ALL</NavDropdownItem>
+							<NavDropdownItem href="/events">EVENTS</NavDropdownItem>
+							<NavDropdownItem href="/businesses">BUSINESSES</NavDropdownItem>
+							<NavDropdownItem href="/add-resource">ADD A RESOURCE</NavDropdownItem>
 						</NavDropdownItemContainer>
 					</NavDropdown>
-
 					<NavLink id="search" href="/search">
 						<span>
 							<FontAwesomeIcon
@@ -112,34 +136,29 @@ const NavBar: FC = () => {
 						</span>
 						SEARCH
 					</NavLink>
+
+					{/** PROFILE DROPDOWN MENU */}
 					<BottomNavLinks id="bottom-links">
-						<NavLink href="/logout">
-							<span>
-								<FontAwesomeIcon
-									icon={faSignOutAlt}
-									style={{ marginRight: "13px" }}
-								/>
-							</span>
-							Log Out
-						</NavLink>
+						{ProfilePic()}
 						<NavDropdown
-							id="support"
+							id="profile"
 							title={
 								<span style={{ fontSize: "18px" }}>
 									<FontAwesomeIcon
-										icon={faQuestionCircle}
+										icon={faUserAlt}
 										style={{ marginRight: "13px" }}
 									/>
-									Support
+									PROFILE
 								</span>
 							}
 						>
 							<NavDropdownItemContainer>
-								<NavDropdownItem href="/faq">FAQ</NavDropdownItem>
-								<NavDropdownItem href="/contact-us">Contact Us</NavDropdownItem>
-								<NavDropdownItem href="/report-something">
-									Report Something
-								</NavDropdownItem>
+								<NavDropdownItem href="/edit-profile">EDIT PROFILE</NavDropdownItem>
+								<NavDropdownItem href="/messages">{MessagesIcon()} MESSAGES</NavDropdownItem>
+								<NavDropdownItem href="/notifications">NOTIFICATIONS</NavDropdownItem>
+								<NavDropdownItem href="/help">HELP/SUPPORT</NavDropdownItem>
+								<NavDropdownItem href="/feedback">GIVE FEEDBACK</NavDropdownItem>
+								<NavDropdownItem href="/logout">LOG OUT</NavDropdownItem>
 							</NavDropdownItemContainer>
 						</NavDropdown>
 					</BottomNavLinks>
