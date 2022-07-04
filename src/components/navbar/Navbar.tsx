@@ -48,7 +48,7 @@ const NavBar: FC = () => {
 						<span>
 							<FontAwesomeIcon icon={faHome} style={{ marginRight: "13px" }} />
 						</span>
-						Home
+						HOME
 					</NavLink>
 					<NavLink href="/donate">
 						<span>
@@ -57,16 +57,16 @@ const NavBar: FC = () => {
 								style={{ marginRight: "13px" }}
 							/>
 						</span>
-						Donate
+						DONATE
 					</NavLink>
-					<NavLink href="/profile">
+					<NavLink href="/about">
 						<span>
 							<FontAwesomeIcon
 								icon={faUserAlt}
 								style={{ marginRight: "13px" }}
 							/>
 						</span>
-						Profile
+						ABOUT
 					</NavLink>
 					<NavLink href="/blog">
 						<span>
@@ -75,18 +75,18 @@ const NavBar: FC = () => {
 								style={{ marginRight: "13px" }}
 							/>
 						</span>
-						Blog
+						BLOG
 					</NavLink>
 
 					<NavDropdown
-						id="add-resource"
+						id="resources"
 						title={
 							<span style={{ fontSize: "18px" }}>
 								<FontAwesomeIcon
 									icon={faPlusSquare}
 									style={{ marginRight: "13px" }}
 								/>
-								Add Resource
+								RESOURCES
 							</span>
 						}
 					>
@@ -110,7 +110,7 @@ const NavBar: FC = () => {
 								style={{ marginRight: "13px" }}
 							/>
 						</span>
-						Search
+						SEARCH
 					</NavLink>
 					<BottomNavLinks id="bottom-links">
 						<NavLink href="/logout">
