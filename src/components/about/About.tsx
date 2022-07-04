@@ -230,7 +230,7 @@ const About: FC = () => {
 					<p>We believe providing information is only the beginning & we're just getting started.</p>
 
 					<em>Deacon & D'Arcy</em>
-					<div>INSERT PIC</div>
+					<DnDImg src={placeholder} alt="Deacon and D'Arcy" />
 				</WhiteBGSection>
 
 				<DarkGreyBGSection>
