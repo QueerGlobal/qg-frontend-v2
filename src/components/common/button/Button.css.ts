@@ -27,8 +27,8 @@ export const StyledButton = styled.button<ButtonWrapperProps>`
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  width: 220px;
-  height: 50px;
+  padding: 0 20px;
+  height: 28px;
 `;
 
 export const ButtonText = styled.div<ButtonWrapperProps>`
