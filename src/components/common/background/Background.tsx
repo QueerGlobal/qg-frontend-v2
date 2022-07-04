@@ -1,6 +1,5 @@
 import React, { FC } from "react";
-import { BackgroundColor, TinyCottonCandyX, LargeCottonCandyX, HuggingImg, WhiteX, WhiteXTwo, BlackSolidHex, CottonCandySolidHex, WhiteTriangle, GradientPinkTriangle, CircleShape, NineWhiteSpikes, BlackBG, BlackX, CottonCandySemiOpaqueRect, SVGDiv, Cont, Cols, Blue, Red, Pink, Yellow, GridOfPics, NineWhitePointsStarDiv, SingleWhitePoint, BorderedHex } from "./Background.css";
-import hugging from "../../assets/misc/placeholder.jpeg";
+import { BackgroundColor, TinyCottonCandyX, LargeCottonCandyX, HuggingImg, WhiteX, WhiteXTwo, BlackSolidHex, CottonCandySolidHex, WhiteTriangle, GradientPinkTriangle, CircleShape, NineWhiteSpikes, BlackBG, BlackX, CottonCandySemiOpaqueRect, SVGDiv, Cont, Cols, Blue, Red, Pink, Yellow, GridOfPics, NineWhitePointsStarDiv, SingleWhitePoint, BorderedHex, PurpleBlock, PinkBlock, WhiteBlock, Pink2Block } from "./Background.css";
 import colors from "../../../styles/colors";
 
 /**
@@ -41,6 +40,14 @@ const Background: FC = () => {
 				<WhiteX />
 				
 				<BlackSolidHex />
+
+				<PinkBlock />
+
+				<PurpleBlock />
+
+				<Pink2Block />
+
+				<WhiteBlock />
 				
 				{/** Unfinished */}
 

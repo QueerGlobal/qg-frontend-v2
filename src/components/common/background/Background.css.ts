@@ -176,6 +176,42 @@ export const BlackSolidHex = styled.div`
 	transform: rotate(15deg);
 `;
 
+export const PinkBlock = styled.div`
+	position: relative;
+	left: 0;
+	bottom: -1180px;
+	width: 40px;
+	height: 10px;
+	background-color: ${colors.COTTON_CANDY};
+`; 
+
+export const PurpleBlock = styled.div`
+	position: relative;
+	left: 0;
+	bottom: -1135px;
+	width: 40px;
+	height: 10px;
+	background-color: ${colors.PRIMARY};
+`; 
+
+export const Pink2Block = styled.div`
+	position: relative;
+	left: 0;
+	bottom: -1090px;
+	width: 40px;
+	height: 10px;
+	background-color: ${colors.COTTON_CANDY};
+`;
+
+export const WhiteBlock = styled.div`
+	position: relative;
+	left: 0;
+	bottom: -1045px;
+	width: 40px;
+	height: 10px;
+	background-color: ${colors.WHITE};
+`;
+
 				// Unfinished
 export const BorderedHex = styled.div`
 	display: block;
