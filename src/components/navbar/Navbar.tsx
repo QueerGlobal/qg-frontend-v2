@@ -1,17 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faBars,
-	faHome,
-	faDollarSign,
-	faInfoCircle,
-	faUserAlt,
-	faPlusSquare,
-	faSearch,
-	faSignOutAlt,
-	faQuestionCircle,
-	faClipboardList,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavDropdown } from "react-bootstrap";
 import {
 	NavButtonContainer,
@@ -21,8 +10,11 @@ import {
 	NavDropdownItem,
 	NavDropdownItemContainer,
 	BottomNavLinks,
-	MessagesContainer
+	MessagesContainer,
+	EighteenPXSpan,
+	ProfileThumbCont
 } from "./Navbar.css";
+import colors from "../../styles/colors";
 
 const NavBar: FC = () => {
 	const [profileThumbnail, setProfileThumbnail] = useState("");
@@ -50,7 +42,7 @@ const NavBar: FC = () => {
 	};
 
 	const ProfilePic = () => {
-		return <img src={profileThumbnail ? profileThumbnail : "../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png"} alt="Profile Thumbnail" />
+		return <ProfileThumbCont src={profileThumbnail ? profileThumbnail : "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Flove-wins%2F500%2FRainbow_Military-512.png&f=1&nofb=1"} alt="Profile Thumbnail" />
 	}
 
 	return (
@@ -63,7 +55,7 @@ const NavBar: FC = () => {
 					data-bs-target="#sidebar"
 					aria-controls="offcanvasScrolling"
 				>
-					<FontAwesomeIcon icon={faBars} style={{ color: "000000" }} />
+					<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
 				</MenuButton>
 			</NavButtonContainer>
 			<CanvasNavbarContainer
@@ -74,50 +66,25 @@ const NavBar: FC = () => {
 				aria-labelledby="offcanvasScrollingLabel"
 			>
 				<div className="offcanvas-body p-0 overflow-hidden">
-					<NavLink href="/">
-						<span>
-							<FontAwesomeIcon icon={faHome} style={{ marginRight: "13px" }} />
-						</span>
+					<NavLink href="/"> 
 						HOME
 					</NavLink>
-					<NavLink href="/donate">
-						<span>
-							<FontAwesomeIcon
-								icon={faDollarSign}
-								style={{ marginRight: "13px" }}
-							/>
-						</span>
+					<NavLink href="/donate"> 
 						DONATE
 					</NavLink>
-					<NavLink href="/about">
-						<span>
-							<FontAwesomeIcon
-								icon={faInfoCircle}
-								style={{ marginRight: "13px" }}
-							/>
-						</span>
+					<NavLink href="/about"> 
 						ABOUT
 					</NavLink>
-					<NavLink href="/blog">
-						<span>
-							<FontAwesomeIcon
-								icon={faClipboardList}
-								style={{ marginRight: "13px" }}
-							/>
-						</span>
+					<NavLink href="/blog"> 
 						BLOG
 					</NavLink>
 					{/** RESOURCES DROPDOWN MENU */}
 					<NavDropdown
 						id="resources"
 						title={
-							<span style={{ fontSize: "18px" }}>
-								<FontAwesomeIcon
-									icon={faPlusSquare}
-									style={{ marginRight: "13px" }}
-								/>
+							<EighteenPXSpan> 
 								RESOURCES
-							</span>
+							</EighteenPXSpan>
 						}
 					>
 						<NavDropdownItemContainer>
@@ -127,13 +94,7 @@ const NavBar: FC = () => {
 							<NavDropdownItem href="/add-resource">ADD A RESOURCE</NavDropdownItem>
 						</NavDropdownItemContainer>
 					</NavDropdown>
-					<NavLink id="search" href="/search">
-						<span>
-							<FontAwesomeIcon
-								icon={faSearch}
-								style={{ marginRight: "13px" }}
-							/>
-						</span>
+					<NavLink id="search" href="/search"> 
 						SEARCH
 					</NavLink>
 
@@ -143,13 +104,9 @@ const NavBar: FC = () => {
 						<NavDropdown
 							id="profile"
 							title={
-								<span style={{ fontSize: "18px" }}>
-									<FontAwesomeIcon
-										icon={faUserAlt}
-										style={{ marginRight: "13px" }}
-									/>
+								<EighteenPXSpan> 
 									PROFILE
-								</span>
+								</EighteenPXSpan>
 							}
 						>
 							<NavDropdownItemContainer>
