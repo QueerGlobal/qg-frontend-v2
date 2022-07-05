@@ -10,12 +10,14 @@ export const NavButtonContainer = styled.div`
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
 	z-index: 1050;
 `;
+
 export const MenuButton = styled.button`
 	background: ${colors.PRIMARY};
 	border: transparent;
 	font-size: 25px;
 	margin: auto 10px;
 `;
+
 export const CanvasNavbarContainer = styled.div`
 	width: 50vw;
 	background: ${colors.PRIMARY};
@@ -55,9 +57,11 @@ export const NavDropdownItem = styled(NavDropdown.Item)`
 		width: 85%;
 	}
 `;
+
 export const NavDropdownItemContainer = styled(Container)`
 	width: 50%;
 `;
+
 export const BottomNavLinks = styled.div`
 	position: absolute;
 	bottom: 0;
@@ -70,4 +74,12 @@ export const MessagesContainer = styled.span`
 	height: 15px;
 	clip-path: circle(50%);
 	font-size: 10px;
+`;
+
+export const EighteenPXSpan = styled.span`
+	font-size: 18px;
+`;
+
+export const ProfileThumbCont = styled.img`
+	width: 40px;
 `;
