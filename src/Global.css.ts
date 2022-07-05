@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
 	border-radius: 0 !important;
 }
 
+// Used to override the react-bootstrap dropdown arrow
+.dropdown-toggle::after {
+	display: none !important; 
+}
+// Used to override the react-dropdown arrow
+
 .nav-link {
 	color: ${colors.WHITE} !important;
 	letter-spacing: 34;
