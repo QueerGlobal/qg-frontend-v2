@@ -22,7 +22,7 @@ export const CanvasNavbarContainer = styled.div`
 	width: 50vw;
 	background: ${colors.PRIMARY};
 	color: ${colors.WHITE};
-	padding-top: 60px;
+	padding: 60px 0 0 60px;
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -53,7 +53,7 @@ export const NavDropdownItem = styled(NavDropdown.Item)`
 		position: absolute;
 		top: 0;
 		left: 0;
-		border: 1px solid ${colors.WHITE};
+		border: .1px solid ${colors.WHITE};
 		width: 85%;
 	}
 `;
