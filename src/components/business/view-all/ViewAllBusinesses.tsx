@@ -14,7 +14,22 @@ const ViewAllBusinesses: FC = () => {
     const [allBusinesses, setAllBusinesses] = useState<{}[]>([]);
     const [count, setCount] = useState(0);
 
-    const retrieveBusinesses = (): void => {};
+    const retrieveBusinesses = (): void => {
+        // fetch("/", {
+        //     method: "POST",
+        //     body: JSON.stringify({ count: count })
+        // })
+        // .then((res) => {
+        //     if (res.status === 200) {
+        //         return res.json();
+        //     }
+        // })
+        // .then(data => {
+            setCount(prev => prev += 21);
+            tempBusinessGenerator(count)
+        // })
+        // .catch((err) => console.log(err));
+    };
 
     const tempBusinessGenerator = (num = 22) => {
         let exampleItems: Array<{}> = [];
