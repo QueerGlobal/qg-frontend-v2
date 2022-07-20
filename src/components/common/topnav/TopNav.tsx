@@ -16,7 +16,7 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
 		return (
 			<TopNavContainer>
 				<TopNavLogo>
-					<NavLink to="/home">
+					<NavLink to="/">
 						<img src={icon} alt="logo" />
 					</NavLink>
 				</TopNavLogo>
