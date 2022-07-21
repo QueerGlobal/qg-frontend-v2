@@ -54,6 +54,7 @@ const NavBar: FC = () => {
 			>
 				<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
 			</MenuButton>
+
 			<CanvasNavbarContainer
 				className="offcanvas offcanvas-start"
 				data-bs-scroll="true"
@@ -65,15 +66,19 @@ const NavBar: FC = () => {
 					<NavLink href="/"> 
 						HOME
 					</NavLink>
+
 					<NavLink href="/donate"> 
 						DONATE
 					</NavLink>
+
 					<NavLink href="/about"> 
 						ABOUT
 					</NavLink>
+
 					<NavLink href="/blog"> 
 						BLOG
 					</NavLink>
+
 					{/** RESOURCES DROPDOWN MENU */}
 					<NavDropdown
 						id="resources"
@@ -90,9 +95,26 @@ const NavBar: FC = () => {
 							<NavDropdownItem href="/add-resource">ADD A RESOURCE</NavDropdownItem>
 						</NavDropdownItemContainer>
 					</NavDropdown>
+
 					<NavLink id="search" href="/search"> 
 						SEARCH
 					</NavLink>
+
+					{/** CONTACT US DROPDOWN MENU */}
+					<NavDropdown
+						id="contact-us"
+						title={
+							<EighteenPXSpan> 
+								CONTACT US
+							</EighteenPXSpan>
+						}
+					>
+						<NavDropdownItemContainer>
+							<NavDropdownItem href="/contact-us">CONTACT US</NavDropdownItem>
+							<NavDropdownItem href="/volunteer">VOLUNTEER</NavDropdownItem>
+							<NavDropdownItem href="/give-feedback">GIVE FEEDBACK</NavDropdownItem>
+						</NavDropdownItemContainer>
+					</NavDropdown>
 
 					{/** PROFILE DROPDOWN MENU */}
 					<BottomNavLinks id="bottom-links">

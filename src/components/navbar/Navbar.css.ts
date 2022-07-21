@@ -3,6 +3,8 @@ import { Nav, NavDropdown, Container } from "react-bootstrap";
 import colors from "../../styles/colors";
 
 export const MenuButton = styled.button`
+	position: relative;
+	right: -350px;
 	height: 50px;
 	background: ${colors.PRIMARY};
 	border: transparent;
