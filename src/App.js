@@ -12,13 +12,11 @@ import TopNav from "./components/common/topnav/TopNav";
 import Footer from './components/common/footer/Footer';
 
 const App = () => {
-	const windowWidth = window.innerWidth <= 375;
-
 	return (
 		<>
 			<GlobalStyles />
 
-      		<TopNav windowWidth={windowWidth} />
+      		<TopNav />
 
 			<Router>
 				<Route path="/" exact component={Home} />
