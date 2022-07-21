@@ -5,7 +5,7 @@ import { Nav } from "react-bootstrap";
 /* PRIMARY: #655DC6 for purple */
 /* COTTON_CANDY: #F5ACB8 for pink */
 
-export const TopNavContainer = styled.header`
+export const TopNavContainer = styled(Nav)`
 	display: flex;
 	color: ${colors.WHITE};
 	text-transform: uppercase;
@@ -22,6 +22,7 @@ export const NavLink = styled(Nav.Link)`
 	opacity: 1;
 	display: inline;
 	margin-left: 10px;
+
 	&:focus,
 	&:active {
 		color: ${colors.WHITE};
