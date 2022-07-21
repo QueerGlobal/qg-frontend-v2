@@ -22,30 +22,28 @@ const TopNav: FC<{ windowWidth: boolean }> = () => {
 		return () => window.removeEventListener("resize", updateWidth);
 	}, []);
 
-	console.log(isWindowWidthMobile);
-
 	return <TopNavContainer>
-		{
-			isWindowWidthMobile ? 
-				<Navbar /> : <> 
-					<TopNavLogo>
-						<NavLink to="/">
-							<img src={icon} alt="logo" />
-						</NavLink>
-					</TopNavLogo>
+		{isWindowWidthMobile ? 
+			<Navbar /> : 
+			<> 
+				<TopNavLogo>
+					<NavLink to="/">
+						<img src={icon} alt="logo" />
+					</NavLink>
+				</TopNavLogo>
 
-					<div>
-						<NavLink href="/about">ABOUT</NavLink>
-						<NavLink href="/resources">RESOURCES</NavLink>  
-						<NavLink href="/blog">BLOG</NavLink>
-						<NavLink href="/donate">
-							<SignUpBtn>DONATE</SignUpBtn>
-						</NavLink>
-						<NavLink href="/get-involved">
-							<DonateBtn>SIGN UP</DonateBtn>
-						</NavLink> {/** Correct? */}
-					</div>
-				</>
+				<div>
+					<NavLink href="/about">ABOUT</NavLink>
+					<NavLink href="/resources">RESOURCES</NavLink>  
+					<NavLink href="/blog">BLOG</NavLink>
+					<NavLink href="/donate">
+						<SignUpBtn>DONATE</SignUpBtn>
+					</NavLink>
+					<NavLink href="/get-involved">
+						<DonateBtn>SIGN UP</DonateBtn>
+					</NavLink> {/** TODO: Correct? */}
+				</div>
+			</>
 		}
 	</TopNavContainer>;
 }
