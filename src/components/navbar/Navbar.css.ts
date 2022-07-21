@@ -2,21 +2,19 @@ import styled from "styled-components";
 import { Nav, NavDropdown, Container } from "react-bootstrap";
 import colors from "../../styles/colors";
 
-export const NavButtonContainer = styled.div`
-	position: fixed;
-	width: 100%; /* TODO add break points for desktop screen */
-	height: 50px;
-	background: ${colors.PRIMARY};
-	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
-	z-index: 1050;
-`;
-
 export const MenuButton = styled.button`
+	height: 50px;
 	background: ${colors.PRIMARY};
 	border: transparent;
 	font-size: 25px;
 	margin: auto 10px;
-`;
+	z-index: 1050;	
+
+	&:focus,
+	&:active {
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+	}
+`; // TODO: move all "transparent" color-related styling to colors object
 
 export const CanvasNavbarContainer = styled.div`
 	width: 50vw;

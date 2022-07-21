@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavDropdown } from "react-bootstrap";
 import {
-	NavButtonContainer,
 	CanvasNavbarContainer,
 	MenuButton,
 	NavLink,
@@ -19,6 +18,14 @@ import colors from "../../styles/colors";
 const NavBar: FC = () => {
 	const [profileThumbnail, setProfileThumbnail] = useState("");
 	const [messages, setMessages] = useState(3);
+
+	const MessagesIcon = () => {
+		if (messages > 0) return <MessagesContainer>{messages}</MessagesContainer>;
+	};
+
+	const ProfilePic = () => {
+		return <ProfileThumbCont src={profileThumbnail ? profileThumbnail : "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Flove-wins%2F500%2FRainbow_Military-512.png&f=1&nofb=1"} alt="Profile Thumbnail" />
+	}
 
 	useEffect(() => {
 		let url: string = "/user";
@@ -37,27 +44,16 @@ const NavBar: FC = () => {
 		});
 	}, []);
 
-	const MessagesIcon = () => {
-		if (messages > 0) return <MessagesContainer>{messages}</MessagesContainer>;
-	};
-
-	const ProfilePic = () => {
-		return <ProfileThumbCont src={profileThumbnail ? profileThumbnail : "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Flove-wins%2F500%2FRainbow_Military-512.png&f=1&nofb=1"} alt="Profile Thumbnail" />
-	}
-
 	return (
 		<>
-			<NavButtonContainer>
-				<MenuButton
-					className="float-end"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#sidebar"
-					aria-controls="offcanvasScrolling"
-				>
-					<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
-				</MenuButton>
-			</NavButtonContainer>
+			<MenuButton
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#sidebar"
+				aria-controls="offcanvasScrolling"
+			>
+				<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
+			</MenuButton>
 			<CanvasNavbarContainer
 				className="offcanvas offcanvas-start"
 				data-bs-scroll="true"
