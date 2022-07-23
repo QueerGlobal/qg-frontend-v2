@@ -4,7 +4,7 @@ import { StyledButton, ButtonText } from './Button.css';
 
 export interface ButtonProps {
   buttonText: string;
-  handleClick?: () => void; //optional until we know where it's clicking to
+  handleClick?: () => any;
   disabled?: boolean;
   label: string;
 }
