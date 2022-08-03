@@ -38,6 +38,10 @@ export const SubHeader2 = styled.h2`
   padding-top: 15px;
 `;
 
+export const PinkSpan = styled.em`
+  color: ${colors.UNICORN};
+`;
+
 export const SubHeader3 = styled.h2`
   color: ${colors.BLACK};
   font-weight: bold;
@@ -50,18 +54,17 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0auto;
+  margin: 0 auto;
 `;
 
 // TODO - Is hotpink supposed to be colors.UNICORN?
-export const Image = styled.h2`
+export const Image = styled.img`
   background-color: hotpink;
   flex-direction: row;
   margin: 25px 5px;
   height: 210px;
   width: 45%;
 `;
-
 
 export const Text = styled.p`
   font-size: 14px;
