@@ -1,13 +1,13 @@
 import React, { FC } from "react";
-import { 
-	AboutContainer,
+import {
+	AboutBtn,
+	AboutBtn2,
 	MiddleDiv,
-	Header,
-	Paragraph,
-	TahuFont,
+	BottomBtnsDiv,
 	AboutMain, 
 	DnDImg,
-	WhiteBGSection, 
+	WhiteBGSection,
+	H2Element, 
 	PurpleSpan, 
 	DarkGreyBGSection,
 	UnitedSection,
@@ -18,7 +18,6 @@ import {
 	FamilyImg } from './About.css';
 import Background from '../common/background/Background';
 import placeholder from '../../assets/misc/placeholder.jpeg';
-import Button from '../common/button/Button';
 
 const About: FC = () => {
 	const unitedSectionImgs = [
@@ -198,10 +197,10 @@ const About: FC = () => {
 			
 			<AboutMain>
 				<WhiteBGSection>
-					<h2>ABOUT US.</h2>
+					<H2Element>ABOUT US.</H2Element>
 					<p>We support and prioritize the people who are least represented in an outside of the rainbow umbrella. We want to give the community a safe, inviting space to confidently be themselves, easily find accurate, trusted information, share common experiences, and have the ability to support other LGBTQIA+ people and businesses in their area.</p>
 			
-					<h2>WE ARE <PurpleSpan>united</PurpleSpan>.</h2>
+					<H2Element>WE ARE <PurpleSpan>united</PurpleSpan>.</H2Element>
 					<UnitedSection>
 						<UnitedImgGrid>
 							{
@@ -220,7 +219,7 @@ const About: FC = () => {
 						</UnitedDesc>
 					</UnitedSection>
 
-					<h2>WE ARE <PurpleSpan>proud</PurpleSpan>.</h2>
+					<H2Element>WE ARE <PurpleSpan>proud</PurpleSpan>.</H2Element>
 					<p>Queer Global is run by a Black trans/pan/poly/not-so-able-bodied man and a multi-racial pan/poly musician, business owner, stylist and vintage clothing expert.</p>
 			
 					<p>Our goal is to provide a platform that consolidates resources and information for people outside of the Big 5 social media platforms, where it gets buried in posts, behind locked accounts and manipulative algorithms.</p>
@@ -229,12 +228,14 @@ const About: FC = () => {
 
 					<p>We believe providing information is only the beginning & we're just getting started.</p>
 
-					<em>Deacon & D'Arcy</em>
-					<DnDImg src={placeholder} alt="Deacon and D'Arcy" />
+					<MiddleDiv>
+						<em>Deacon & D'Arcy</em>
+						<DnDImg src={placeholder} alt="Deacon and D'Arcy" />
+					</MiddleDiv>
 				</WhiteBGSection>
 
 				<DarkGreyBGSection>
-					<h2>WE ARE <PurpleSpan>family</PurpleSpan>.</h2>
+					<H2Element>WE ARE <PurpleSpan>family</PurpleSpan>.</H2Element>
 					<small>Our amazing volunteers!</small>
 
 					<FamilyImgGrid>
@@ -245,15 +246,17 @@ const About: FC = () => {
 						}
 					</FamilyImgGrid>
 
-					<small>We're all different, but still all the same. Our family is always growing.</small>
-      				<Button label='primary' buttonText='SEE VOLUNTEER OPPORTUNITIES' handleClick={() => window.location.href = "/volunteer"} />
-					
-					<small>We want YOU to feel represented and worthy as you are. The people you see on our site are real Queer Global members. Want to join them?</small>
-      				<Button label='primary' buttonText='SEND US YOUR PHOTO OR ARTWORK' handleClick={() => window.location.href = "/submit-artwork"} />
-			
-					<h2>WE ARE HERE FOR <PurpleSpan>you</PurpleSpan>.</h2>
+					<BottomBtnsDiv>
+						<small>We're all different, but still all the same. Our family is always growing.</small>
+						<AboutBtn label='primary' buttonText='SEE VOLUNTEER OPPORTUNITIES' handleClick={() => window.location.href = "/volunteer"} />
+						
+						<small>We want YOU to feel represented and worthy as you are. The people you see on our site are real Queer Global members. Want to join them?</small>
+						<AboutBtn label='primary' buttonText='SEND US YOUR PHOTO OR ARTWORK' handleClick={() => window.location.href = "/submit-artwork"} />
+					</BottomBtnsDiv>
+
+					<H2Element>WE ARE HERE FOR <PurpleSpan>you</PurpleSpan>.</H2Element>
 					<p>We do our best to provide up-to-date, accurate resources and information, but we could always use a helping hand. If you know of any helpful resources, please help us and the rest of our community out and add them.</p>
-      				<Button label='primary' buttonText='ADD A RESOURCE' handleClick={() => window.location.href = "/add-a-resource"} />
+      				<AboutBtn2 label='primary' buttonText='ADD A RESOURCE' handleClick={() => window.location.href = "/add-a-resource"} />
 				</DarkGreyBGSection>
 			</AboutMain>
 		</>

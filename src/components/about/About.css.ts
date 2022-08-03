@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colors from "../../styles/colors";
 
+import Button from '../common/button/Button';
 import { Container } from "react-bootstrap";
 
 interface PropsShape {
@@ -33,12 +34,9 @@ export const BackgroundColor = styled.div`
 `;
 
 export const MiddleDiv = styled.div`
-	position: absolute;
 	width: 90%;
 	background: ${colors.WHITE};
-	color: ${colors.BLACK};
-	top: 30%;
-	border-radius: 7px;
+	text-align: center;
 `;
 
 export const Header = styled.h1`
@@ -51,24 +49,21 @@ export const Paragraph = styled.p`
 	opacity: 1;
 `;
 
-export const TahuFont = styled.span`
-	color: ${colors.PRIMARY};
-	font-family: "Tahu!", sans-serif;
-	font-size: 61px;
-	font-weight: 500;
-	line-height: 1.2;
-	margin-left: 1.5rem;
-	margin-bottom: 0.5rem;
-	text-transform: lowercase;
+export const H2Element = styled.h2`
+	font-size: 3.5em;
+	font-weight: 700;
+	margin-top: 6%;
 `;
 
 export const WhiteBGSection = styled.div`
   background-color: ${colors.WHITE};
+  padding: 0 90px 90px;
 `;
 
 export const DarkGreyBGSection = styled.div`
   background-color: ${colors.BLACK};
   color: ${colors.WHITE};
+  padding: 0 90px 90px;
 `;
 
 export const AboutMain = styled.main`
@@ -79,13 +74,12 @@ export const AboutMain = styled.main`
   top: 200px;
 `;
 
-export const PurpleSpan = styled.span`
+export const PurpleSpan = styled.em`
   color: ${colors.PRIMARY};
 `;
 
 export const DnDImg = styled.img`
-	display: block;
-	width: 75%;
+	width: 90%;
 	height: auto;
 `;
 
@@ -94,10 +88,11 @@ export const UnitedSection = styled.div`
 `;
 
 export const UnitedImgGrid = styled.div`
-	width: 50%;
+	width: 48%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
+	margin-right: 5%;
 `;
 
 export const UnitedImg = styled.img`
@@ -105,15 +100,30 @@ export const UnitedImg = styled.img`
 `;
 
 export const UnitedDesc = styled.div`
-	width: 50%;
+	width: 45%;
 `;
 
 export const FamilyImgGrid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
 `;
 
 export const FamilyImg = styled.img`
 	width: 100%;
+`;
+
+export const BottomBtnsDiv = styled.div`
+	text-align: center;
+	width: 60%;
+	margin: 10px auto;
+`;
+
+export const AboutBtn = styled(Button)`
+	margin: 10px auto 10%;
+`;
+
+export const AboutBtn2 = styled(Button)`
+	margin: auto;
 `;
