@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 
-export const PageWrapper = styled.div`
+interface PropsShape {
+	className: string;
+}
+
+export const PageWrapper = styled.div<PropsShape>`
   position: relative;
   background-color: ${colors.PRIMARY};
   display: flex;
