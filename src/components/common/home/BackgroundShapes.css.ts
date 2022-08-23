@@ -5,6 +5,10 @@ import colors from '../../../styles/colors';
 /* COTTON_CANDY: #F5ACB8 for pink */
 /* #48ADE5 for blue circle on home page */
 
+interface PropsShape {
+	className: string;
+}
+
 export const HomepageBGCont = styled.div`
 	position: absolute;
 	z-index: 1;
@@ -12,7 +16,7 @@ export const HomepageBGCont = styled.div`
 	width: 100%;
 `;
 
-export const PurpleCircles = styled.div`
+export const PurpleCircles = styled.div<PropsShape>`
 	position: absolute;
 	left: -10%;
 	top: 91px;
@@ -137,7 +141,7 @@ export const BlackC4 = styled.div`
 	border-width: 13px;
 `;
 
-export const BlueX = styled.div`
+export const BlueX = styled.div<PropsShape>`
 	&:before {
 		content: "+";
 		position: absolute;
@@ -212,7 +216,6 @@ export const LowerBlackC2 = styled.div`
     border-radius: 50%;
 	background: linear-gradient(${colors.WATER}, ${colors.WATER_HOVER});
 `;
-
 
 export const BlueSemiOpaqueRect = styled.div`
 	position: absolute;

@@ -10,9 +10,14 @@ import { WhitePlus, PurpleCircles, PurpleC2, PurpleC3, PurpleC4, PurpleC5, Purpl
  * @returns Node Background
  */
 const Background: FC = () => {
+	const isWideScreen = true;
+	const blackDotsVisualTop = isWideScreen ? "65px" : "203px";
+	const blackDotsVisualRight = isWideScreen ? "20%" : "-8%";
+	const blackDotsVisualWidth = isWideScreen ? "224px" : "50%";
+
 	return (
 		<HomepageBGCont>
-			<PurpleCircles>
+			<PurpleCircles className="purpleCircles">
 				<PurpleC2 />
 				<PurpleC3 />
 				<PurpleC4 />
@@ -22,7 +27,7 @@ const Background: FC = () => {
 				<PurpleC8 />
 			</PurpleCircles>
 
-			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.68 115.86" style={{stroke: "none", position: "absolute", top: "203px", right: "-8%", width: "50%"}}>
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.68 115.86" style={{stroke: "none", position: "absolute", top: blackDotsVisualTop, right: blackDotsVisualRight, width: blackDotsVisualWidth}}>
 				<g id="Group_2433" data-name="Group 2433">
 					<g id="Group_2377" data-name="Group 2377">
 						<path id="Path_1824" data-name="Path 1824" d="M219.08,115.86a4.6,4.6,0,1,1,4.6-4.6,4.6,4.6,0,0,1-4.6,4.6Z" style={{fill:"#1f1f1f"}} />
@@ -195,7 +200,7 @@ const Background: FC = () => {
 				</g>
 			</svg>
 
-			<BlueX />
+			<BlueX className="blueX" />
 
 			<WhitePlus />
 
