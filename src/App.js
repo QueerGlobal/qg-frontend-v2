@@ -9,6 +9,7 @@ import Search from "./components/search/Search.tsx";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "../src/Global.css";
 import TopNav from "./components/common/topnav/TopNav";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
 	const windowWidth = window.innerWidth <= 375;
@@ -26,6 +27,7 @@ const App = () => {
 				<Route path="/add-resource" component={AddResource} />
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
+				<Route path="/contact-us" exact component={Contact} />
 			</Router>
 		</>
 	);
