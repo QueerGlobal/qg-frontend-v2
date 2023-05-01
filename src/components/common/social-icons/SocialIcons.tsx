@@ -34,7 +34,7 @@ const SocialIcons: FC = () => {
         </IconContainer>
         <IconContainer>
           <a
-            href="https://www.instagram.com/queerglobal/?hl=en"
+            href="https://www.instagram.com/queerglobal/"
             target="_blank"
             rel="noreferrer"
           >
