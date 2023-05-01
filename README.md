@@ -28,7 +28,7 @@ Site Milestone Dates\*: June 30th | August 31st | October 11th
 - Search (links to blank page)
 - Get Involved (links to blank page)
 - Header/Footer (90%)
-- Social media links (icons not linked in footer)
+- Social media links (icons linked)
 
 ---
 
