@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 
 import { ContactMain } from "./Contact.css";
+import { PageWrapper } from "../homepage/Homepage.css";
 import Button from "../common/button/Button";
 
 const Contact: FC = () => {
