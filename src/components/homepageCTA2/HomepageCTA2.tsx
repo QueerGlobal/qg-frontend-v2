@@ -24,7 +24,7 @@ const HomepageCTA2: FC = () => {
       <ImageWrapper1>
         <Image>Image goes here</Image>
       </ImageWrapper1>
-      <Header>You're face is lovely, <br />
+      <Header>Your face is lovely, <br />
               can we use it?
       </Header>
       <Content>
