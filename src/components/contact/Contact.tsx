@@ -1,14 +1,32 @@
 import React, { FC } from "react";
 
-import { ContactMain } from "./Contact.css";
-import Button from "../common/button/Button";
+import Footer from "../common/footer/Footer";
+import ContactCTA from "./contactCTA/ContactCTA";
+import {
+  ContactWrapper,
+  HeaderPurpleTransparentLeft,
+  HeaderPurpleTransparentTop,
+  HeaderImageWrapper,
+  HeaderImage,
+  TitleWrapper,
+  Title,
+} from "./Contact.css";
 
 const Contact: FC = () => {
   return (
     <>
-      <ContactMain>
-        <h1>Contact Us</h1>
-      </ContactMain>
+      {/* <HeaderPurpleTransparentTop /> */}
+      <HeaderPurpleTransparentLeft />
+      <HeaderImageWrapper id="header-image-wrapper">
+        <HeaderImage id="header-image" />
+      </HeaderImageWrapper>
+      <TitleWrapper>
+        <Title>CONTACT US</Title>
+      </TitleWrapper>
+      <ContactWrapper id="main">
+        <ContactCTA />
+      </ContactWrapper>
+      <Footer />
     </>
   );
 };
