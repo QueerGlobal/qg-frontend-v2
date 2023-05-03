@@ -22,7 +22,7 @@ Site Milestone Dates\*: June 30th | August 31st | October 11th
 - Profile (links to blank page)
   --- Logout (links to blank page)
 - Support
-  --- Contact Us (links to blank page)
+  --- Contact Us (links to skeleton)
   --- FAQ (links to blank page)
   --- Report Something (links to blank page)
 - Search (links to blank page)
