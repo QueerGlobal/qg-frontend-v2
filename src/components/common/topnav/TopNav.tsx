@@ -6,6 +6,7 @@ import {
   HeaderLogo,
   SignUpBtn,
   DonateBtn,
+  NavWrapper,
 } from "./TopNav.css";
 import icon from "../../../assets/header/QG-Logo-V3-White-Transparent-PNG-1.png";
 
@@ -20,7 +21,7 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
             <img src={icon} alt="logo" />
           </NavLink>
         </HeaderLogo>
-        <nav>
+        <NavWrapper>
           <NavLink href="/about">ABOUT</NavLink>
           <NavLink href="/resources">RESOURCES</NavLink>
           <NavLink href="/blog">BLOG</NavLink>
@@ -31,7 +32,7 @@ const TopNav: FC<{ windowWidth: boolean }> = ({ windowWidth }) => {
             <DonateBtn>SIGN UP</DonateBtn>
           </NavLink>{" "}
           {/** Correct? */}
-        </nav>
+        </NavWrapper>
       </HeaderContainer>
     );
   }

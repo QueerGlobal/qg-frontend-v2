@@ -27,13 +27,14 @@ import Button from "../common/button/Button";
 /* #E50695 for pink donate button */
 
 export const ContactWrapper = styled.div`
- background-color: ${colors.WHITE};
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- padding: 15px;
- width: 95%;
+  height: 4418px;
+  width: 100%;
+  background-color: ${colors.PRIMARY};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15px; */
 `;
 
 export const ContactMain = styled.main`
@@ -42,60 +43,82 @@ export const ContactMain = styled.main`
   margin: 10%;
 `;
 
-export const WhiteBGSectionLeft = styled.div`
-  background-color: white;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
+/*
+   ***************************************
+  *************** PANELS ******************
+   ***************************************
+*/
+
+export const HeaderPurpleTransparentLeft = styled.div`
+  /* Layout Properties */
+  position: absolute;
+  top: 0px;
+  left: -7px;
+  width: 976px;
+  height: 751px;
+  /* UI Properties */
+  background: transparent linear-gradient(90deg, var(--unnamed-color-655dc6) 0%, var(--unnamed-color-655dc6) 43%, #655DC600 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #655DC6 0%, #655DC6 43%, #655DC600 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 30;
 `;
 
-export const WhiteBGSectionRight = styled.div`
-  background-color: white;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
+export const HeaderPurpleTransparentTop = styled.div`
+  /* Layout Properties */
+  top: 0px;
+  left: 409px;
+  width: 1504px;
+  height: 329px;
+  transform: matrix(0, 1, -1, 0, 0, 0);
+  /* UI Properties */
+  background: transparent linear-gradient(90deg, var(--unnamed-color-655dc6) 0%, #655DC6CC 43%, #655DC600 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #655DC6 0%, #655DC6CC 43%, #655DC600 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 30;
 `;
 
-export const PurpleSpan = styled.span`
-  color: #655DC6;
-`;
-
-export const TextWrapper = styled.div`
+export const HeaderImageWrapper = styled.div`
+  background-color: ${colors.PRIMARY};
   display: flex;
-  justify-content: center;
-  height: 20rem;
-  width: 50rem;
-  padding: 1rem;
-  /* display: grid; */
-  /* justify-content: center;
-    justify-items: center; */
+  /* height: 939px;
+  width: 1540px; */
+  justify-content: end;
+  align-items: end;
+  margin: 0auto;
 `;
 
-export const TextArea = styled.textarea`
-  height: 99%;
-  width: 99%;
-  border: 3px inset;
+export const HeaderImage = styled.image`
+  background-image: url("https://via.placeholder.com/750x1410");
+  position: absolute;
+  top: .1%;
+  flex-direction: row;
+  /* margin: 25px 5px; */
+  height: 750px;
+  width: 1410px;
+  margin-right: 0auto;
+  justify-content: end;
+  align-items: end;
+  z-index: 20;
 `;
 
-export const ButtonWrapper = styled.div`
+/*
+   *************************************
+  *************** TEXT ******************
+   *************************************
+*/
+
+export const TitleWrapper = styled.div`
+  position: absolute;
   display: flex;
-  justify-content: center;
-  /* margin-bottom: 40px; */
-  gap: 5rem;
-  width: 70%;
+  left: 15%;
+  top: 25%;
+  z-index: 30;
 `;
 
-export const SendMessageButton = styled(Button)`
-/* Layout Properties */
-/* top: 2390px;
-left: 1086px;
-width: 278px;
-height: 55px; */
-/* UI Properties */
-background: transparent linear-gradient(90deg, var(--unnamed-color-54c0e8) 0%, var(--unnamed-color-2a7de1) 100%) 0% 0% no-repeat padding-box;
-background: transparent linear-gradient(90deg, #54C0E8 0%, #2A7DE1 100%) 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #00000029;
-opacity: 1;
-`
+export const Title = styled.h1`
+  font-weight: 700;
+  font-size: 75px;
+  letter-spacing: .25rem;
+  color: ${colors.WHITE};
+  /* top: 55%; */
+`;

@@ -1,40 +1,30 @@
 import React, { FC } from "react";
 
 import Footer from "../common/footer/Footer";
+import ContactCTA from "./contactCTA/ContactCTA";
 import {
-  WhiteBGSectionLeft,
-  WhiteBGSectionRight,
-  ContactMain,
-  TextWrapper,
-  TextArea,
-  ButtonWrapper,
-  PurpleSpan,
   ContactWrapper,
-  SendMessageButton,
+  HeaderPurpleTransparentLeft,
+  HeaderPurpleTransparentTop,
+  HeaderImageWrapper,
+  HeaderImage,
+  TitleWrapper,
+  Title,
 } from "./Contact.css";
-import Button from "../common/button/Button";
 
 const Contact: FC = () => {
   return (
     <>
+      {/* <HeaderPurpleTransparentTop /> */}
+      <HeaderPurpleTransparentLeft />
+      <HeaderImageWrapper id="header-image-wrapper">
+        <HeaderImage id="header-image" />
+      </HeaderImageWrapper>
+      <TitleWrapper>
+        <Title>CONTACT US</Title>
+      </TitleWrapper>
       <ContactWrapper id="main">
-        <WhiteBGSectionLeft id="white-bg-section">
-          <h2>
-            <PurpleSpan>CONTACT</PurpleSpan> US.
-          </h2>
-          {/* <TextWrapper id="text-wrapper">
-            <TextArea
-              placeholder="Tell us what's on your mind..."
-              id="text-area"
-            />
-          </TextWrapper> */}
-        </WhiteBGSectionLeft>
-        <ButtonWrapper>
-          <SendMessageButton
-            label="secondary"
-            buttonText="Send us your message"
-          />
-        </ButtonWrapper>
+        <ContactCTA />
       </ContactWrapper>
       <Footer />
     </>
