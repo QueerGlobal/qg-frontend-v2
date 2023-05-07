@@ -39,7 +39,7 @@ export const PanelsContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 3rem;
-  bottom: 28%;
+  bottom: 8%;
 `;
 
 export const WhiteBGSectionLeft = styled.div`

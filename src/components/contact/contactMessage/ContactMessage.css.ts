@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colors from '../../../styles/colors';
 import Button from "../../common/button/Button";
+import { ButtonWrapperProps } from '../../common/button/Button.css';
 
 /* #FFFFFF for white panels and CONTACT text */
 /* #655DC600 for white gradient 1 */
@@ -25,6 +26,31 @@ import Button from "../../common/button/Button";
 /* #161616 for black FAQ text */
 
 /* #E50695 for pink donate button */
+
+
+/*
+   ***************************************
+  *************** PANELS ******************
+   ***************************************
+*/
+
+export const PanelBox = styled.div`
+
+  /* Layout Properties */
+  position: relative;
+  display: flex;
+  margin-top: 5rem;
+  bottom: 8%;
+  width: 1640px;
+  height: 652px;
+
+  /* UI Properties */
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000040;
+  opacity: 1;
+
+`;
 
 /*
    *************************************
@@ -55,23 +81,35 @@ export const TextArea = styled.textarea`
    *****************************************
 */
 
-export const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  /* margin-bottom: 40px; */
-  gap: 5rem;
-  width: 70%;
-`;
+// export const ButtonWrapper = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   /* margin-bottom: 40px; */
+//   gap: 5rem;
+//   width: 70%;
+// `;
 
-export const SendMessageButton = styled(Button)`
+export const SendMessageButton = styled.button<ButtonWrapperProps>`
+
 /* Layout Properties */
-/* top: 2390px;
-left: 1086px;
-width: 278px;
-height: 55px; */
+position: relative;
+top: 80%;
+margin: 0rem 10rem 0rem 50rem;
+width: 300px;
+height: 45px;
+
 /* UI Properties */
-background: transparent linear-gradient(90deg, var(--unnamed-color-54c0e8) 0%, var(--unnamed-color-2a7de1) 100%) 0% 0% no-repeat padding-box;
+border: none;
+/* background: transparent linear-gradient(90deg, var(--unnamed-color-54c0e8) 0%, var(--unnamed-color-2a7de1) 100%) 0% 0% no-repeat padding-box; */
 background: transparent linear-gradient(90deg, #54C0E8 0%, #2A7DE1 100%) 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #00000029;
+/* box-shadow: 0px 3px 6px #00000029; */
 opacity: 1;
+
+/* Text Properties */
+color: ${colors.WHITE};
+font-family: 'Work Sans', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+
 `

@@ -1,16 +1,15 @@
 import React, { FC } from "react";
-import { ButtonWrapper, SendMessageButton } from "./ContactMessage.css";
+import { PanelBox, SendMessageButton } from "./ContactMessage.css";
+import { ButtonText } from "../../common/button/Button.css";
+import { propTypes } from "react-bootstrap/esm/Image";
+import { TitleText } from "../contactCTA/ContactCTA.css";
 
 const ContactMessage: FC = () => {
   return (
-    <div id="panel-box">
-      <ButtonWrapper>
-        <SendMessageButton
-          label="secondary"
-          buttonText="Send us your message"
-        />
-      </ButtonWrapper>
-    </div>
+    <PanelBox>
+      <TitleText>MESSAGE</TitleText>
+      <SendMessageButton label="water">Send Message</SendMessageButton>
+    </PanelBox>
   );
 };
 
