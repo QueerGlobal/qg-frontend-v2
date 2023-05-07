@@ -2,6 +2,8 @@ import React, { FC } from "react";
 
 import Footer from "../common/footer/Footer";
 import ContactCTA from "./contactCTA/ContactCTA";
+import ContactMessage from "./contactMessage/ContactMessage";
+import ContactFAQ from "./contactFAQ/ContactFAQ";
 import {
   ContactWrapper,
   HeaderPurpleTransparentLeft,
@@ -25,6 +27,8 @@ const Contact: FC = () => {
       </TitleWrapper>
       <ContactWrapper id="main">
         <ContactCTA />
+        <ContactMessage />
+        <ContactFAQ />
       </ContactWrapper>
       <Footer />
     </>

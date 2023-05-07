@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../../styles/colors';
-interface ButtonWrapperProps {
+export interface ButtonWrapperProps {
   label: string;
   active?: string;
   disabled?: boolean;
@@ -16,6 +16,9 @@ export const StyledButton = styled.button<ButtonWrapperProps>`
     }
     if (props.label === 'donate' && !props.disabled) {
       return colors.DONATE;
+    }
+    if (props.label === 'water' && !props.disabled) {
+      return colors.WATER;
     }
     if (props.disabled) {
       return colors.DISABLED;
