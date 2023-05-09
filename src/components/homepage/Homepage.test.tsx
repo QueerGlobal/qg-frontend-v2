@@ -1,9 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Homepage from './Homepage';
-import HomepageCTA from '../homepageCTA/HomepageCTA';
-import HomepageLinks from '../homepageLinks/HomepageLinks';
-import HomepageCTA2 from '../homepageCTA2/HomepageCTA2';
 
 describe('Homepage', () => {
   it('renders without crashing', () => {
