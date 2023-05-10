@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container, Nav } from "react-bootstrap";
 import colors from "../../../styles/colors";
+import bgImg from "../../../assets/footer/QG-Pattern-with-bckgrnd-01.jpg";
 
 export const FooterContainer = styled(Container)`
 	display: flex;
@@ -10,6 +11,10 @@ export const FooterContainer = styled(Container)`
 	background-color: ${colors.BLACK};
 	height: 100%;
 	max-width: 100%;
+	&.QG-background {
+		background-image: url(${bgImg}) !important;
+		background-size: cover;
+	}
 `;
 
 export const FooterBar = styled.div`
