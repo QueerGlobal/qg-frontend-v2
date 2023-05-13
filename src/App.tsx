@@ -16,7 +16,7 @@ const App = () => {
 		<>
 			<GlobalStyles />
 
-      		<TopNav />
+			<TopNav windowWidth={false} />
 
 			<Router>
 				<Route path="/" exact component={Home} />
