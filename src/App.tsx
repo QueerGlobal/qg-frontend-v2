@@ -9,14 +9,15 @@ import Search from "./components/search/Search";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "./Global.css";
 import TopNav from "./components/common/topnav/TopNav";
+import Footer from './components/common/footer/Footer';
 
-const App = (): JSX.Element => {
-	const windowWidth = window.innerWidth <= 375; // TODO: Delete windowWidth; Moved to TopNav
-
+const App = () => {
 	return (
 		<>
 			<GlobalStyles />
-      		<TopNav windowWidth={windowWidth} />
+
+      		<TopNav />
+
 			<Router>
 				<Route path="/" exact component={Home} />
 				<Route path="/about" exact component={About} />
@@ -27,6 +28,8 @@ const App = (): JSX.Element => {
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
 			</Router>
+
+			<Footer />
 		</>
 	);
 };
