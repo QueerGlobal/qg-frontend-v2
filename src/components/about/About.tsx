@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Footer from '../common/footer/Footer';
 import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection } from './About.css';
 
 const About: FC = () => {
@@ -46,8 +45,6 @@ const About: FC = () => {
 					<button>ADD A RESOURCE</button>
 				</DarkGreyBGSection>
 			</AboutMain>
-
-			<Footer />
 		</>
 	);
 };
