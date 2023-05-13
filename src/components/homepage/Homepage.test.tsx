@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Homepage from './Homepage';
 
@@ -7,7 +6,7 @@ describe('Homepage', () => {
     render(<Homepage />);
   });
 
-  it('renders the HomepageCTA copy', () => {
+  it('renders the HomepageContents copy', () => {
     render(<Homepage />);
     expect(
       screen.getByText(
@@ -25,7 +24,7 @@ describe('Homepage', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders the HomepageCTA2 copy', () => {
+  it('renders the HomepageContents2 copy', () => {
     render(<Homepage />);
     expect(
       screen.getByText(
