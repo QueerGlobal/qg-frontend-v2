@@ -43,6 +43,7 @@ export const PanelBox = styled.div`
   bottom: 8%;
   width: 1640px;
   height: 652px;
+  justify-content: center;
 
   /* UI Properties */
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -52,11 +53,43 @@ export const PanelBox = styled.div`
 
 `;
 
+export const InputContainer = styled.div`
+  position: relative;
+  margin: 11.3rem -49rem 13.3rem 25rem;
+  padding-bottom: 10rem;
+  height: 25rem;
+  width: 35rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+`;
+
+export const IdentityContainer = styled.div`
+  width: 100%;
+  height: 25%;
+  display: grid;
+  grid-template: auto auto / repeat(2, 1fr);
+  justify-content: space-between;
+`;
+
+export const MessageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: .4fr 6fr / auto;
+`;
+
 /*
    *************************************
   *************** TEXT ******************
    *************************************
 */
+
+export const TitleText = styled.h1`
+  margin: 4rem -9rem 10rem -1rem;
+  font-weight: bold;
+  font-size: 50px;
+`;
 
 export const TextWrapper = styled.div`
   display: flex;
