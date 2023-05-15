@@ -12,10 +12,10 @@ import {
 import SocialIcons from "../social-icons/SocialIcons";
 import icon from "../../../assets/footer/QG-Logo-V3-Gold-Transparent-PNG-1.png";
 
-import Contact from "../../contact/Contact";
+// import Contact from "../../contact/Contact";
 
 const Footer: FC = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear: number = new Date().getFullYear();
 
   return (
     <FooterContainer className="QG-background">
