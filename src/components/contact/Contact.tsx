@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 import Footer from "../common/footer/Footer";
 import ContactCTA from "./contactCTA/ContactCTA";
@@ -7,7 +7,7 @@ import ContactFAQ from "./contactFAQ/ContactFAQ";
 import {
   ContactWrapper,
   HeaderPurpleTransparentLeft,
-  HeaderPurpleTransparentTop,
+  // HeaderPurpleTransparentTop,
   HeaderImageWrapper,
   HeaderImage,
   TitleWrapper,
