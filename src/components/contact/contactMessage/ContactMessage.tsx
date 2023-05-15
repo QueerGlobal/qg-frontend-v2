@@ -7,8 +7,8 @@ import {
   SendMessageButton,
   TitleText,
 } from "./ContactMessage.css";
-import { ButtonText } from "../../common/button/Button.css";
-import { propTypes } from "react-bootstrap/esm/Image";
+// import { ButtonText } from "../../common/button/Button.css";
+// import { propTypes } from "react-bootstrap/esm/Image";
 
 const ContactMessage: FC = () => {
   return (

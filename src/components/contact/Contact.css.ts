@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
-import Button from "../common/button/Button";
+// import Button from "../common/button/Button";
 
 /* #FFFFFF for white panels and CONTACT text */
 /* #655DC600 for white gradient 1 */

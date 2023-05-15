@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../../styles/colors';
+// import colors from '../../../styles/colors';
 
 /* #FFFFFF for white panels and CONTACT text */
 /* #655DC600 for white gradient 1 */
