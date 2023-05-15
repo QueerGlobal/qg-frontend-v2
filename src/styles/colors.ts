@@ -1,4 +1,4 @@
-const colors = {
+const colors: any = {
   //Buttons
   PRIMARY: '#655dc6',
   PRIMARY_HOVER: '#4A448E',
@@ -10,8 +10,8 @@ const colors = {
   DISABLED_HOVER: '#CCCCCC',
   DISABLED_TEXT: '#B5B5B5',
   // Footer Bar
-  DARK_BROWN: '754C24',
-  LIGHT_BROWN: 'C69C6D',
+  DARK_BROWN: '#754C24',
+  LIGHT_BROWN: '#C69C6D',
   //Colors
   BAHAMAS: '#2A7DE1',
   BAHAMAS_HOVER: '#1F5EA9',

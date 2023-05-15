@@ -18,16 +18,16 @@ const SocialIcons: FC = () => {
           <a
             href="https://www.facebook.com/QueerGlobal/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <img src={facebook} alt="facebook" />
           </a>
         </IconContainer>
         <IconContainer>
           <a
-            href="https://twitter.com/QueerGlobal_"
+            href="https://twitter.com/queerglobal_"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <img src={twitter} alt="twitter" />
           </a>
@@ -36,7 +36,7 @@ const SocialIcons: FC = () => {
           <a
             href="https://www.instagram.com/queerglobal/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <img src={instagram} alt="instagram" />
           </a>
@@ -45,18 +45,18 @@ const SocialIcons: FC = () => {
           <a
             href="https://www.linkedin.com/company/queer-global/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <img src={linkedIn} alt="linkedIn" />
           </a>
         </IconContainer>
         <IconContainer>
           <a
-            href="https://www.pinterest.com/QueerGlobal/"
+            href="https://www.pinterest.com/QueerGlobal/_created/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
-            <img src={pinterest} alt="facebook" />
+            <img src={pinterest} alt="pinterest" />
           </a>
         </IconContainer>
       </IconsWrapper>
