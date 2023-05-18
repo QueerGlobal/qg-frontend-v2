@@ -4,6 +4,6 @@ import TopNav from './TopNav';
 
 describe('SocialIcons Component', () => {
   it('should render correctly', () => {
-    render(<TopNav />);
+    render(<TopNav windowWidth={false}/>);
   });
 });
