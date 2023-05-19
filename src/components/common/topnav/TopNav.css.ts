@@ -15,6 +15,10 @@ export const TopNavContainer = styled(Nav)`
 	padding: 2% 10%;
 `;
 
+export const NavWrapper = styled.nav`
+	z-index: 50;
+`;
+
 export const NavLink = styled(Nav.Link)`
 	color: ${colors.WHITE};
 	font-size: 18px;
@@ -32,6 +36,7 @@ export const NavLink = styled(Nav.Link)`
 export const TopNavLogo = styled.span`
 	text-align: left;
 	flex-grow: 1;
+	z-index: 50;
 `;
 
 export const SignUpBtn = styled.button`
