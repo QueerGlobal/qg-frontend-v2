@@ -29,7 +29,7 @@ const TopNav: FC<{ windowWidth: boolean }> = () => {
       ) : (
         <>
           <TopNavLogo>
-            <NavLink to="/">
+            <NavLink to="/" href="/">
               <img src={icon} alt="logo" />
             </NavLink>
           </TopNavLogo>
