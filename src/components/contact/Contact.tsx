@@ -7,7 +7,7 @@ import ContactFAQ from "./contactFAQ/ContactFAQ";
 import {
   ContactWrapper,
   HeaderPurpleTransparentLeft,
-  // HeaderPurpleTransparentTop,
+  // HeaderPurpleTransparentTop, // <-- plan on using this
   HeaderImageWrapper,
   HeaderImage,
   TitleWrapper,
