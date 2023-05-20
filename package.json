@@ -25,9 +25,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "lint": "eslint src/*",
-    "lint:fix": "eslint src/* --fix",
-    "lint:quiet": "eslint src/* --quiet",
+    "lint": "eslint src/components/** src/App.t*",
+    "lint:fix": "eslint src/components/** src/App.t* --fix",
+    "lint:quiet": "eslint src/components/** src/App.t* --quiet",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

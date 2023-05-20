@@ -28,7 +28,7 @@ const NavBar: FC = () => {
 	}
 
 	useEffect(() => {
-		let url: string = "/user";
+		const url = "/user";
 		fetch(url, {
 			method: 'GET',
 			headers: {
