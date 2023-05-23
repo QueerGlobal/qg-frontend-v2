@@ -11,7 +11,7 @@ import GlobalStyles from "./Global.css";
 import TopNav from "./components/common/topnav/TopNav";
 import Footer from './components/common/footer/Footer';
 
-const App = () => {
+const App: React.FC = () => {
 	return (
 		<>
 			<GlobalStyles />
