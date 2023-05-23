@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { FC } from 'react';
 import Button from '../common/button/Button';
 import {
