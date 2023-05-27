@@ -16,16 +16,22 @@ const ContactMessage: FC = () => {
       <TitleText>MESSAGE</TitleText>
       <InputContainer id="input-container">
         <IdentityContainer id="identity-container">
-          <span>Name</span>
-          <span>Email</span>
-          <input type="text"></input>
-          <input type="text"></input>
+          <span>
+            <b>Name</b>
+          </span>
+          <span>
+            <b>Email</b>
+          </span>
+          <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
+          <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
           {/* <span>Message</span>
           <textarea></textarea> */}
         </IdentityContainer>
         <MessageContainer id="message-container">
-          <span>Message</span>
-          <textarea></textarea>
+          <span>
+            <b>Message</b>
+          </span>
+          <textarea style={{ borderColor: "#B5B5B5" }}></textarea>
         </MessageContainer>
       </InputContainer>
       <SendMessageButton label="water">Send Message</SendMessageButton>

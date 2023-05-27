@@ -54,10 +54,10 @@ export const PanelBox = styled.div`
 `;
 
 export const InputContainer = styled.div`
-  position: relative;
-  margin: 11.3rem -49rem 13.3rem 25rem;
+  position: absolute;
+  margin: 11.3rem 0rem 13.3rem 0rem;
   padding-bottom: 10rem;
-  height: 25rem;
+  /* height: 25rem; */
   width: 35rem;
   display: grid;
   grid-template-rows: auto auto;
@@ -65,14 +65,18 @@ export const InputContainer = styled.div`
 `;
 
 export const IdentityContainer = styled.div`
+  position: relative;
   width: 100%;
-  height: 25%;
+  height: 100%;
   display: grid;
+  column-gap: 1.5rem;
   grid-template: auto auto / repeat(2, 1fr);
   justify-content: space-between;
 `;
 
 export const MessageContainer = styled.div`
+  position: relative;
+  margin-top: .25rem;
   width: 100%;
   height: 100%;
   display: grid;
@@ -86,6 +90,7 @@ export const MessageContainer = styled.div`
 */
 
 export const TitleText = styled.h1`
+  position: relative;
   margin: 4rem -9rem 10rem -1rem;
   font-weight: bold;
   font-size: 50px;
@@ -128,7 +133,8 @@ export const SendMessageButton = styled.button<ButtonWrapperProps>`
 position: relative;
 top: 80%;
 margin: 0rem 10rem 0rem 50rem;
-width: 300px;
+border-radius: .15rem;
+width: 214px;
 height: 45px;
 
 /* UI Properties */
