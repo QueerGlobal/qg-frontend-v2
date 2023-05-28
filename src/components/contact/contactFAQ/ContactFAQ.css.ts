@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 // import colors from '../../../styles/colors';
 
+import Accordion from "react-bootstrap/Accordion";
+
 
 /*
    ***************************************
@@ -23,5 +25,20 @@ export const PanelBox = styled.div`
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 20px #00000040;
   opacity: 1;
+`;
 
+export const AccordionBox = styled.div`
+  position: absolute;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-rows: 700px;
+  grid-template-columns: 1640px;
+  top: 200px;
+  /* grid-template-areas: "main"; */
+`;
+
+export const StyledAccordion = styled(Accordion)`
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
 `;
