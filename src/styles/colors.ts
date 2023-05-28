@@ -1,3 +1,4 @@
+// eslint-disable-next-line 
 const colors: any = {
   //Buttons
   PRIMARY: '#655dc6',
