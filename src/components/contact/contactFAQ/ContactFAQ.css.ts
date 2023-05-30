@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-// import colors from '../../../styles/colors';
-
 import Accordion from "react-bootstrap/Accordion";
-
 
 /*
    ***************************************
@@ -35,7 +32,6 @@ export const AccordionBox = styled.div`
   grid-template-rows: 700px;
   grid-template-columns: 1640px;
   top: 200px;
-  /* grid-template-areas: "main"; */
 `;
 
 export const StyledAccordion = styled(Accordion)`

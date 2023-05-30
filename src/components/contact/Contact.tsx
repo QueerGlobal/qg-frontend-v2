@@ -1,6 +1,5 @@
 import { FC } from "react";
 
-import Footer from "../common/footer/Footer";
 import ContactCTA from "./contactCTA/ContactCTA";
 import ContactMessage from "./contactMessage/ContactMessage";
 import ContactFAQ from "./contactFAQ/ContactFAQ";
@@ -30,7 +29,6 @@ const Contact: FC = () => {
         <ContactMessage />
         <ContactFAQ />
       </ContactWrapper>
-      <Footer />
     </>
   );
 };

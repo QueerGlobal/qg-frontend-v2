@@ -7,8 +7,6 @@ import {
   SendMessageButton,
   TitleText,
 } from "./ContactMessage.css";
-// import { ButtonText } from "../../common/button/Button.css";
-// import { propTypes } from "react-bootstrap/esm/Image";
 
 const ContactMessage: FC = () => {
   return (
@@ -24,8 +22,6 @@ const ContactMessage: FC = () => {
           </span>
           <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
           <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
-          {/* <span>Message</span>
-          <textarea></textarea> */}
         </IdentityContainer>
         <MessageContainer id="message-container">
           <span>

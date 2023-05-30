@@ -1,30 +1,5 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
-// import Button from "../common/button/Button";
-
-/* #FFFFFF for white panels and CONTACT text */
-/* #655DC600 for white gradient 1 */
-/* #FFFFFF00 for white gradient 2 */
-
-/* #655DC6 for medium purple */
-/* #655DC6CC for light purple */
-
-/* #1F5EA9 for dark blue */
-/* #2A7DE1 for medium blue */
-/* #54C0E8 for medium cyan/ring */
-
-/* #1F1F1F for dark gray bg */
-/* #1F1F1F for dark gray text */
-/* #B5B5B5 for gray text boxes */
-/* #898C8E for gray text placeholder */
-/* #00000029 for gray button borders */
-/* #E0E0E0 for gray FAQ vectors */
-
-/* #231F20 for black circle */
-/* #000000 for black rings */
-/* #161616 for black FAQ text */
-
-/* #E50695 for pink donate button */
 
 export const ContactWrapper = styled.div`
   height: 4418px;
@@ -34,7 +9,6 @@ export const ContactWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 15px; */
 `;
 
 export const ContactMain = styled.main`
@@ -80,8 +54,6 @@ export const HeaderPurpleTransparentTop = styled.div`
 export const HeaderImageWrapper = styled.div`
   background-color: ${colors.PRIMARY};
   display: flex;
-  /* height: 939px;
-  width: 1540px; */
   justify-content: end;
   align-items: end;
   margin: 0auto;
@@ -92,7 +64,6 @@ export const HeaderImage = styled.image`
   position: absolute;
   top: .1%;
   flex-direction: row;
-  /* margin: 25px 5px; */
   height: 750px;
   width: 1410px;
   margin-right: 0auto;
@@ -120,5 +91,4 @@ export const Title = styled.h1`
   font-size: 75px;
   letter-spacing: .25rem;
   color: ${colors.WHITE};
-  /* top: 55%; */
 `;
