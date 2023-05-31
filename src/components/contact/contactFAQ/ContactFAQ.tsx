@@ -101,7 +101,7 @@ const ContactFAQ: FC = () => {
             <Accordion.Header>
               <b>
                 Is it safe to put my credit card information through the donate
-                links you've provided?
+                links you&apos;ve provided?
               </b>
             </Accordion.Header>
             <Accordion.Body>
