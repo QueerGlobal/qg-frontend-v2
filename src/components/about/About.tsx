@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { FC } from "react";
 import { AboutMain, WhiteBGSection, PurpleSpan, DarkGreyBGSection } from './About.css';
 

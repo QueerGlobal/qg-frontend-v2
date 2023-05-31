@@ -12,7 +12,7 @@ import TopNav from "./components/common/topnav/TopNav";
 import Footer from "./components/common/footer/Footer";
 import Contact from "./components/contact/Contact";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyles />
