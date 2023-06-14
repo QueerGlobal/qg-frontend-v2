@@ -14,6 +14,7 @@ export const HomepageBGCont = styled.div`
 	z-index: 1;
 	top: 0;
 	width: 100%;
+	height: 100%;
 `;
 
 export const PurpleCircles = styled.div<PropsShape>`
@@ -105,7 +106,7 @@ export const BlackCirclesHidingRect = styled.div`
 	background-color: ${colors.PRIMARY};
 	width: 240px;
 	height: 120px;
-	z-index: 1;
+	z-index: -1;
 `;
 
 export const BlackC2 = styled.div`
@@ -219,7 +220,7 @@ export const LowerBlackC2 = styled.div`
 
 export const BlueSemiOpaqueRect = styled.div`
 	position: absolute;
-	z-index: 40;
+	z-index: -1;
 	left: 0px;
 	top: 480px;
 	background-color: ${colors.WATER};
@@ -230,7 +231,7 @@ export const BlueSemiOpaqueRect = styled.div`
 
 export const PurpleSemiOpaqueRect = styled.div`
 	position: absolute;
-	z-index: 40;
+	z-index: -1;
 	right: 0px;
 	top: 650px;
 	background-color: ${colors.PRIMARY_HOVER};
