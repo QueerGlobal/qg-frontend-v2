@@ -1,82 +1,131 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
+import braidedGirl from '../../assets/nathana-reboucas-9ltd8_dh_JM-unsplash.jpg'
+// import standingMan from '../'
+
 
 /** TODO - Figure out meaning behind the box-shadow color */
 export const HomepageContentsWrapper = styled.div`
-  position: absolute;
-  z-index: 3;
+  z-index: 1;
   display: flex;
-  top: 125px;
   background-color: ${colors.WHITE};
   box-shadow: 0px 0px 10px #00000040;
-  border-radius: 10px 10px 0 0;
   flex-direction: column;
-  margin-top: 35%;
-  padding: 15px;
-  width: 95%;
-  height: 2350px;
-`;
-
-export const Header = styled.h1`
-  color: ${colors.PRIMARY};
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-`;
-export const SubHeader1 = styled.h2`
-  color: ${colors.BLACK};
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 15px 0 0;
-`;
-
-export const SubHeader2 = styled.h2`
-  color: ${colors.BLACK};
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: underline ${colors.PRIMARY};
-  line-height: 20px;
-  padding-top: 15px;
-`;
-
-export const PinkSpan = styled.em`
-  color: ${colors.UNICORN};
-`;
-
-export const SubHeader3 = styled.h2`
-  color: ${colors.BLACK};
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-`;
-
-export const ImageWrapper = styled.div`
-  display: flex;
+  padding: 100px;
+  max-width: 90%;
+  width: 100%;
+  gap: 100px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  @media (max-width: 1168px) {
+    padding: 10px;
+    gap: 20px;
+  }
 `;
 
-// TODO - Is hotpink supposed to be colors.UNICORN?
-export const Image = styled.img`
-  background-color: hotpink;
-  flex-direction: row;
-  margin: 25px 5px;
-  height: 210px;
-  width: 45%;
-`;
-
-export const Text = styled.p`
-  font-size: 14px;
-  color: ${colors.BLACK};
-`;
-
-export const ButtonWrapper = styled.div`
+export const Header = styled.div`
   display: flex;
-  justify-content: center;
+  height: 100px;
   align-items: center;
+  font-size: 5vw;
+  @media (max-width: 568px) {
+    margin-top: 100px;
+  }
+`
+
+export const Header1 = styled.h1`
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 5vw;
+
 `;
+
+export const LGBTQIA = styled.span`
+  color: #655dc6;
+  font-style: italic;
+  display: inline-block;
+  border-bottom: 5px solid #655dc6;
+  font-weight:bold;
+`
+
+export const UpperBody = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 150px;
+  max-height: 800px;
+  @media (max-width: 1168px) {
+    flex-direction: column;
+  gap: 50px;
+  }
+`
+
+export const MiddleBody = styled.div`
+    width: 100%;
+  display: flex;
+  background-color: yellow;
+  height: 500px;
+  z-index: -1;
+`
+
+export const Message = styled.p`
+  display: inline-block;
+  font-size: 1.5vw;
+  margin-top: 100px;
+  @media (max-width: 1168px) {
+    margin-top: 20px;
+  font-size: 3vw;
+  text-align: center;
+
+
+  }
+`
+
+export const CommunityBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+`
+
+export const Button = styled.button<{$position?: string, $color?:string, $shadow?:string, $backgroundColor?:string}>`
+	--color: white;
+	--background-color: transparent;
+	--shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	color: ${props => props.$color || `var(--color)`};
+	background-color: ${props => props.$backgroundColor || `var(--background-color)`};
+	/* position: ${props => props.$position || ''};  */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 30px 10px 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	box-shadow: ${props => props.$shadow || `var(--shadow)`};
+`
+
+export const BraidedGirl = styled.img`
+	height:60%;
+  width: 60%;
+  @media (max-width: 1168px) {
+    height:100%;
+  width: 100%;
+  }
+`
+
+BraidedGirl.defaultProps = {
+	src: braidedGirl
+}
+
+
+export const StandingMan = styled.img`
+  	height:60%;
+  width: 60%;
+`
+
+StandingMan.defaultProps = {
+	// src: standingMan
+}

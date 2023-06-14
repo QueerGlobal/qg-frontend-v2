@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { PageWrapper } from './Homepage.css';
+import { InnerContainer, OuterContainer } from './Homepage.css';
 import HomepageContents from '../homepageContents/HomepageContents';
 import BackgroundShapes from '../common/home/BackgroundShapes';
 import ForegroundShapes from '../common/home/ForegroundShapes';
@@ -9,14 +9,16 @@ import HomepageStyles from "./HomepageMediaQueries.css";
 
 const Homepage: FC = () => {
   return (
-    <PageWrapper className="pageWrapper">
+      <OuterContainer>
+        <InnerContainer>
+
       <HomepageStyles />
-      <BackgroundShapes />
       <HiGreeting />
       <HomepageContents />
-      <ForegroundShapes />
+      {/* <ForegroundShapes /> */}
       <BottomImages />
-    </PageWrapper>
+        </InnerContainer>
+      </OuterContainer>
   );
 };
 

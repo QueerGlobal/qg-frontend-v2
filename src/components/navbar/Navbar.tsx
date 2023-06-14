@@ -45,101 +45,102 @@ const NavBar: FC = () => {
 	}, []);
 
 	return (
-		<>
-			<MenuButton
-				type="button"
-				data-bs-toggle="offcanvas"
-				data-bs-target="#sidebar"
-				aria-controls="offcanvasScrolling"
-			>
-				<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
-			</MenuButton>
+		// <>
+		// 	<MenuButton
+		// 		type="button"
+		// 		data-bs-toggle="offcanvas"
+		// 		data-bs-target="#sidebar"
+		// 		aria-controls="offcanvasScrolling"
+		// 	>
+		// 		<FontAwesomeIcon icon={faBars} style={{ color: `${colors.BLACK}` }} />
+		// 	</MenuButton>
 
-			<CanvasNavbarContainer
-				className="offcanvas offcanvas-start"
-				data-bs-scroll="true"
-				data-bs-backdrop="true"
-				id="sidebar"
-				aria-labelledby="offcanvasScrollingLabel"
-			>
-				<div className="offcanvas-body p-0 overflow-hidden">
-					<NavLink href="/"> 
-						HOME
-					</NavLink>
+		// 	<CanvasNavbarContainer
+		// 		className="offcanvas offcanvas-start"
+		// 		data-bs-scroll="true"
+		// 		data-bs-backdrop="true"
+		// 		id="sidebar"
+		// 		aria-labelledby="offcanvasScrollingLabel"
+		// 	>
+		// 		<div className="offcanvas-body p-0 overflow-hidden">
+		// 			<NavLink href="/"> 
+		// 				HOME
+		// 			</NavLink>
 
-					<NavLink href="/donate"> 
-						DONATE
-					</NavLink>
+		// 			<NavLink href="/donate"> 
+		// 				DONATE
+		// 			</NavLink>
 
-					<NavLink href="/about"> 
-						ABOUT
-					</NavLink>
+		// 			<NavLink href="/about"> 
+		// 				ABOUT
+		// 			</NavLink>
 
-					<NavLink href="/blog"> 
-						BLOG
-					</NavLink>
+		// 			<NavLink href="/blog"> 
+		// 				BLOG
+		// 			</NavLink>
 
-					{/** RESOURCES DROPDOWN MENU */}
-					<NavDropdown
-						id="resources"
-						title={
-							<EighteenPXSpan> 
-								RESOURCES
-							</EighteenPXSpan>
-						}
-					>
-						<NavDropdownItemContainer>
-							<NavDropdownItem href="/resources">SEE ALL</NavDropdownItem>
-							<NavDropdownItem href="/events">EVENTS</NavDropdownItem>
-							<NavDropdownItem href="/businesses">BUSINESSES</NavDropdownItem>
-							<NavDropdownItem href="/add-resource">ADD A RESOURCE</NavDropdownItem>
-						</NavDropdownItemContainer>
-					</NavDropdown>
+		// 			{/** RESOURCES DROPDOWN MENU */}
+		// 			<NavDropdown
+		// 				id="resources"
+		// 				title={
+		// 					<EighteenPXSpan> 
+		// 						RESOURCES
+		// 					</EighteenPXSpan>
+		// 				}
+		// 			>
+		// 				<NavDropdownItemContainer>
+		// 					<NavDropdownItem href="/resources">SEE ALL</NavDropdownItem>
+		// 					<NavDropdownItem href="/events">EVENTS</NavDropdownItem>
+		// 					<NavDropdownItem href="/businesses">BUSINESSES</NavDropdownItem>
+		// 					<NavDropdownItem href="/add-resource">ADD A RESOURCE</NavDropdownItem>
+		// 				</NavDropdownItemContainer>
+		// 			</NavDropdown>
 
-					<NavLink id="search" href="/search"> 
-						SEARCH
-					</NavLink>
+		// 			<NavLink id="search" href="/search"> 
+		// 				SEARCH
+		// 			</NavLink>
 
-					{/** CONTACT US DROPDOWN MENU */}
-					<NavDropdown
-						id="contact-us"
-						title={
-							<EighteenPXSpan> 
-								CONTACT US
-							</EighteenPXSpan>
-						}
-					>
-						<NavDropdownItemContainer>
-							<NavDropdownItem href="/contact-us">CONTACT US</NavDropdownItem>
-							<NavDropdownItem href="/volunteer">VOLUNTEER</NavDropdownItem>
-							<NavDropdownItem href="/give-feedback">GIVE FEEDBACK</NavDropdownItem>
-						</NavDropdownItemContainer>
-					</NavDropdown>
+		// 			{/** CONTACT US DROPDOWN MENU */}
+		// 			<NavDropdown
+		// 				id="contact-us"
+		// 				title={
+		// 					<EighteenPXSpan> 
+		// 						CONTACT US
+		// 					</EighteenPXSpan>
+		// 				}
+		// 			>
+		// 				<NavDropdownItemContainer>
+		// 					<NavDropdownItem href="/contact-us">CONTACT US</NavDropdownItem>
+		// 					<NavDropdownItem href="/volunteer">VOLUNTEER</NavDropdownItem>
+		// 					<NavDropdownItem href="/give-feedback">GIVE FEEDBACK</NavDropdownItem>
+		// 				</NavDropdownItemContainer>
+		// 			</NavDropdown>
 
-					{/** PROFILE DROPDOWN MENU */}
-					<BottomNavLinks id="bottom-links">
-						{ProfilePic()}
-						<NavDropdown
-							id="profile"
-							title={
-								<EighteenPXSpan> 
-									PROFILE
-								</EighteenPXSpan>
-							}
-						>
-							<NavDropdownItemContainer>
-								<NavDropdownItem href="/edit-profile">EDIT PROFILE</NavDropdownItem>
-								<NavDropdownItem href="/messages">{MessagesIcon()} MESSAGES</NavDropdownItem>
-								<NavDropdownItem href="/notifications">NOTIFICATIONS</NavDropdownItem>
-								<NavDropdownItem href="/help">HELP/SUPPORT</NavDropdownItem>
-								<NavDropdownItem href="/feedback">GIVE FEEDBACK</NavDropdownItem>
-								<NavDropdownItem href="/logout">LOG OUT</NavDropdownItem>
-							</NavDropdownItemContainer>
-						</NavDropdown>
-					</BottomNavLinks>
-				</div>
-			</CanvasNavbarContainer>
-		</>
+		// 			{/** PROFILE DROPDOWN MENU */}
+		// 			<BottomNavLinks id="bottom-links">
+		// 				{ProfilePic()}
+		// 				<NavDropdown
+		// 					id="profile"
+		// 					title={
+		// 						<EighteenPXSpan> 
+		// 							PROFILE
+		// 						</EighteenPXSpan>
+		// 					}
+		// 				>
+		// 					<NavDropdownItemContainer>
+		// 						<NavDropdownItem href="/edit-profile">EDIT PROFILE</NavDropdownItem>
+		// 						<NavDropdownItem href="/messages">{MessagesIcon()} MESSAGES</NavDropdownItem>
+		// 						<NavDropdownItem href="/notifications">NOTIFICATIONS</NavDropdownItem>
+		// 						<NavDropdownItem href="/help">HELP/SUPPORT</NavDropdownItem>
+		// 						<NavDropdownItem href="/feedback">GIVE FEEDBACK</NavDropdownItem>
+		// 						<NavDropdownItem href="/logout">LOG OUT</NavDropdownItem>
+		// 					</NavDropdownItemContainer>
+		// 				</NavDropdown>
+		// 			</BottomNavLinks>
+		// 		</div>
+		// 	</CanvasNavbarContainer>
+		// </>
+		<div>hi</div>
 	);
 };
 

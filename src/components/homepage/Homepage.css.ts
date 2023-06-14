@@ -5,14 +5,15 @@ interface PropsShape {
 	className: string;
 }
 
-export const PageWrapper = styled.div<PropsShape>`
-  position: relative;
-  background-color: ${colors.PRIMARY};
+export const OuterContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+export const InnerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 20px 0 20px; 
-  width: 100%;
-  height: 2674px;
-`;
+  margin-top: 100px;
+`
