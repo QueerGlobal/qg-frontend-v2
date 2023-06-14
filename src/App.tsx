@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Donate from "./components/donate/Donate";
@@ -10,26 +10,29 @@ import Logout from "./components/logout/Logout";
 import GlobalStyles from "./Global.css";
 import TopNav from "./components/common/topnav/TopNav";
 import Footer from './components/common/footer/Footer';
+import Layout from "./Layout";
 
-const App: React.FC = () => {
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/" element={<Layout />}>
+							<Route path="/"  index element={<Home/>} />
+				<Route path="/about" element={<About/>} />
+				<Route path="/donate" element={<Donate/>} />
+				<Route path="/profile" element={<Profile/>} />
+				<Route path="/blog" element={<Blog/>} />
+				<Route path="/add-resource" element={<AddResource/>} />
+				<Route path="/search" element={<Search/>} />
+				<Route path="/logout" element={<Logout/>} />
+		</Route>
+	)
+)
+
+const App = () => {
 	return (
 		<>
 			<GlobalStyles />
+			<RouterProvider router={router} />
 
-			<TopNav windowWidth={false} />
-
-			<Router>
-				<Route path="/" exact component={Home} />
-				<Route path="/about" exact component={About} />
-				<Route path="/donate" component={Donate} />
-				<Route path="/profile" component={Profile} />
-				<Route path="/blog" component={Blog} />
-				<Route path="/add-resource" component={AddResource} />
-				<Route path="/search" component={Search} />
-				<Route path="/logout" component={Logout} />
-			</Router>
-
-			<Footer />
 		</>
 	);
 };
