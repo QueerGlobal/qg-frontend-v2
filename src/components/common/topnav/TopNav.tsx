@@ -1,51 +1,84 @@
-import React, { FC, useEffect, useState } from "react";
-import Navbar from "../../navbar/Navbar";
+import { FC, useState } from "react";
 import {
-	TopNavContainer,
-	NavLink,
-	TopNavLogo,
-	SignUpBtn,
-	DonateBtn
+	Button,
+	NavContainer,
+	NavInner,
+	DropdownContainer,
+	DropdownItem,
+	DropdownMenu,
+	Logo,
 } from "./TopNav.css";
-import icon from "../../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png";
+import {MdOutlineKeyboardArrowUp} from 'react-icons/md'
+import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 
-const TopNav: FC<{ windowWidth: boolean }> = () => {
-	const [width, setWidth] = useState(window.innerWidth);
+const dropdownItems = [
+	{
+		title: 'See all',
+		href: '/see-all'
+	},
+	{
+		title: 'Events',
+		href: '/events'
+	},
+	{
+		title: 'Businesses',
+		href: '/businesses'
+	},
+	{
+		title: 'Resouces',
+		href: '/resources'
+	}
+]
 
-	const updateWidth = () => setWidth(window.innerWidth);
+const TopNav: FC<{ windowWidth?: boolean }> = ({windowWidth}) => {
+	const [visible, setVisible] = useState(false);
+	// const [width, setWidth] = useState(window.innerWidth);
 
-	const isWindowWidthMobile = width <= 500;
+	// const updateWidth = () => setWidth(window.innerWidth);
 
-	useEffect(() => {
-		window.addEventListener("resize", updateWidth);
+	// const isWindowWidthMobile = width <= 500;
 
-		return () => window.removeEventListener("resize", updateWidth);
-	}, []);
+	// useEffect(() => {
+	// 	window.addEventListener("resize", updateWidth);
 
-	return <TopNavContainer>
-		{isWindowWidthMobile ? 
-			<Navbar /> : 
-			<> 
-				<TopNavLogo>
-					<NavLink to="/">
-						<img src={icon} alt="logo" />
-					</NavLink>
-				</TopNavLogo>
+	// 	return () => window.removeEventListener("resize", updateWidth);
+	// }, []);
 
-				<div>
-					<NavLink href="/about">ABOUT</NavLink>
-					<NavLink href="/resources">RESOURCES</NavLink>  
-					<NavLink href="/blog">BLOG</NavLink>
-					<NavLink href="/donate">
-						<SignUpBtn>DONATE</SignUpBtn>
-					</NavLink>
-					<NavLink href="/get-involved">
-						<DonateBtn>SIGN UP</DonateBtn>
-					</NavLink> {/** TODO: Correct? */}
-				</div>
-			</>
-		}
-	</TopNavContainer>;
+	return (
+				<NavContainer>
+					{/* <Logo /> */}
+					<NavInner>
+
+					<Button>About</Button>
+						<DropdownContainer>
+							<Button
+							$position="relative"
+							onClick={() => {
+								setVisible((visible) => !visible)
+							}}
+							>
+								Resources
+								{visible === true ? <MdOutlineKeyboardArrowUp size={20} /> : <MdOutlineKeyboardArrowDown size={20}/> }
+							</Button>
+							{visible && (
+								<DropdownMenu>
+
+									{dropdownItems.map((item) => (
+										<DropdownItem
+										key={item.title}
+										>
+											{item.title}
+										</DropdownItem>
+									))}	
+									</DropdownMenu>
+							)}
+							</DropdownContainer>
+					<Button>Blog</Button>
+					<Button $backgroundColor="#FF007F">Donate</Button>
+					<Button $backgroundColor="white" $color="black">Sign Up</Button>
+					</NavInner>
+				</NavContainer>
+	)
 }
 
 export default TopNav;
