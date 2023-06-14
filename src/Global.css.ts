@@ -5,11 +5,13 @@ import colors from './styles/colors';
 const GlobalStyles = createGlobalStyle`
 	* {
 		box-sizing: border-box;
-	}
-
-	body {
 		margin: 0;
 		padding: 0;
+	}
+
+	body, html, :root {
+		height: 100%;
+		width: 100%;
 	}
 
 	a[aria-expanded="true"] {
