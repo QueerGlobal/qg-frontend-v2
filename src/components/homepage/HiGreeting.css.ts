@@ -1,31 +1,56 @@
+
 import styled from 'styled-components';
 import colors from '../../styles/colors';
+import womenWithGlasses from '../../assets/home/top.png'
 
 export const HiGreetingContainer = styled.div`
-  position: absolute;
   z-index: 2;
-  top: 0px;
-  left: 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 `;
 
-export const Greeting = styled.p`
-  position: absolute;
-  color: ${colors.WHITE};
-  left: 57px;
-  top: 103px;
-  font-style: oblique;
-  font-size: 100px;
-`;
-
-export const TopImageContainer = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 75px;
-  width: 447px;
-  height: 300px;
-
-  & img {
-    width: 447px;
-    height: 300px;
+export const Hi = styled.span`
+  font-size: 10vw;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  @media (max-width: 1168px) {
+    font-size: 5vw;
   }
-`;
+  @media (max-width: 568px) {
+    
+  }
+`
+
+export const Header1 = styled.h1`
+  color: white;
+  position: absolute;
+  right: 400px;
+  font-size: 200%;
+  @media (max-width: 1168px) {
+    font-size: 100%;
+  }
+  @media (max-width: 568px) {
+    font-size: 150%;
+    position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+    top: 300px;
+    color: black;
+    z-index: 11;
+  }
+`
+
+export const WomenWithGlasses = styled.img`
+	position: relative;
+  height: 50%;
+  width: 50%;
+`
+
+WomenWithGlasses.defaultProps = {
+	src: womenWithGlasses
+}

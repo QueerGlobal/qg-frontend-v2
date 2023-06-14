@@ -1,14 +1,15 @@
 import { FC } from 'react';
-import { HiGreetingContainer, Greeting, TopImageContainer } from './HiGreeting.css';
+import { Header1, Hi, HiGreetingContainer, WomenWithGlasses} from './HiGreeting.css';
 import topImg from '../../assets/home/top.png';
 
 const HiGreeting: FC = () => {
     return (
         <HiGreetingContainer>
-            <Greeting>Hi</Greeting>
-            <TopImageContainer>
-                <img src={topImg} alt="" />
-            </TopImageContainer>
+                <WomenWithGlasses />
+                <Header1 >
+                    <Hi>Hi, </Hi>
+                    WE&prime;RE QUEER GLOBAL.
+                </Header1>
         </HiGreetingContainer>
     );
 };
