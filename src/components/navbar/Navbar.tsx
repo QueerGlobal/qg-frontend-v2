@@ -45,6 +45,7 @@ const NavBar: FC = () => {
 	}, []);
 
 	return (
+
 		// <>
 		// 	<MenuButton
 		// 		type="button"

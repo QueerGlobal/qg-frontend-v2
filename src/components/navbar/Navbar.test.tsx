@@ -7,3 +7,4 @@ describe('Navbar Component', () => {
     render(<Navbar />);
   });
 });
+
