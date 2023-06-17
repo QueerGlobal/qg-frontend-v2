@@ -16,7 +16,7 @@ const Homepage: FC = () => {
       <HiGreeting />
       <HomepageContents />
       {/* <ForegroundShapes /> */}
-      <BottomImages />
+      {/* <BottomImages /> */}
         </InnerContainer>
       </OuterContainer>
   );

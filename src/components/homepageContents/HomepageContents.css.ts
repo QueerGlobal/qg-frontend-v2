@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 import braidedGirl from '../../assets/nathana-reboucas-9ltd8_dh_JM-unsplash.jpg'
-// import standingMan from '../'
+import standingMan from '../../assets/Mask Group 16.png'
+import laughingMan from '../../assets/middle_image.jpg'
 
 
 /** TODO - Figure out meaning behind the box-shadow color */
@@ -54,20 +55,13 @@ export const UpperBody = styled.div`
   width: 100%;
   display: flex;
   gap: 150px;
-  max-height: 800px;
+  max-height: 850px;
   @media (max-width: 1168px) {
     flex-direction: column;
   gap: 50px;
   }
 `
 
-export const MiddleBody = styled.div`
-    width: 100%;
-  display: flex;
-  background-color: yellow;
-  height: 500px;
-  z-index: -1;
-`
 
 export const Message = styled.p`
   display: inline-block;
@@ -108,8 +102,8 @@ export const Button = styled.button<{$position?: string, $color?:string, $shadow
 `
 
 export const BraidedGirl = styled.img`
-	height:60%;
-  width: 60%;
+	height:50%;
+  width: 55%;
   @media (max-width: 1168px) {
     height:100%;
   width: 100%;
@@ -122,10 +116,41 @@ BraidedGirl.defaultProps = {
 
 
 export const StandingMan = styled.img`
-  	height:60%;
-  width: 60%;
+  	height:55%;
+  width: 55%;
 `
 
 StandingMan.defaultProps = {
-	// src: standingMan
+	src: standingMan
+}
+
+export const MiddleContent = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`
+
+
+export const MiddleBody = styled.div`
+    width: 100%;
+  display: flex;
+  z-index: -1;
+  align-items: center;
+  gap: 10px;
+`
+
+export const LowerBody = styled.div`
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+export const LaughingMan = styled.img`
+  	height:55%;
+  width: 55%;
+`
+
+LaughingMan.defaultProps = {
+	src: laughingMan
 }
