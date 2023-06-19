@@ -9,7 +9,7 @@ import {
   TitleText,
   WhiteBGSectionLeft,
   WhiteBGSectionRight,
-} from "./ContactCTA.css";
+} from "./ContactMain.css";
 
 const ContactCTA: FC = () => {
   return (

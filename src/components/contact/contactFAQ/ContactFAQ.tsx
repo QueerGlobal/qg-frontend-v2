@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { AccordionBox, StyledAccordion, PanelBox } from "./ContactFAQ.css";
-import { TitleText } from "../contactCTA/ContactCTA.css";
+import { TitleText } from "../contactMain/ContactMain.css";
 
 import Accordion from "react-bootstrap/Accordion";
 

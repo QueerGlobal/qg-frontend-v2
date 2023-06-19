@@ -31,7 +31,7 @@ export const InputContainer = styled.div`
   position: absolute;
   margin: 11.3rem 0rem 13.3rem 0rem;
   padding-bottom: 10rem;
-  width: 35rem;
+  width: 60rem;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
@@ -43,7 +43,7 @@ export const IdentityContainer = styled.div`
   height: 100%;
   display: grid;
   column-gap: 1.5rem;
-  grid-template: auto auto / repeat(2, 1fr);
+  grid-template: auto auto / repeat(3, 1fr);
   justify-content: space-between;
 `;
 
@@ -82,6 +82,14 @@ export const TextArea = styled.textarea`
   width: 99%;
   border: 3px inset;
 `;
+
+export const TextInput = styled.input`
+  border: 1px solid #B5B5B5;
+`
+
+export const SelectInput = styled.select`
+  border: 1px solid #B5B5B5;
+`
 
 /*
    *****************************************

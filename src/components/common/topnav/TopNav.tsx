@@ -6,6 +6,7 @@ import {
   TopNavLogo,
   SignUpBtn,
   DonateBtn,
+  NavWrapper
 } from "./TopNav.css";
 import icon from "../../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png";
 
@@ -34,7 +35,7 @@ const TopNav: FC<{ windowWidth: boolean }> = () => {
             </NavLink>
           </TopNavLogo>
 
-          <div>
+          <NavWrapper>
             <NavLink href="/about">ABOUT</NavLink>
             <NavLink href="/resources">RESOURCES</NavLink>
             <NavLink href="/blog">BLOG</NavLink>
@@ -45,7 +46,7 @@ const TopNav: FC<{ windowWidth: boolean }> = () => {
               <DonateBtn>SIGN UP</DonateBtn>
             </NavLink>{" "}
             {/** TODO: Correct? */}
-          </div>
+          </NavWrapper>
         </>
       )}
     </TopNavContainer>

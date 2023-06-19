@@ -4,7 +4,9 @@ import {
   InputContainer,
   MessageContainer,
   PanelBox,
+  SelectInput,
   SendMessageButton,
+  TextInput,
   TitleText,
 } from "./ContactMessage.css";
 
@@ -20,8 +22,25 @@ const ContactMessage: FC = () => {
           <span>
             <b>Email</b>
           </span>
-          <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
-          <input type="text" style={{ border: "1px solid #B5B5B5" }}></input>
+          <span>
+            <b>Interested in?</b>
+          </span>
+          <TextInput type="text"></TextInput>
+          <TextInput type="text"></TextInput>
+          <SelectInput name="" id="dropdown">
+            <option value="General">
+              General
+            </option>
+            <option value="Volunteering">
+              Volunteering
+            </option>
+            <option value="Donations">
+              Donations
+            </option>
+            <option value="Tech Support">
+              Tech Support
+            </option>
+          </SelectInput>
         </IdentityContainer>
         <MessageContainer id="message-container">
           <span>

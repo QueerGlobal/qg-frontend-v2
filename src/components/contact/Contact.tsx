@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import ContactCTA from "./contactCTA/ContactCTA";
+import ContactMain from "./contactMain/ContactMain";
 import ContactMessage from "./contactMessage/ContactMessage";
 import ContactFAQ from "./contactFAQ/ContactFAQ";
 import {
@@ -12,6 +12,7 @@ import {
   TitleWrapper,
   Title,
 } from "./Contact.css";
+
 
 const Contact: FC = () => {
   return (
@@ -25,7 +26,7 @@ const Contact: FC = () => {
         <Title>CONTACT US</Title>
       </TitleWrapper>
       <ContactWrapper id="main">
-        <ContactCTA />
+        <ContactMain />
         <ContactMessage />
         <ContactFAQ />
       </ContactWrapper>
