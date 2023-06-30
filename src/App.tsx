@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/home/Home";
+import ContactHelp from "./components/contact-help/ContactHelp";
 import About from "./components/about/About";
 import Donate from "./components/donate/Donate";
 import Profile from "./components/profile/Profile";
@@ -27,6 +28,7 @@ const App: React.FC = () => {
 				<Route path="/add-resource" component={AddResource} />
 				<Route path="/search" component={Search} />
 				<Route path="/logout" component={Logout} />
+				<Route path="/contact-help" component={ContactHelp} />
 			</Router>
 
 			<Footer />

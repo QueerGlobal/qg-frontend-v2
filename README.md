@@ -53,7 +53,7 @@ Dedicated data file with constants will be made for info not needed from the bac
   --- Back-end data needed: All businesses
 - "/donate" back-end ([render](https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/b1ac5c96-9327-4dd4-9b28-2c6fd810889b))
   --- Back-end data needed: % data on where money has been allocated to for "Purchase web domain", "Volunteer engagement", "Software & Licenses"
-- "/contact-us" static ([render](https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/8875368e-2396-45c9-8ff1-b53624f6270f))
+- "/contact-help" static ([render](https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/8875368e-2396-45c9-8ff1-b53624f6270f))
 - "/profile" back-end ([render](https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/9966678f-a17e-4af1-bb6a-45568e955832))
   --- Back-end data needed: public/private profile boolean, user's info, social links, business, cards ('pills' of info tags), friends, resources
 - "/gallery" back-end ([render](https://xd.adobe.com/view/6f6af599-8eb6-46b5-8731-e4c09ddd587e-3a39/screen/c8cf5b5c-bd3a-41ac-af52-e8d69b55a55f))

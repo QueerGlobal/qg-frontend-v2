@@ -30,7 +30,7 @@ const Footer: FC = () => {
 				<NavLink href="/resources">Resources</NavLink>
 				<NavLink href="/donate">Donate</NavLink>
 				<NavLink href="/get-involved">Get Involved</NavLink>
-				<NavLink href="/contact-us">Contact Us</NavLink>
+				<NavLink href="/contact-help">Contact Us</NavLink>
 			</NavLinksContainer>
 			<RightsReserved>
 				&#169; {currentYear} Queer Global | All Rights Reserved

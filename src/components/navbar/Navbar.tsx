@@ -110,7 +110,7 @@ const NavBar: FC = () => {
 						}
 					>
 						<NavDropdownItemContainer>
-							<NavDropdownItem href="/contact-us">CONTACT US</NavDropdownItem>
+							<NavDropdownItem href="/contact-help">CONTACT US</NavDropdownItem>
 							<NavDropdownItem href="/volunteer">VOLUNTEER</NavDropdownItem>
 							<NavDropdownItem href="/give-feedback">GIVE FEEDBACK</NavDropdownItem>
 						</NavDropdownItemContainer>
@@ -131,7 +131,7 @@ const NavBar: FC = () => {
 								<NavDropdownItem href="/edit-profile">EDIT PROFILE</NavDropdownItem>
 								<NavDropdownItem href="/messages">{MessagesIcon()} MESSAGES</NavDropdownItem>
 								<NavDropdownItem href="/notifications">NOTIFICATIONS</NavDropdownItem>
-								<NavDropdownItem href="/help">HELP/SUPPORT</NavDropdownItem>
+								<NavDropdownItem href="/contact-help">HELP/SUPPORT</NavDropdownItem>
 								<NavDropdownItem href="/feedback">GIVE FEEDBACK</NavDropdownItem>
 								<NavDropdownItem href="/logout">LOG OUT</NavDropdownItem>
 							</NavDropdownItemContainer>
