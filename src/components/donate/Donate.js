@@ -3,6 +3,9 @@
 import React, { FC } from "react";
 import "./Donate.css";
 import headShot from "../../assets/home/nathana-reboucas-9ltd8_dh_JM-unsplash.jpg";
+import { donationMethods } from '../donate/config.js'
+import { DonateCard } from "./DonateCard";
+
 
 const Donate = () => {
 	return (
@@ -42,13 +45,19 @@ const Donate = () => {
 					</h6>
 
 					<div className="pay-options-row">
-						<div className="pay-option-card">
+
+						{
+
+							donationMethods.map( method =>  <DonateCard method={method} key={method.name} /> )
+						}
+						{/* <div className="pay-option-card">
 							<img />
 							<p>GoFundMe</p>
 
 							<button>DONATE</button>
-						</div>
-						<div className="pay-option-card">
+						</div> */}
+
+						{/* <div className="pay-option-card">
 							<img />
 							<p>Patreon</p>
 
@@ -85,7 +94,7 @@ const Donate = () => {
 							<p>Amazon</p>
 
 							<button>DONATE</button>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

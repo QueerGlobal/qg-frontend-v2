@@ -67,6 +67,12 @@ p {
     text-align: center;
 }
 
+.pay-option-logo {
+    height: 5rem;
+    width: 5rem;
+    display: block;
+}
+
 button {
     background-color: black;
     color: white;
