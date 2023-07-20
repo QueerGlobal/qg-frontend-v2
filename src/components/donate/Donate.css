@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,700&display=swap');
 *{
     font-family: Open Sans;
 }
@@ -24,6 +27,8 @@
     height: contain;
     margin: auto;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-image-container{
@@ -46,6 +51,12 @@ p {
 .pay-option-header{
     text-align: center;
     margin-top: 2rem;
+}
+
+.pay-option-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pay-options-row{
@@ -71,6 +82,65 @@ p {
     height: 5rem;
     width: 5rem;
     display: block;
+}
+
+.pay-option-monthly {
+    background-color: #655DC6;
+    padding: .25rem 1.5rem;
+    align-self: center;
+    margin: 2rem 0;
+
+}
+
+.donate-transparency {
+    align-self: center;
+    font-weight: extra-bold;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px){
+
+.donate-transparency {
+    align-self: center;
+    font-weight: extra-bold;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+}
+
+.donate-script {
+font-family: 'Seaweed Script', cursive;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-009383);
+text-align: left;
+font: normal normal normal 146px/213px Tahu!;
+letter-spacing: 0px;
+color: #009383;
+opacity: 1;
+font-size: 4.5rem;
+font-weight: normal;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.donate-script {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 3rem 0;
+}
+
+}
+
+
+.donate-sub-header{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 button {
