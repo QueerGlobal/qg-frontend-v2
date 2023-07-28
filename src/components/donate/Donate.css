@@ -68,8 +68,8 @@ p {
 
 .pay-option-card{
     background-color: #D3D3D3;
-    height: 8rem;
-    width: 7rem;
+    height: 12rem;
+    width: 9rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -79,9 +79,10 @@ p {
 }
 
 .pay-option-logo {
-    height: 5rem;
-    width: 5rem;
-    display: block;
+    max-height: 5rem;
+    max-width: 5rem;
+    margin: auto;
+
 }
 
 .pay-option-monthly {
@@ -141,6 +142,36 @@ font-weight: normal;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+}
+
+.donation-info-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.donation-info-card{
+    height: fit;
+    width: 18rem;
+    /* border: .2rem solid black; */
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.donation-info-pie {
+    height: auto;
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+
+.donation-info-header{
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 button {
