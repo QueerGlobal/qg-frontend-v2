@@ -5,7 +5,7 @@ import "./Donate.css";
 import headShot from "../../assets/home/nathana-reboucas-9ltd8_dh_JM-unsplash.jpg";
 import { donationMethods } from "../donate/config.js";
 import { DonateCard } from "./DonateCard";
-import pie from './pies/pie.png'
+import pie from "./pies/pie.png";
 import pie1 from "./pies/pie1.png";
 import pie2 from "./pies/pie2.png";
 import pie3 from "./pies/pie3.png";
@@ -46,48 +46,69 @@ const Donate = () => {
               </p>
               <img className="image" src={headShot} />
             </div>
-            <div className="pay-option-container">
-              <h6 className="pay-option-header">
-                We are not picky. Everything helps
-              </h6>
 
-              <div className="pay-options-row">
-                {donationMethods.map((method) => (
-                  <DonateCard method={method} key={method.name} />
-                ))}
+            <section>
+              <div className="pay-option-container">
+                <h6 className="pay-option-header">
+                  We are not picky. Everything helps
+                </h6>
+
+                <div className="pay-options-row">
+                  {donationMethods.map((method) => (
+                    <DonateCard method={method} key={method.name} />
+                  ))}
+                </div>
+                <button className="pay-option-monthly">
+                  SET UP MONTHLY DONATIONS
+                </button>
               </div>
-              <button className="pay-option-monthly">
-                SET UP MONTHLY DONATIONS
-              </button>
-            </div>
+            </section>
           </div>
-          <h2 className="donate-transparency">
-            WE BELIEVE IN <span className="donate-script">transparency</span>.
-          </h2>
-          <p className="donate-sub-header">
-            Here is where your money went in 2019 and 2020.
-          </p>
 
-          <div className="donation-info-card-container">
-            <div className="donation-info-card">
-              <img className="donation-info-pie" src={pie} />
+          <section>
+            <h2 className="donate-transparency">
+              WE BELIEVE IN <span className="donate-script">transparency</span>.
+            </h2>
+            <p className="donate-sub-header">
+              Here is where your money went in 2019 and 2020.
+            </p>
 
-              <h6 className="donation-info-header">Purchase Web Domain</h6>
-              <p>at www.queerglobal.org</p>
+            <div className="donation-info-card-container">
+              <div className="donation-info-card">
+                <img className="donation-info-pie" src={pie} />
+
+                <h6 className="donation-info-header">Purchase Web Domain</h6>
+                <p>at www.queerglobal.org</p>
+              </div>
+              <div className="donation-info-card">
+                <img className="donation-info-pie" src={pie} />
+
+                <h6 className="donation-info-header">Volunteer Engagemnet</h6>
+                <p>
+                  Meals, rewards, and training for team members, supplies for
+                  volunteer parties, and gift cards, swag, and donations given
+                  to volunteers.
+                </p>
+              </div>
+
+              <div className="donation-info-card">
+                <img className="donation-info-pie" src={pie} />
+
+                <h6 className="donation-info-header">Software & Licenses</h6>
+                <p>
+                  GSuite ($300 a month), Asana, Github, AWS, IFTTT, Mailchimp,
+                  Canva.com, Facebook, LinkedIn, Jira for project management,
+                  NGLCC, Adobe creative suite.
+                </p>
+              </div>
             </div>
-            <div className="donation-info-card">
-              <img className="donation-info-pie" src={pie} />
+          </section>
+<section>
+  <h6 className="fundraising-header">Looking ahead</h6>
+  <p>Our current fundraising mission is to continue building the Queer Global website. This includes maintaining software licenses, volunteer rewards and meals, training, legal services, and administration work. A little goes a long way….</p>
+</section>
 
-              <h6 className="donation-info-header" >Volunteer Engagemnet</h6>
-              <p>Meals, rewards, and training for team members, supplies for volunteer parties, and gift cards, swag, and donations given to volunteers.</p>
-            </div>
-            <div className="donation-info-card">
-              <img className="donation-info-pie" src={pie} />
 
-              <h6 className="donation-info-header" >Software & Licenses</h6>
-              <p>GSuite ($300 a month), Asana, Github, AWS, IFTTT, Mailchimp, Canva.com, Facebook, LinkedIN, Jira for project management, NGLCC, Adobe creative suite.</p>
-            </div>
-          </div>
         </div>
       </div>
     </>

@@ -9,12 +9,12 @@
     background-color: #009383;
     width: full;
     height: fit;
-
+    padding: 0 2rem;
 }
 
 .header {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 700;
     color: white;
     padding: 6rem 0 0 4rem;
     margin-bottom: 3rem;
@@ -26,7 +26,7 @@
     width: 90%;
     height: contain;
     margin: auto;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
 }
@@ -51,6 +51,7 @@ p {
 .pay-option-header{
     text-align: center;
     margin-top: 2rem;
+    font-weight: 600;
 }
 
 .pay-option-container{
@@ -94,16 +95,15 @@ p {
 }
 
 .donate-transparency {
-    align-self: center;
     font-weight: extra-bold;
     margin-top: 5rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px){
 
 .donate-transparency {
-    align-self: center;
     font-weight: extra-bold;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -152,7 +152,7 @@ font-weight: normal;
 
 .donation-info-card{
     height: fit;
-    width: 18rem;
+    width: 12rem;
     /* border: .2rem solid black; */
     margin: 2rem;
     display: flex;
@@ -164,7 +164,7 @@ font-weight: normal;
 
 .donation-info-pie {
     height: auto;
-    width: 10rem;
+    width: 8rem;
     margin: 1rem auto;
 }
 
@@ -172,6 +172,10 @@ font-weight: normal;
 .donation-info-header{
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+.fundraising-header {
+    font-weight: 700;
 }
 
 button {
