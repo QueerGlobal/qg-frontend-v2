@@ -5,7 +5,7 @@
     font-family: Open Sans;
 }
 
-.hero-container{
+.main-container{
     background-color: #009383;
     width: full;
     height: fit;
@@ -21,7 +21,7 @@
 
 }
 
-.text-container{
+.inner-container{
     background-color: white;
     width: 90%;
     height: contain;
@@ -174,8 +174,38 @@ font-weight: normal;
     margin-bottom: 1rem;
 }
 
-.fundraising-header {
+.donation-amount-header {
     font-weight: 700;
+}
+
+.donation-amount-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+}
+
+.donation-amount-card{
+    height: 16rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.donation-amount{
+   color:  #655DC6;
+}
+
+.donation-amount-button{
+    align-self: center;
+    width: 7rem;
+    font-size: .75rem;
+
 }
 
 button {
