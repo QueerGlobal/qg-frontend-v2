@@ -42,7 +42,7 @@ export const DonationAmounts = () => {
       </p>
       <button className="volunteer-button">SEE VOLUNTEER OPPURTUNITIES</button>
        <h6 className="volunteer-transparency">
-              <span className="volunteer-script">Thank you </span>for helping our community.
+              <span className="volunteer-script">Thank you </span><span className="thank-you-tag">for helping our community.</span>
             </h6>
     </section>
   );
