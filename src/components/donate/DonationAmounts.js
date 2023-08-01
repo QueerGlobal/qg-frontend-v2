@@ -2,7 +2,7 @@ import React from "react";
 
 export const DonationAmounts = () => {
   return (
-    <section>
+    <section className="donation-amount-section">
       <h6 className="donation-amount-header">Looking ahead</h6>
       <p>
         Our current fundraising mission is to continue building the Queer Global
@@ -40,6 +40,10 @@ export const DonationAmounts = () => {
       <p>
         <strong>Will you help us built it?</strong>
       </p>
+      <button className="volunteer-button">SEE VOLUNTEER OPPURTUNITIES</button>
+       <h6 className="volunteer-transparency">
+              <span className="volunteer-script">Thank you </span>for helping our community.
+            </h6>
     </section>
   );
 };

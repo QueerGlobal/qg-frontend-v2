@@ -10,6 +10,7 @@
     width: full;
     height: fit;
     padding: 0 2rem;
+    padding-bottom: 12rem;
 }
 
 .header {
@@ -117,7 +118,8 @@ font-family: 'Seaweed Script', cursive;
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-009383);
 text-align: left;
-font: normal normal normal 146px/213px Tahu!;
+/* font: normal normal normal 146px/213px Tahu!; */
+font: Tahu!;
 letter-spacing: 0px;
 color: #009383;
 opacity: 1;
@@ -174,6 +176,12 @@ font-weight: normal;
     margin-bottom: 1rem;
 }
 
+
+.donation-amount-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .donation-amount-header {
     font-weight: 700;
 }
@@ -205,6 +213,34 @@ font-weight: normal;
     align-self: center;
     width: 7rem;
     font-size: .75rem;
+
+}
+
+.volunteer-button{
+    background-color: #655DC6;
+    padding: .25rem 1.5rem;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.volunteer-transparency{
+    align-self: center;
+    margin-top: 5rem;
+}
+
+
+.volunteer-script{
+
+font-family: 'Seaweed Script', cursive;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-009383);
+text-align: left;
+font: Tahu!;
+letter-spacing: 0px;
+color: #009383;
+opacity: 1;
+font-size: 4.5rem;
+font-weight: normal;
 
 }
 
