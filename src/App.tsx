@@ -9,29 +9,31 @@ import Search from "./components/search/Search";
 import Logout from "./components/logout/Logout";
 import GlobalStyles from "./Global.css";
 import TopNav from "./components/common/topnav/TopNav";
-import Footer from './components/common/footer/Footer';
+import Footer from "./components/common/footer/Footer";
+import Contact from "./components/contact/Contact";
 
 const App: React.FC = () => {
-	return (
-		<>
-			<GlobalStyles />
+  return (
+    <>
+      <GlobalStyles />
 
-			<TopNav windowWidth={false} />
+      <TopNav windowWidth={false} />
 
-			<Router>
-				<Route path="/" exact component={Home} />
-				<Route path="/about" exact component={About} />
-				<Route path="/donate" component={Donate} />
-				<Route path="/profile" component={Profile} />
-				<Route path="/blog" component={Blog} />
-				<Route path="/add-resource" component={AddResource} />
-				<Route path="/search" component={Search} />
-				<Route path="/logout" component={Logout} />
-			</Router>
+      <Router>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/donate" component={Donate} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/add-resource" component={AddResource} />
+        <Route path="/search" component={Search} />
+        <Route path="/logout" component={Logout} />
+        <Route path="/contact-us" component={Contact} />
+      </Router>
 
-			<Footer />
-		</>
-	);
+      <Footer />
+    </>
+  );
 };
 
 export default App;

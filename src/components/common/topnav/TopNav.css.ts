@@ -13,6 +13,11 @@ export const TopNavContainer = styled(Nav)`
 	height: 100%;
 	max-width: 100%;
 	padding: 2% 10%;
+	z-index: 50;
+`;
+
+export const NavWrapper = styled.nav`
+	z-index: 60;
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -22,6 +27,7 @@ export const NavLink = styled(Nav.Link)`
 	opacity: 1;
 	display: inline;
 	margin-left: 10px;
+	z-index: 70;
 
 	&:focus,
 	&:active {
@@ -32,6 +38,7 @@ export const NavLink = styled(Nav.Link)`
 export const TopNavLogo = styled.span`
 	text-align: left;
 	flex-grow: 1;
+	z-index: 50;
 `;
 
 export const SignUpBtn = styled.button`
