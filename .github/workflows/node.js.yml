@@ -31,3 +31,6 @@ jobs:
     - run: npm run test:ci
       env:
         CI: ""
+
+    - name: Run ESLint
+      run: npm run lint
