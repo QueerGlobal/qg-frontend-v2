@@ -59,7 +59,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Run `npm test` for info on [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
-Run `npm run build` for info on [deployment](https://facebook.github.io/create-react-app/docs/deployment). 
+Run `npm run build` for info on [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 
 ---
 
