@@ -9,7 +9,7 @@ import {
 } from "./TopNav.css";
 import icon from "../../../assets/topnav/QG-Logo-V3-White-Transparent-PNG-1.png";
 
-const TopNav: FC<{ windowWidth: boolean }> = () => {
+const TopNav: FC = () => {
 	const [width, setWidth] = useState(window.innerWidth);
 
 	const updateWidth = () => setWidth(window.innerWidth);

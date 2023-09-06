@@ -16,7 +16,7 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyles />
 
-			<TopNav windowWidth={false} />
+			<TopNav />
 
 			<Router>
 				<Route path="/" exact component={Home} />
