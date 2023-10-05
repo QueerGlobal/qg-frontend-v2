@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,700&display=swap');
+*{
+    font-family: Open Sans;
+}
+
+.main-container{
+    background-color: #009383;
+    width: full;
+    height: fit;
+    padding: 0 2rem;
+    padding-bottom: 12rem;
+}
+
+@media only screen and (max-width: 768px){
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
+
+.header {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    padding: 6rem 0 0 4rem;
+    margin-bottom: 3rem;
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .header{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    }
+}
+
+.inner-container{
+    background-color: white;
+    width: 90%;
+    height: contain;
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px){
+
+
+.inner-container{
+    background-color: white;
+    width: 90%;
+    height: contain;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+.text-image-container{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+
+    .text-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
+
+.image {
+    height: 15rem;
+    width: 12rem;
+}
+
+
+@media only screen and (max-width: 768px){
+.image {
+    height: 15rem;
+    width: 12rem;
+    align-self: center;
+
+}
+
+}
+
+.text-next-to-image{
+    padding-right: 3rem;
+}
+
+p {
+    font-size: .85rem;
+}
+
+.pay-option-header{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.pay-option-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pay-options-row{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pay-option-card{
+    background-color: #D3D3D3;
+    height: 12rem;
+    width: 9rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pay-option-logo {
+    max-height: 5rem;
+    max-width: 5rem;
+    margin: auto;
+
+}
+
+.pay-option-monthly {
+    background-color: #655DC6;
+    padding: .25rem 1.5rem;
+    align-self: center;
+    margin: 2rem 0;
+
+}
+
+.donate-transparency {
+    font-weight: extra-bold;
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+
+.donate-transparency {
+    font-weight: extra-bold;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+}
+
+.donate-script {
+font-family: 'Seaweed Script', cursive;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-009383);
+text-align: left;
+/* font: normal normal normal 146px/213px Tahu!; */
+font: Tahu!;
+letter-spacing: 0px;
+color: #009383;
+opacity: 1;
+font-size: 4.5rem;
+font-weight: normal;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.donate-script {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 3rem 0;
+}
+
+}
+
+
+.donate-sub-header{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.donation-info-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.donation-info-card{
+    height: fit;
+    width: 12rem;
+    /* border: .2rem solid black; */
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.donation-info-pie {
+    height: auto;
+    width: 8rem;
+    margin: 1rem auto;
+}
+
+
+.donation-info-header{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+.donation-amount-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-amount-header {
+    font-weight: 700;
+}
+
+.donation-amount-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+}
+
+.donation-amount-card{
+    height: 16rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.donation-amount{
+   color:  #655DC6;
+}
+
+.donation-amount-button{
+    align-self: center;
+    width: 7rem;
+    font-size: .75rem;
+
+}
+
+.volunteer-button{
+    background-color: #655DC6;
+    padding: .25rem 1.5rem;
+    align-self: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+
+}
+
+@media only screen and (max-width: 768px){
+
+  .volunteer-button{
+      font-size: .75rem;
+  }
+
+}
+
+
+.volunteer-transparency{
+    align-self: center;
+    margin-top: 5rem;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+.thank-you-tag{
+display: none;
+}
+}
+
+.volunteer-script{
+
+font-family: 'Seaweed Script', cursive;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-009383);
+text-align: left;
+font: Tahu!;
+letter-spacing: 0px;
+color: #009383;
+opacity: 1;
+font-size: 4.5rem;
+font-weight: normal;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+img {
+    height: 3rem;
+}
