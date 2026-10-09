@@ -1,8 +1,8 @@
 # qg-frontend-v2
 
-This is the intended Queer Global web app. It is **not** what currently serves the public site.
+This is the intended Queer Global web app. It is **not** what currently serves [queerglobal.com](https://queerglobal.com).
 
-- **Live placeholder:** [https://queerglobal.grandkru.com](https://queerglobal.grandkru.com) — stands in for `queerglobal.com` until that DNS is available
+- **Live placeholder:** [https://queerglobal.com](https://queerglobal.com)
 - **Docs:** [qg-docs](https://github.com/QueerGlobal/qg-docs)
 
 ## Run locally
