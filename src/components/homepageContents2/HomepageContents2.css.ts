@@ -31,7 +31,7 @@ export const SubHeader = styled.h2`
   margin: 48px 0 -5px -40px;
 `;
 
-export const Span = styled.h2`
+export const Span = styled.span`
   color: ${colors.UNICORN};
   font-size: 48px;
   font-weight: 800;
