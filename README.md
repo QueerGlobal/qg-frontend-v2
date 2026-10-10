@@ -1,8 +1,7 @@
 # qg-frontend-v2
 
-This is the intended Queer Global web app. It is **not** what currently serves [queerglobal.com](https://queerglobal.com).
+This is the intended Queer Global web app. There is no public website yet.
 
-- **Live placeholder:** [https://queerglobal.com](https://queerglobal.com)
 - **Docs:** [qg-docs](https://github.com/QueerGlobal/qg-docs)
 
 ## Run locally
@@ -25,4 +24,4 @@ Create React App, React 17, `react-scripts` 4. Use a current Node 18+ if you can
 
 There is no backend. The mobile nav `GET /user` call does not hit a real API.
 
-See [qg-docs/STATUS.md](https://github.com/QueerGlobal/qg-docs/blob/main/STATUS.md) for the full list.
+See [STATUS.md in qg-docs](https://github.com/QueerGlobal/qg-docs/blob/cursor/rewrite-public-front-door/STATUS.md) for the full list. That file lands on `main` when [qg-docs PR #18](https://github.com/QueerGlobal/qg-docs/pull/18) merges.
