@@ -1,5 +1,4 @@
 import React, { ComponentProps } from 'react';
-
 import { Story } from '@storybook/react';
 import HomepageContents2 from '../components/homepageContents2/HomepageContents2';
 
