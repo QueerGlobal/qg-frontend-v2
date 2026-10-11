@@ -73,7 +73,8 @@
     },
     "tar": "7.5.22",
     "nth-check": "2.1.1",
-    "postcss": "8.5.29"
+    "postcss": "8.5.29",
+    "serialize-javascript": "7.1.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.20",
