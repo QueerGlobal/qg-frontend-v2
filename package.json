@@ -75,7 +75,8 @@
     "nth-check": "2.1.1",
     "postcss": "8.5.29",
     "serialize-javascript": "7.1.2",
-    "webpack-dev-middleware": "7.4.5"
+    "webpack-dev-middleware": "7.4.5",
+    "node-forge": "1.4.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.20",
