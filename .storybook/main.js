@@ -1,3 +1,4 @@
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -5,9 +6,13 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  staticDirs: ['../public'],
   typescript: {
     check: false,
-    checkOptions: {},
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
