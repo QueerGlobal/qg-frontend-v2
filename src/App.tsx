@@ -10,6 +10,7 @@ import Logout from "./components/logout/Logout";
 import GlobalStyles from "./Global.css";
 import TopNav from "./components/common/topnav/TopNav";
 import Footer from './components/common/footer/Footer';
+import ErrorBoundary from './components/common/error-boundary/ErrorBoundary';
 
 const App: React.FC = () => {
 	return (
@@ -19,14 +20,16 @@ const App: React.FC = () => {
 			<TopNav />
 
 			<Router>
-				<Route path="/" exact component={Home} />
-				<Route path="/about" exact component={About} />
-				<Route path="/donate" component={Donate} />
-				<Route path="/profile" component={Profile} />
-				<Route path="/blog" component={Blog} />
-				<Route path="/add-resource" component={AddResource} />
-				<Route path="/search" component={Search} />
-				<Route path="/logout" component={Logout} />
+				<ErrorBoundary>
+					<Route path="/" exact component={Home} />
+					<Route path="/about" exact component={About} />
+					<Route path="/donate" component={Donate} />
+					<Route path="/profile" component={Profile} />
+					<Route path="/blog" component={Blog} />
+					<Route path="/add-resource" component={AddResource} />
+					<Route path="/search" component={Search} />
+					<Route path="/logout" component={Logout} />
+				</ErrorBoundary>
 			</Router>
 
 			<Footer />
