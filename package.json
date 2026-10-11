@@ -67,6 +67,11 @@
       "last 1 safari version"
     ]
   },
+  "overrides": {
+    "express": {
+      "path-to-regexp": "0.1.13"
+    }
+  },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.20",
     "@storybook/addon-links": "^7.6.20",
